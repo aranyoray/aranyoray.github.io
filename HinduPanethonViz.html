@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu Pantheon 1.0</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f0f0;
+        }
+        #familyTree { 
+            width: 100%; 
+            height: 100%; 
+        }
+        .deity {
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        .deity-male {
+            filter: drop-shadow(0 0 3px rgba(100,149,237,0.7));
+        }
+        .deity-female {
+            filter: drop-shadow(0 0 3px rgba(255,105,180,0.7));
+        }
+        .deity-other {
+            filter: drop-shadow(0 0 3px rgba(153,50,204,0.7));
+        }
+        .deity-glow-male {
+            filter: drop-shadow(0 0 5px rgba(100,149,237,1));
+            font-size: 32px;
+        }
+        .deity-glow-female {
+            filter: drop-shadow(0 0 5px rgba(255,105,180,1));
+            font-size: 32px;
+        }
+        .deity-glow-other {
+            filter: drop-shadow(0 0 5px rgba(153,50,204,1));
+            font-size: 32px;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        .arrow {
+            fill: #999;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
+        <a href="index.html" style="text-decoration: none; color: #333; background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Back to Main Page</a>
+    </div>
+    <div id="familyTree"></div>
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        const deities = [
+            { id: "Brahma", symbol: "🎭", cluster: "Trimurti", gender: "male" },
+            { id: "Vishnu", symbol: "🔵", cluster: "Trimurti", gender: "male" },
+            { id: "Shiva", symbol: "🔱", cluster: "Trimurti", gender: "male" },
+            { id: "Saraswati", symbol: "🎻", cluster: "Consorts", gender: "female" },
+            { id: "Lakshmi", symbol: "💰", cluster: "Consorts", gender: "female" },
+            { id: "Parvati", symbol: "🏔️", cluster: "Consorts", gender: "female" },
+            { id: "Ganesha", symbol: "🐘", cluster: "Devas", gender: "male" },
+            { id: "Kartikeya", symbol: "🦚", cluster: "Devas", gender: "male" },
+            { id: "Indra", symbol: "⚡", cluster: "Devas", gender: "male" },
+            { id: "Agni", symbol: "🔥", cluster: "Devas", gender: "male" },
+            { id: "Vayu", symbol: "💨", cluster: "Devas", gender: "male" },
+            { id: "Surya", symbol: "☀️", cluster: "Devas", gender: "male" },
+            { id: "Chandra", symbol: "🌙", cluster: "Devas", gender: "male" },
+            { id: "Varuna", symbol: "🌊", cluster: "Devas", gender: "male" },
+            { id: "Yama", symbol: "💀", cluster: "Devas", gender: "male" },
+            { id: "Kubera", symbol: "💎", cluster: "Devas", gender: "male" },
+            { id: "Durga", symbol: "🦁", cluster: "Devis", gender: "female" },
+            { id: "Kali", symbol: "👹", cluster: "Devis", gender: "female" },
+            { id: "Radha", symbol: "💃", cluster: "Devis", gender: "female" },
+            { id: "Sita", symbol: "🌱", cluster: "Devis", gender: "female" },
+            { id: "Hanuman", symbol: "🐒", cluster: "Devas", gender: "male" },
+            { id: "Rama", symbol: "🏹", cluster: "Avatars", gender: "male" },
+            { id: "Krishna", symbol: "🎶", cluster: "Avatars", gender: "male" },
+            { id: "Matsya", symbol: "🐠", cluster: "Avatars", gender: "male" },
+            { id: "Kurma", symbol: "🐢", cluster: "Avatars", gender: "male" },
+            { id: "Varaha", symbol: "🐗", cluster: "Avatars", gender: "male" },
+            { id: "Narasimha", symbol: "🦁", cluster: "Avatars", gender: "male" },
+            { id: "Vamana", symbol: "👣", cluster: "Avatars", gender: "male" },
+            { id: "Parashurama", symbol: "🪓", cluster: "Avatars", gender: "male" },
+            { id: "Buddha", symbol: "☸️", cluster: "Avatars", gender: "male" },
+            { id: "Kalki", symbol: "🐎", cluster: "Avatars", gender: "male" },
+            { id: "Garuda", symbol: "🦅", cluster: "Celestial Beings", gender: "male" },
+            { id: "Nandi", symbol: "🐂", cluster: "Celestial Beings", gender: "male" },
+            { id: "Airavata", symbol: "🐘", cluster: "Celestial Beings", gender: "male" },
+            { id: "Kamadeva", symbol: "🏹", cluster: "Devas", gender: "male" },
+            { id: "Rati", symbol: "❤️", cluster: "Devis", gender: "female" },
+            { id: "Aditi", symbol: "👩‍👧‍👦", cluster: "Devis", gender: "female" },
+            { id: "Diti", symbol: "👩‍👦", cluster: "Devis", gender: "female" },
+            { id: "Usha", symbol: "🌅", cluster: "Devis", gender: "female" },
+            { id: "Ratri", symbol: "🌃", cluster: "Devis", gender: "female" },
+            { id: "Bhumi", symbol: "🌍", cluster: "Devis", gender: "female" },
+            { id: "Ganga", symbol: "🏞️", cluster: "Devis", gender: "female" },
+            { id: "Yamuna", symbol: "🌊", cluster: "Devis", gender: "female" },
+            { id: "Saraswati", symbol: "📚", cluster: "Devis", gender: "female" },
+            { id: "Gayatri", symbol: "🌟", cluster: "Devis", gender: "female" },
+            { id: "Kama", symbol: "💘", cluster: "Devas", gender: "male" }
+        ];
+
+        const links = [
+            { source: "Brahma", target: "Saraswati", type: "spouse" },
+            { source: "Vishnu", target: "Lakshmi", type: "spouse" },
+            { source: "Shiva", target: "Parvati", type: "spouse" },
+            { source: "Shiva", target: "Ganesha", type: "parent" },
+            { source: "Parvati", target: "Ganesha", type: "parent" },
+            { source: "Shiva", target: "Kartikeya", type: "parent" },
+            { source: "Parvati", target: "Kartikeya", type: "parent" },
+            { source: "Vishnu", target: "Rama", type: "avatar" },
+            { source: "Vishnu", target: "Krishna", type: "avatar" },
+            { source: "Vishnu", target: "Matsya", type: "avatar" },
+            { source: "Vishnu", target: "Kurma", type: "avatar" },
+            { source: "Vishnu", target: "Varaha", type: "avatar" },
+            { source: "Vishnu", target: "Narasimha", type: "avatar" },
+            { source: "Vishnu", target: "Vamana", type: "avatar" },
+            { source: "Vishnu", target: "Parashurama", type: "avatar" },
+            { source: "Vishnu", target: "Buddha", type: "avatar" },
+            { source: "Vishnu", target: "Kalki", type: "avatar" },
+            { source: "Rama", target: "Sita", type: "spouse" },
+            { source: "Krishna", target: "Radha", type: "consort" },
+            { source: "Indra", target: "Airavata", type: "mount" },
+            { source: "Shiva", target: "Nandi", type: "mount" },
+            { source: "Vishnu", target: "Garuda", type: "mount" },
+            { source: "Kamadeva", target: "Rati", type: "spouse" },
+            { source: "Aditi", target: "Indra", type: "parent" },
+            { source: "Diti", target: "Indra", type: "sibling" }
+        ];
+
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const padding = 100; // Padding to keep deities away from edges
+
+        const svg = d3.select("#familyTree")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const simulation = d3.forceSimulation(deities)
+            .force("link", d3.forceLink(links).id(d => d.id).distance(120))
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(40))
+            .force("x", d3.forceX(width / 2).strength(0.05))
+            .force("y", d3.forceY(height / 2).strength(0.05));
+
+        const link = svg.append("g")
+            .selectAll("line")
+            .data(links)
+            .join("line")
+            .attr("class", "link");
+
+        const node = svg.append("g")
+            .selectAll("text")
+            .data(deities)
+            .join("text")
+            .attr("class", d => `deity deity-${d.gender}`)
+            .text(d => d.symbol)
+            .on("mouseover", showTooltip)
+            .on("mouseout", hideTooltip)
+            .call(drag(simulation));
+
+        const arrow = svg.append("defs").selectAll("marker")
+            .data(["end"])
+            .join("marker")
+            .attr("id", "arrow")
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 20)
+            .attr("refY", 0)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("class", "arrow")
+            .attr("d", "M0,-5L10,0L0,5");
+
+        link.attr("marker-end", d => isEqualRelationship(d) ? "" : "url(#arrow)");
+
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => Math.max(padding, Math.min(width - padding, d.source.x)))
+                .attr("y1", d => Math.max(padding, Math.min(height - padding, d.source.y)))
+                .attr("x2", d => Math.max(padding, Math.min(width - padding, d.target.x)))
+                .attr("y2", d => Math.max(padding, Math.min(height - padding, d.target.y)));
+
+            node
+                .attr("x", d => Math.max(padding, Math.min(width - padding, d.x)))
+                .attr("y", d => Math.max(padding, Math.min(height - padding, d.y)));
+        });
+
+        function isEqualRelationship(d) {
+            return d.type === "spouse" || d.type === "sibling" || d.type === "consort";
+        }
+
+        function showTooltip(event, d) {
+            const tooltip = d3.select("#tooltip");
+            tooltip.html(`<strong>${d.id}</strong><br>Cluster: ${d.cluster}<br>Gender: ${d.gender}`)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY + 10) + "px")
+                .style("opacity", 1);
+
+            d3.select(this).attr("class", `deity deity-glow-${d.gender}`);
+            
+            link.style("stroke", l => (l.source.id === d.id || l.target.id === d.id) ? "#ff0" : "#999")
+                .style("stroke-width", l => (l.source.id === d.id || l.target.id === d.id) ? 2 : 1);
+            
+            svg.selectAll(".arrow")
+                .style("opacity", 1);
+        }
+
+        function hideTooltip() {
+            d3.select("#tooltip").style("opacity", 0);
+            d3.select(this).attr("class", d => `deity deity-${d.gender}`);
+            link.style("stroke", "#999").style("stroke-width", 1);
+            svg.selectAll(".arrow")
+                .style("opacity", 0);
+        }
+
+        function drag(simulation) {
+            function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fy = null;
+            }
+
+            return d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
+        }
+
+        // Zoom functionality
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 5])
+            .on("zoom", zoomed);
+
+        svg.call(zoom);
+
+        function zoomed(event) {
+            svg.selectAll("g").attr("transform", event.transform);
+        }
+
+        // Legend for clusters
+        const clusters = [...new Set(deities.map(d => d.cluster))];
+        const colorScale = d3.scaleOrdinal(d3.schemeCategory10).domain(clusters);
+
+        const legend = svg.append("g")
+            .attr("class", "legend")
+            .attr("transform", `translate(${width - 150}, 20)`);
+
+        legend.selectAll("rect")
+            .data(clusters)
+            .enter()
+            .append("rect")
+            .attr("y", (d, i) => i * 20)
+            .attr("width", 10)
+            .attr("height", 10)
+            .attr("fill", d => colorScale(d));
+
+        legend.selectAll("text")
+            .data(clusters)
+            .enter()
+            .append("text")
+            .attr("x", 15)
+            .attr("y", (d, i) => i * 20 + 9)
+            .text(d => d)
+            .style("font-size", "12px");
+
+        // Color nodes based on cluster
+        node.style("fill", d => colorScale(d.cluster));
+
+        // Run the simulation
+        simulation.alpha(1).restart();
+    </script>
+</body>
+</html>

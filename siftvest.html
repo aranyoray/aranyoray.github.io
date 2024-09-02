@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiftVest - Mutual Fund NAV History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        #nav-history {
+            margin-top: 2rem;
+        }
+        label, select, input, button {
+            margin: 10px 0;
+            display: block;
+        }
+        select, input, button {
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        #dataTable {
+            margin-top: 2rem;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SiftVest - Mutual Fund NAV History</h1>
+        <p>Select up to 5 Mutual Funds to compare their NAV history.</p>
+    </header>
+    <section id="nav-history">
+        <div id="fund-selectors">
+            <label for="mutual-fund-1">Select Mutual Fund 1:</label>
+            <select id="mutual-fund-1"></select>
+            <label for="mutual-fund-2">Select Mutual Fund 2:</label>
+            <select id="mutual-fund-2"></select>
+            <label for="mutual-fund-3">Select Mutual Fund 3:</label>
+            <select id="mutual-fund-3"></select>
+            <label for="mutual-fund-4">Select Mutual Fund 4:</label>
+            <select id="mutual-fund-4"></select>
+            <label for="mutual-fund-5">Select Mutual Fund 5:</label>
+            <select id="mutual-fund-5"></select>
+        </div>
+        <label for="start-date">From:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">To:</label>
+        <input type="date" id="end-date">
+        <button id="fetch-nav">Fetch NAV Data</button>
+        <div id="error-message"></div>
+        <canvas id="navChart"></canvas>
+        <div id="dataTable"></div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email</a></li>
+            <li><a href="https://github.com/your-github">GitHub</a></li>
+        </ul>
+    </footer>
+    <script src="assets/js/siftvest.js"></script>
+</body>
+</html>
