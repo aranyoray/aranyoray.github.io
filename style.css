@@ -31,6 +31,131 @@ nav ul {
 nav ul li {
     display: inline;
 }
+/* Add font awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    background-color: #2b3a67; /* Dark blue background */
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #3c4f82;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav ul li ul li a {
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+footer ul li a span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+footer ul li a:hover span {
+    display: block;
+    opacity: 1;
+}
+
+footer ul li a:hover i {
+    display: none;
+}
 
 nav ul li a {
     text-decoration: none;
