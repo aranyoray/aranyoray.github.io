@@ -1,18 +1,38 @@
+/* Import Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Global settings */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    background-color: #2b3a67; /* Dark blue background */
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #ffffff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
 }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
 header {
     text-align: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 header h1 {
     margin: 0;
     font-size: 3em;
+    font-weight: 600;
+    color: #ffca3a; /* Bright yellow for a fun look */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease forwards;
 }
 
 header p {
@@ -20,6 +40,7 @@ header p {
     margin-top: 5px;
 }
 
+/* Navigation styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,49 +50,19 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-}
-/* Add font awesome for icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
-body {
-    background-color: #2b3a67; /* Dark blue background */
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-weight: 600;
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffca3a; /* Match the heading color */
 }
 
 nav ul li ul {
@@ -95,9 +86,12 @@ nav ul li ul li a {
     font-weight: 400;
 }
 
+/* Section and paragraph styling */
 h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #ffca3a; /* Bright yellow for headings */
+    animation: fadeInDown 1s ease forwards;
 }
 
 p, li {
@@ -111,9 +105,91 @@ ul {
     margin-left: 20px;
 }
 
+/* Fun box and flower emoji */
+.fun-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.fun-box {
+    width: 200px;
+    height: 200px;
+    background-color: #FFD700;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.fun-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.fun-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.flower-emoji {
+    display: inline-block;
+    font-size: 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flower-emoji:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 10px 2px gold;
+}
+
+.flower-popup {
+    text-align: center;
+}
+
+.flower-popup h3 {
+    margin-bottom: 10px;
+}
+
+.flower-popup p {
+    margin: 0;
+}
+
+/* Reusable margin, padding, and background classes */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
 footer {
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
     margin-top: 40px;
+    animation: fadeInDown 1s ease forwards;
 }
 
 footer ul {
@@ -131,6 +207,11 @@ footer ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ffca3a; /* Match the heading color */
 }
 
 footer ul li a span {
@@ -157,90 +238,23 @@ footer ul li a:hover i {
     display: none;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #007BFF;
+/* Animation for fade-in effect */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-#intro, #projects, #resume {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.fade-in-down {
+    animation: fadeInDown 1s ease forwards;
 }
 
-#intro img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-.flower-emoji {
-    display: inline-block;
-    font-size: 32px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.flower-emoji:hover {
-    transform: scale(1.3);
-    box-shadow: 0px 0px 10px 2px gold;
-}
-
-.flower-popup {
-    text-align: center;
-}
-
-.flower-popup h3 {
-    margin-bottom: 10px;
-}
-
-.flower-popup p {
-    margin: 0;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
-.p-4 {
-    padding: 1rem;
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.rounded {
-    border-radius: 0.5rem;
-}
-
-.shadow {
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
+/* Bounce animation */
 .animate-bounce {
     animation: bounce 2s infinite;
 }
@@ -256,32 +270,36 @@ footer ul li a {
         transform: translateY(-5px);
     }
 }
-.fun-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+
+/* Special section styles */
+#intro, #projects, #resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.fun-box {
-    width: 200px;
-    height: 200px;
-    background-color: #FFD700;
+#intro img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: #ffca3a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.fun-box:hover {
-    transform: scale(1.1);
-}
-
-.fun-box h2 {
-    font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
 }
