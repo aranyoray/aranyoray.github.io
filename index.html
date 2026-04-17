@@ -144,16 +144,6 @@
   }
   .ch-svg { width: 100%; height: 100%; overflow: visible; }
   
-  /* PCB CHIP WIDGET */
-  .hero-wrapper { display: flex; gap: 40px; align-items: flex-start; justify-content: space-between; position: relative; }
-  .hero-content { flex: 1; }
-  .chip-stage {
-    width: 240px; height: 240px; position: relative; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    margin-top: 20px;
-  }
-  .ch-svg { width: 100%; height: 100%; overflow: visible; }
-  
   .trace-bg {
     fill: none; stroke: #4285F4; stroke-width: 1;
     opacity: 0.15;
@@ -523,6 +513,67 @@
     .hero { padding: 36px 0 24px; }
     .stat-val { font-size: 36px; }
   }
+
+  /* PROJECTS CAROUSEL */
+  .carousel { position: relative; overflow: hidden; border-radius: 8px; }
+  .carousel-track {
+    display: flex;
+    transition: transform 350ms ease-in-out;
+  }
+  .carousel-slide {
+    min-width: 100%; flex-shrink: 0;
+    display: flex; flex-direction: column;
+  }
+  .carousel-slide img {
+    width: 100%; height: auto; aspect-ratio: 17/10;
+    object-fit: cover; border-radius: 8px;
+    background: var(--bg);
+  }
+  .carousel-caption {
+    padding: 14px 2px 0;
+  }
+  .carousel-caption h4 {
+    font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600;
+    color: var(--text); margin-bottom: 4px; letter-spacing: -0.01em;
+  }
+  .carousel-caption p {
+    font-family: 'Outfit', sans-serif; font-size: 12.5px;
+    color: var(--text-muted); line-height: 1.55;
+  }
+  .carousel-nav {
+    position: absolute; top: 0; left: 0; right: 0;
+    height: calc(100% - 60px);
+    display: flex; justify-content: space-between; align-items: center;
+    pointer-events: none; padding: 0 8px;
+  }
+  .carousel-btn {
+    pointer-events: auto;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--text); display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: opacity 0.2s, transform 0.18s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 14px; padding: 0;
+  }
+  .carousel-btn:hover { transform: scale(1.08); }
+  .carousel-btn:disabled { opacity: 0.25; cursor: default; transform: none; }
+  .carousel-dots {
+    display: flex; justify-content: center; gap: 8px;
+    padding: 14px 0 0;
+  }
+  .carousel-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--border); border: none; padding: 0;
+    cursor: pointer; transition: background 0.2s, transform 0.2s;
+  }
+  .carousel-dot.active { background: var(--text); transform: scale(1.25); }
+  .carousel-dot:hover:not(.active) { background: var(--text-muted); }
+
+  @media (max-width: 600px) {
+    .carousel-btn { width: 30px; height: 30px; font-size: 12px; }
+    .carousel-caption h4 { font-size: 14px; }
+    .carousel-caption p { font-size: 12px; }
+  }
 </style>
 </head>
 <body>
@@ -790,6 +841,77 @@
 
     </div>
 
+    <!-- PROJECTS CAROUSEL -->
+    <div class="card card-full">
+      <div class="card-label">Projects</div>
+      <div class="carousel" role="region" aria-label="Projects" tabindex="0">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="assets/projects/bant-qualification.jpg" alt="Revamped and automated BANT qualification" width="680" height="400">
+            <div class="carousel-caption">
+              <h4>Revamped &amp; Automated BANT Qualification</h4>
+              <p>Automated lead scoring for sales teams, replacing manual qualification workflows.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/cctv-varanasi.jpg" alt="CCTV analytics for Varanasi" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>CCTV Analytics for Varanasi</h4>
+              <p>AI-powered video analytics for urban safety monitoring in a city of 1.5M+.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/graphic-design.jpg" alt="Graphic design portfolio" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>Graphic Design (Adobe, Figma, Code)</h4>
+              <p>Design portfolio spanning brand identity, UI mockups, and code-based visual systems.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/avatar-learning.jpg" alt="Avatar-powered transfer learning for students" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>Avatar-Powered Transfer Learning</h4>
+              <p>AI avatars enabling personalized learning experiences for neurodiverse children.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/autism-game.jpg" alt="Culturally adapted game app for autism" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>Culturally Adapted Game App for Autism</h4>
+              <p>Gamified social-emotional learning app for Indian children with autism. 82-child pilot.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/fungal-research.jpg" alt="Fungal inhibitor research" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>Fungal Inhibitor Research</h4>
+              <p>Novel enzyme inhibitor research presented at MIT/Caltech Summer Science Program.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/projects/nanopesticide.jpg" alt="Nanopesticide for 1000 farmers" width="680" height="400" loading="lazy">
+            <div class="carousel-caption">
+              <h4>Nanopesticide for ~1,000 Farmers</h4>
+              <p>Rice husk ash nano-silica pesticide reaching 1,200+ farmers. ISEF + US Air Force commendation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous project" disabled>&#8249;</button>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next project">&#8250;</button>
+        </div>
+      </div>
+      <div class="carousel-dots" role="tablist" aria-label="Project slides">
+        <button class="carousel-dot active" aria-label="Slide 1" data-slide="0"></button>
+        <button class="carousel-dot" aria-label="Slide 2" data-slide="1"></button>
+        <button class="carousel-dot" aria-label="Slide 3" data-slide="2"></button>
+        <button class="carousel-dot" aria-label="Slide 4" data-slide="3"></button>
+        <button class="carousel-dot" aria-label="Slide 5" data-slide="4"></button>
+        <button class="carousel-dot" aria-label="Slide 6" data-slide="5"></button>
+        <button class="carousel-dot" aria-label="Slide 7" data-slide="6"></button>
+      </div>
+    </div>
+
     <!-- APPROACH -->
     <div class="card card-full">
       <div class="card-label">Approach</div>
@@ -893,12 +1015,64 @@
     localStorage.setItem('theme', next);
   });
 
-  // Shortcut
+  // Shortcut (skip when carousel or other interactive region is focused)
   document.addEventListener('keydown', (e) => {
-    if (e.key.toLowerCase() === 'd' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+    if (e.key.toLowerCase() === 'd' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName) && !document.activeElement.closest('[role="region"]')) {
       toggle.click();
     }
   });
+
+  // Projects Carousel
+  (() => {
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const carousel = document.querySelector('.carousel');
+    const total = slides.length;
+    let current = 0;
+
+    function goTo(idx) {
+      current = Math.max(0, Math.min(idx, total - 1));
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === total - 1;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+    dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.slide)));
+
+    // Keyboard navigation (only when carousel is focused)
+    carousel.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { goTo(current + 1); e.preventDefault(); }
+      if (e.key === 'ArrowLeft') { goTo(current - 1); e.preventDefault(); }
+    });
+
+    // Touch swipe
+    let startX = 0, startT = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      startT = Date.now();
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - startX;
+      const dt = Date.now() - startT;
+      const velocity = Math.abs(dx) / dt;
+      if (Math.abs(dx) > 50 || velocity > 0.3) {
+        goTo(current + (dx < 0 ? 1 : -1));
+      }
+    }, { passive: true });
+
+    // Recalculate on resize
+    window.addEventListener('resize', () => {
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      requestAnimationFrame(() => { track.style.transition = ''; });
+    });
+  })();
 
 </script>
 </body>
