@@ -519,15 +519,17 @@
   .carousel-track {
     display: flex;
     transition: transform 350ms ease-in-out;
+    width: 700%;
   }
   .carousel-slide {
-    min-width: 100%; flex-shrink: 0;
+    width: calc(100% / 7); flex-shrink: 0;
     display: flex; flex-direction: column;
   }
   .carousel-slide img {
     width: 100%; height: auto; aspect-ratio: 17/10;
     object-fit: cover; border-radius: 8px;
     background: var(--bg);
+    display: block;
   }
   .carousel-caption {
     padding: 14px 2px 0;
@@ -1035,7 +1037,7 @@
 
     function goTo(idx) {
       current = Math.max(0, Math.min(idx, total - 1));
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      track.style.transform = 'translateX(-' + (current * (100 / total)) + '%)';
       prevBtn.disabled = current === 0;
       nextBtn.disabled = current === total - 1;
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
@@ -1069,7 +1071,7 @@
     // Recalculate on resize
     window.addEventListener('resize', () => {
       track.style.transition = 'none';
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      track.style.transform = 'translateX(-' + (current * (100 / total)) + '%)';
       requestAnimationFrame(() => { track.style.transition = ''; });
     });
   })();
