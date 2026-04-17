@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "WebFetch(domain:fueler.io)",
+      "Skill(plan-eng-review)",
+      "Bash(curl -sL \"https://fueler.io/storage/users/cover_image/aranyo_1760252214.png\" -o assets/projects/fueler-cover.png)",
+      "Bash(ffmpeg -y -i group-photo-finance-aranyo-komal.jpg -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/bant-qualification.jpg)",
+      "Bash(ffmpeg -y -i organization-aranyo-usa-komal.jpeg -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/cctv-varanasi.jpg)",
+      "Bash(ffmpeg -y -i Better-India-aranyo-insta-post-komal.png -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/graphic-design.jpg)",
+      "Bash(ffmpeg -y -i assets/cams.jpeg -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/avatar-learning.jpg)",
+      "Bash(ffmpeg -y -i harvard-goup-photo-event-aranyo.jpeg -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/autism-game.jpg)",
+      "Bash(ffmpeg -y -i assets/nanocide.jpeg -vf \"scale=680:400:force_original_aspect_ratio=increase,crop=680:400\" -q:v 3 assets/projects/nanopesticide.jpg)",
+      "Bash(where ffmpeg:*)",
+      "Bash(where magick:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}
