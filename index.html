@@ -137,10 +137,27 @@
   /* PCB CHIP WIDGET */
   .hero-wrapper { display: flex; gap: 40px; align-items: flex-start; justify-content: space-between; position: relative; }
   .hero-content { flex: 1; }
+  .chip-col {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 16px; flex-shrink: 0;
+  }
+  .chip-col .hero-actions { flex-wrap: nowrap; justify-content: center; }
   .chip-stage {
     width: 240px; height: 240px; position: relative; flex-shrink: 0;
     display: flex; align-items: center; justify-content: center;
     margin-top: 20px; cursor: crosshair;
+  }
+  .hero-photo {
+    width: 260px; flex-shrink: 0; margin-top: 20px;
+  }
+  .hero-photo img {
+    width: 100%; height: 260px; object-fit: cover;
+    border-radius: 14px; display: block;
+    border: 1px solid var(--border);
+  }
+  @media (max-width: 768px) {
+    .hero-photo { width: 80%; max-width: 320px; }
+    .hero-photo img { height: auto; aspect-ratio: 1; }
   }
   .ch-svg { width: 100%; height: 100%; overflow: visible; }
   
@@ -608,12 +625,9 @@
         </div>
         <h1 class="hero-name">Aranyo<br><em>Ray.</em></h1>
         <p class="hero-tagline"><strong>Founder &amp; Builder</strong> — Scaling systems from bits to atoms.</p>
-        <div class="hero-actions">
-          <a href="https://calendly.com/aranyo/meet" class="btn-primary" target="_blank" rel="noopener noreferrer">Schedule a call</a>
-          <a href="mailto:aranyoray@gmail.com" class="btn-secondary">Email me →</a>
-        </div>
       </div>
 
+      <div class="chip-col">
       <div class="chip-stage" aria-hidden="true">
         <svg class="ch-svg" viewBox="0 0 200 200">
           <defs>
@@ -679,6 +693,15 @@
           </g>
         </svg>
       </div>
+        <div class="hero-actions">
+          <a href="https://calendly.com/aranyo/meet" class="btn-primary" target="_blank" rel="noopener noreferrer">Schedule a call</a>
+          <a href="mailto:aranyoray@gmail.com" class="btn-secondary">Email me →</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="in-lab.jpeg" alt="Aranyo in lab" loading="lazy" />
+      </div>
     </div>
   </div>
 
@@ -690,8 +713,8 @@
     <div class="card">
       <div class="card-label">Currently</div>
       <div class="build-status"><span class="dot"></span> Active</div>
-      <div class="build-title">Stealth Startup — Behavioral Safety</div>
-      <div class="build-sub">Building behavioral-first safety at scale. Backed by advisors from GIC (Singapore), Disney, and Apple.</div>
+      <div class="build-title"><a href="https://samawritten.com" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none; border-bottom:1px solid currentColor;">SamaWritten</a></div>
+      <div class="build-sub">A digital heart on your sleeve. Backed by advisors from CHN Indiana, Tidal Health, Gentuity, Narayana Health, and more.</div>
     </div>
 
     <!-- LOCATION -->
@@ -726,8 +749,8 @@
       <ul class="sidequest-list">
         <li class="sq-item">
           <span class="sq-year">2026</span>
-          <span class="sq-title">Stealth Startup</span> — Building behavioral-first safety at scale.
-          <span class="sq-meta">Backed by advisors from <span class="hl hl-orange">GIC (Singapore)</span>, <span class="hl hl-orange">Disney</span>, and <span class="hl hl-orange">Apple</span>.</span>
+          <span class="sq-title"><a href="https://samawritten.com" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:underline;">SamaWritten</a></span> — A digital heart on your sleeve.
+          <span class="sq-meta">Backed by advisors from <span class="hl hl-orange">CHN Indiana</span>, <span class="hl hl-orange">Tidal Health</span>, <span class="hl hl-orange">Gentuity</span>, <span class="hl hl-orange">Narayana Health</span>, and more.</span>
         </li>
         <li class="sq-item">
           <span class="sq-year">2023–25</span>
@@ -837,8 +860,10 @@
         <span class="logo-pill">Harvard GSAS JEI</span>
         <span class="logo-pill">BYJU'S</span>
         <span class="logo-pill">US SBIR</span>
-        <span class="logo-pill">Apple (Advisor)</span>
-        <span class="logo-pill">GIC (Advisor)</span>
+        <span class="logo-pill">CHN Indiana (Advisor)</span>
+        <span class="logo-pill">Tidal Health (Advisor)</span>
+        <span class="logo-pill">Gentuity (Advisor)</span>
+        <span class="logo-pill">Narayana Health (Advisor)</span>
       </div>
 
     </div>
