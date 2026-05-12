@@ -114,7 +114,7 @@
     gap: var(--space-lg);
 }
 
-.m-bio-col h3 {
+.m-bio-col h2 {
     font-family: var(--font-serif);
     font-size: 1.35rem;
     font-weight: 400;
