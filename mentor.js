@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!track || cards.length === 0) return;
 
+    const trackContainer = document.querySelector('.m-carousel-track-container');
     let currentIndex = 0;
     let cardsPerView = getCardsPerView();
     let totalPages = Math.ceil(cards.length / cardsPerView);
@@ -66,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (width <= 650) return 1;
         if (width <= 900) return 2;
         return 3;
+    }
+
+    function isNativeScroll() {
+        // Mobile CSS switches the track container to overflow-x scroll.
+        return window.innerWidth <= 650;
     }
 
     function buildDots() {
@@ -94,8 +100,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const gap = parseFloat(getComputedStyle(track).gap) || 0;
         const cardWidth = cards[0].offsetWidth;
-        const shift = currentIndex * cardsPerView * (cardWidth + gap);
-        track.style.transform = 'translateX(-' + shift + 'px)';
+
+        if (isNativeScroll()) {
+            // Let native horizontal scroll + scroll-snap drive position on mobile;
+            // clear any transform left over from the desktop layout.
+            track.style.transform = 'none';
+            if (trackContainer) {
+                trackContainer.scrollTo({
+                    left: currentIndex * (cardWidth + gap),
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            const shift = currentIndex * cardsPerView * (cardWidth + gap);
+            track.style.transform = 'translateX(-' + shift + 'px)';
+        }
 
         updateButtons();
         updateDots();
@@ -116,6 +135,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('resize', onResize);
+
+    // Sync dots with native swipe on mobile.
+    if (trackContainer) {
+        let scrollRaf = null;
+        trackContainer.addEventListener('scroll', () => {
+            if (!isNativeScroll()) return;
+            if (scrollRaf) cancelAnimationFrame(scrollRaf);
+            scrollRaf = requestAnimationFrame(() => {
+                const gap = parseFloat(getComputedStyle(track).gap) || 0;
+                const cardWidth = cards[0].offsetWidth || 1;
+                const idx = Math.round(trackContainer.scrollLeft / (cardWidth + gap));
+                if (idx !== currentIndex) {
+                    currentIndex = Math.max(0, Math.min(idx, totalPages - 1));
+                    updateDots();
+                }
+            });
+        }, { passive: true });
+    }
+
     buildDots();
     goTo(0);
 });
