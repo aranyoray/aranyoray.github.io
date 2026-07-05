@@ -1,3 +1,55 @@
+/* ===== Design Tokens ===== */
+:root {
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --space-sm: 0.75rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --color-bg: #ffffff;
+    --color-border: rgba(0, 0, 0, 0.1);
+    --color-text: #1a1917;
+    --color-text-secondary: #4a4a48;
+    --color-text-tertiary: #8a8a86;
+}
+
+[data-theme="dark"] {
+    --color-bg: #0a0a0a;
+    --color-border: rgba(255, 255, 255, 0.12);
+    --color-text: #f5f5f5;
+    --color-text-secondary: #b4b4b0;
+    --color-text-tertiary: #808078;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) {
+        --color-bg: #0a0a0a;
+        --color-border: rgba(255, 255, 255, 0.12);
+        --color-text: #f5f5f5;
+        --color-text-secondary: #b4b4b0;
+        --color-text-tertiary: #808078;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* ===== Mentor Page ===== */
 .mentor-page {
     max-width: 1100px;
@@ -21,6 +73,76 @@
     align-items: center;
     max-width: 1060px;
     margin: 0 auto;
+    gap: var(--space-md);
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.nav-links a {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.18s;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: var(--color-text);
+}
+
+/* Theme toggle */
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    color: var(--color-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.theme-toggle:hover {
+    border-color: var(--color-text);
+    background: var(--color-border);
+}
+
+.theme-toggle svg {
+    width: 18px;
+    height: 18px;
+}
+
+.sun-icon { display: none; }
+.moon-icon { display: block; }
+[data-theme="dark"] .sun-icon { display: block; }
+[data-theme="dark"] .moon-icon { display: none; }
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme]) .sun-icon { display: block; }
+    html:not([data-theme]) .moon-icon { display: none; }
 }
 
 /* Container */
@@ -574,6 +696,18 @@
 }
 
 @media (max-width: 650px) {
+    .mentor-nav {
+        gap: var(--space-sm);
+    }
+
+    .nav-links {
+        gap: var(--space-sm);
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
     .m-hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
