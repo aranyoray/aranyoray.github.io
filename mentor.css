@@ -831,17 +831,53 @@ body {
     }
 }
 
+/* Programs grid: even 2-up on narrow screens instead of ragged wrap */
+@media (max-width: 560px) {
+    .m-programs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .m-program {
+        min-width: 0;
+    }
+}
+
 @media (max-width: 480px) {
     .m-container {
-        padding: 0 var(--space-sm);
+        padding: 0 1.15rem;
     }
 
     .m-section {
         padding: var(--space-lg) 0;
     }
 
+    /* Slimmer card padding so text gets more width on small screens */
+    .m-bio-col,
+    .m-expertise-block {
+        padding: 1.15rem;
+    }
+
+    .m-timeline {
+        padding: 0 1.15rem;
+    }
+
+    .m-title {
+        font-size: clamp(2.25rem, 11vw, 3rem);
+    }
+
+    .m-section-title {
+        font-size: clamp(1.65rem, 7vw, 2rem);
+    }
+
+    .m-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+    }
+
     .mentor-header {
-        padding: var(--space-sm);
+        padding: var(--space-sm) 1.15rem;
     }
 
     .nav-links {
@@ -849,6 +885,6 @@ body {
     }
 
     .nav-links a {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 }
