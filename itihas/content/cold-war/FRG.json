@@ -1,0 +1,2039 @@
+{
+  "id": "FRG",
+  "name": "West Germany",
+  "capital": "Bonn",
+  "lat": 50.74,
+  "lng": 7.1,
+  "intro": "It's 1948. Your cities are rubble, your country is split in four, your neighbors hate you, and the word \"Germany\" makes everyone reach for a rifle. You have one asset: everybody needs you. The Americans need a shield, the French need a market, the Soviets need you not to be in NATO. You're not sovereign yet. Play it right and you'll be Europe's richest country in twenty years. Play it wrong and you're a battlefield.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 45,
+    "ECON": 30,
+    "INFLUENCE": 25
+  },
+  "nodes": [
+    {
+      "id": "FRG_T1",
+      "turn": 1,
+      "year": "1948–49",
+      "title": "A State Half Built",
+      "situation": "The West wants a separate West German state. Adenauer says yes; Schumacher's Social Democrats fear it locks in division. Stalin is blockading Berlin.",
+      "choices": [
+        {
+          "id": "FRG_T1_A",
+          "label": "Found the Federal Republic, Face West",
+          "summary": "Found the Federal Republic, Face West",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 8,
+            "ECON": 10,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T1_A_E1",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Basic Law, May 1949; a \"provisional\" capital that lasts 41 years",
+              "insight": "a state built to be temporary and outlived its purpose",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_A_E2",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The GDR is founded in October in reply",
+              "insight": "two Germanies, each claiming to be the real one",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_A_E3",
+              "place": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "text": "The Deutsche Mark launches the Wirtschaftswunder",
+              "insight": "a currency became a national identity",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_A_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France, terrified of a revived Germany, proposes the Coal and Steel Community",
+              "insight": "European integration starts as a leash on you",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_A_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin lifts the blockade",
+              "insight": "he lost Berlin and gained a permanent grievance.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T1_B",
+          "label": "Refuse a Separate State — Demand All-German Elections",
+          "summary": "Refuse a Separate State — Demand All-German Elections",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -5,
+            "ECON": -6,
+            "INFLUENCE": 4
+          },
+          "flags": [
+            "FRG_NEUTRAL"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T1_B_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Four-power talks drag for years; no currency reform in the East",
+              "insight": "the whole country stays poor longer",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US, needing a Western anchor, builds it in France and Italy instead",
+              "insight": "Germany is a bystander in NATO's founding",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T1_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin dangles a neutral unified Germany (as he actually did in 1952)",
+              "insight": "this branch makes it real",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_B_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer loses to Schumacher",
+              "insight": "a Social Democratic, neutralist West Germany",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_B_E5",
+              "place": "Vienna",
+              "lat": 48.21,
+              "lng": 16.37,
+              "text": "Austria and Germany become twin neutral states by 1955",
+              "insight": "a \"Central European zone\" the Rapacki Plan dreamed of.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T1_C",
+          "label": "Found the State AND Demand Immediate Rearmament",
+          "summary": "Found the State AND Demand Immediate Rearmament",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -4,
+            "ECON": 6,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T1_C_E1",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France's Assembly explodes; the EDC is stillborn in 1949, not 1954",
+              "insight": "European integration is set back five years",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin cites German rearmament to justify a permanent army in the GDR",
+              "insight": "the Cold War's front line hardens early",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_C_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Veterans' groups and old officers rush in",
+              "insight": "denazification collapses faster",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T1_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Truman refuses; the request embarrasses the occupiers",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T1_C_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "British Labour recoils",
+              "insight": "Britain distances from the German project for a decade.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "A State Half Built",
+          "deck": "The West wants a separate West German state."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: he lost Berlin and gained a permanent grievance."
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: he lost Berlin and gained a permanent grievance."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T1_A",
+          "lines": {
+            "FRG_T1_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T1_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T1_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T1_A",
+          "lines": {
+            "FRG_T1_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T1_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T1_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T1_A",
+          "lines": {
+            "FRG_T1_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "FRG_T1_B": "We will pay for this. Decide what domestic spending can wait.",
+            "FRG_T1_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T1_A",
+          "lines": {
+            "FRG_T1_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T1_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T1_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T2",
+      "turn": 2,
+      "year": "1952",
+      "title": "The Stalin Note",
+      "situation": "Stalin offers unification: a neutral, armed Germany with free elections, out of NATO. Adenauer says it's a trap; millions of Germans want to take it. The US wants you in a European army.",
+      "choices": [
+        {
+          "id": "FRG_T2_A",
+          "label": "Reject the Note, Join the West",
+          "summary": "Reject the Note, Join the West",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 3,
+            "ECON": 6,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T2_A_E1",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer wins 1953 on \"no experiments\"",
+              "insight": "Western integration becomes the FRG's DNA",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin dies in 1953; the offer dies with him",
+              "insight": "historians still argue if it was real",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_A_E3",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The June 1953 workers' uprising is crushed by Soviet tanks",
+              "insight": "East Germans learn nobody is coming",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_A_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "The European Defense Community passes the German Bundestag, then dies in the French Assembly in 1954",
+              "insight": "NATO membership follows in 1955",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US commits 250,000 troops to Germany for 40 years",
+              "insight": "you got a guarantee by giving up unity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T2_B",
+          "label": "Accept the Note — Test It",
+          "summary": "Accept the Note — Test It",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -10,
+            "STABILITY": -8,
+            "ECON": -3,
+            "INFLUENCE": 10
+          },
+          "flags": [
+            "FRG_NEUTRAL"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T2_B_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Four-power talks produce either a united neutral Germany by 1955 (historians' \"what if\") or a collapse that leaves you looking naïve",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "chance": {
+                "flag": "EARLY_REUNIFICATION",
+                "historian": 0.5,
+                "student": 0.5,
+                "successText": "Four-power talks produce either a united neutral Germany by 1955 (historians' \"what if\") or a collapse that leaves you looking naïve In this run, the proposed outcome takes hold.",
+                "failureText": "The proposed outcome does not take hold in this run. Rival leaders resist the pressure; the uncertainty changes their next calculations."
+              },
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower is furious; NATO loses its front line",
+              "insight": "the US considers withdrawing to the Rhine",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T2_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Even if sincere, Stalin's successors must agree",
+              "insight": "Beria (who actually floated a deal) is shot in 1953",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_B_E4",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland, facing a united Germany, clings harder to Moscow",
+              "insight": "the Oder-Neisse border becomes the price",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_B_E5",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France demands guarantees; the Franco-German reconciliation is delayed a decade.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T2_C",
+          "label": "Counter-Offer: Unification Inside a Neutral Central Europe (Germany",
+          "summary": "Counter-Offer: Unification Inside a Neutral Central Europe (Germany + Poland + Czechoslovakia)",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -5,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T2_C_E1",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland's leaders are intrigued; Moscow vetoes",
+              "insight": "but the idea survives as the Rapacki Plan (1957)",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin's offer was for Germany only",
+              "insight": "he refuses; the note's sincerity is exposed either way",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Dulles calls it \"neutralism,\" his least favorite word",
+              "insight": "US aid tightens",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T2_C_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer's coalition splits; a \"third way\" party emerges",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T2_C_E5",
+              "place": "Vienna",
+              "lat": 48.21,
+              "lng": 16.37,
+              "text": "Austria's 1955 State Treaty is cited as proof neutrality works.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "The Stalin Note",
+          "deck": "Stalin offers unification: a neutral, armed Germany with free elections, out of NATO."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: historians still argue if it was real"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: you got a guarantee by giving up unity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T2_A",
+          "lines": {
+            "FRG_T2_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T2_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T2_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T2_B",
+          "lines": {
+            "FRG_T2_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T2_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T2_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T2_A",
+          "lines": {
+            "FRG_T2_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "FRG_T2_B": "We will pay for this. Decide what domestic spending can wait.",
+            "FRG_T2_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T2_B",
+          "lines": {
+            "FRG_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T2_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T2_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T3",
+      "turn": 3,
+      "year": "1955–57",
+      "title": "Sovereign",
+      "situation": "You're in NATO, sovereign, and offered the Treaty of Rome (EEC). The Hallstein Doctrine says you'll break relations with anyone who recognizes East Germany. Should you also want nuclear weapons?",
+      "choices": [
+        {
+          "id": "FRG_T3_A",
+          "label": "Join the EEC, Enforce Hallstein, No Own Nukes",
+          "summary": "Join the EEC, Enforce Hallstein, No Own Nukes",
+          "historical": true,
+          "meterDelta": {
+            "ECON": 12,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T3_A_E1",
+              "place": "Rome",
+              "lat": 41.9,
+              "lng": 12.5,
+              "text": "Treaty of Rome, 1957",
+              "insight": "the Common Market makes you Europe's engine",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_A_E2",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "Yugoslavia recognizes the GDR in 1957; you cut ties",
+              "insight": "Hallstein costs you the Third World",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_A_E3",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "De Gaulle and Adenauer reconcile (1963 Élysée Treaty)",
+              "insight": "the Franco-German engine",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_A_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer wants \"tactical\" nukes anyway; the US says no, deploys its own under dual-key",
+              "insight": "Germany hosts the bombs it may not own",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_A_E5",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Ulbricht, denied recognition, tightens the border; 200,000 flee yearly",
+              "insight": "the pressure that builds the Wall.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T3_B",
+          "label": "Join the EEC AND Pursue a Franco-German-Italian Bomb…",
+          "summary": "Join the EEC AND Pursue a Franco-German-Italian Bomb (the real 1957 secret talks)",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 8,
+            "ECON": -5,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T3_B_E1",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "De Gaulle takes power in 1958 and cancels the joint program (as he did)",
+              "insight": "or, at 40%, doesn't: a European bomb by 1965",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US threatens to withdraw troops; Kennedy later offers the MLF to bury the idea",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T3_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev's 1958 Berlin ultimatum comes harder",
+              "insight": "\"German fingers on the trigger\" is his best propaganda",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_B_E4",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland's Rapacki Plan gains Western supporters",
+              "insight": "nuclear-free zone talks",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_B_E5",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The SPD's \"fight atomic death\" campaign brings 1.5 million into the streets.",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T3_C",
+          "label": "Drop Hallstein",
+          "summary": "Drop Hallstein — Recognize Everyone, Trade With the East",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -3,
+            "ECON": 8,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T3_C_E1",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Recognition stabilizes the GDR; fewer flee; the Wall might never be needed",
+              "insight": "or comes anyway",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_C_E2",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "Third World ties bloom; German exports to Asia and Africa double by 1965",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Dulles is appalled; US–German trust dips",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T3_C_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer's CDU splits; Ostpolitik arrives 12 years early",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T3_C_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev pockets the recognition and asks for more",
+              "insight": "Berlin is next.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "FRG_NEUTRAL"
+          ],
+          "situation": "Your earlier choice pushed Germany toward neutrality. Western governments now offer closer economic and security ties. You can reconsider that course or strengthen trade across the divide."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "Sovereign",
+          "deck": "You're in NATO, sovereign, and offered the Treaty of Rome (EEC)."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Belgrade",
+          "deck": "At stake: Hallstein costs you the Third World"
+        },
+        {
+          "city": "Belgrade",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Hallstein costs you the Third World"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T3_B",
+          "lines": {
+            "FRG_T3_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T3_B": "This raises the pressure. Be ready for the other side to answer.",
+            "FRG_T3_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T3_A",
+          "lines": {
+            "FRG_T3_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T3_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "FRG_T3_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T3_A",
+          "lines": {
+            "FRG_T3_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "FRG_T3_B": "We will pay for this. Decide what domestic spending can wait.",
+            "FRG_T3_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T3_A",
+          "lines": {
+            "FRG_T3_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T3_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T3_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T4",
+      "turn": 4,
+      "year": "1961",
+      "title": "The Wall",
+      "situation": "East Germany is bleeding 2,000 people a day through Berlin. On August 13 barbed wire goes up overnight. Kennedy sends a battle group but won't tear it down. West Berliners feel abandoned. Adenauer stays in Bonn.",
+      "choices": [
+        {
+          "id": "FRG_T4_A",
+          "label": "Protest, Accept, Rely on the US",
+          "summary": "Protest, Accept, Rely on the US",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -6,
+            "INFLUENCE": -4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T4_A_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The Wall stands 28 years; 140+ die trying to cross",
+              "insight": "the Cold War's ugliest monument and its most stable border",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_A_E2",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Adenauer's slow reaction costs the CDU its majority in 1961; Brandt's star rises",
+              "insight": "the Wall makes the man who'll take it down",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "\"Ich bin ein Berliner\" 1963",
+              "insight": "Kennedy's guarantee is words and troops, not action",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T4_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev, having solved his refugee problem, drops the Berlin ultimatum",
+              "insight": "the Wall was his defeat dressed as victory",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_A_E5",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "De Gaulle quietly notes the US won't fight for Berlin",
+              "insight": "he pulls France from NATO's command in 1966.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T4_B",
+          "label": "Demand NATO Tear It Down",
+          "summary": "Demand NATO Tear It Down",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 20,
+            "STABILITY": -10,
+            "INFLUENCE": -10
+          },
+          "flags": [
+            "BERLIN_WAR"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T4_B_E1",
+              "place": "Checkpoint Charlie",
+              "lat": 52.51,
+              "lng": 13.39,
+              "text": "The October tank standoff (real) escalates; a US bulldozer meets Soviet armor",
+              "insight": "shots fired",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy refuses; the alliance splits publicly",
+              "insight": "Adenauer is called reckless",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T4_B_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Germans are terrified",
+              "insight": "the peace movement's first big march",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev orders a second blockade",
+              "insight": "the airlift returns in 1962",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_B_E5",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Khrushchev deploys missiles to Cuba as his counter-lever",
+              "insight": "the Cuban crisis gets an explicit Berlin price tag.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T4_C",
+          "label": "Negotiate Directly With the GDR — \"Small Steps\"",
+          "summary": "Negotiate Directly With the GDR — \"Small Steps\"",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -4,
+            "STABILITY": 2,
+            "INFLUENCE": 3
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T4_C_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "A 1963 pass agreement lets West Berliners visit the East at Christmas (this was real)",
+              "insight": "expanded into a permanent arrangement",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_C_E2",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Ulbricht, gaining a channel, loosens some travel",
+              "insight": "the Wall gets doors",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US worries you're going neutral; aid is tied to loyalty",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T4_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev sees a wedge; offers a German peace treaty",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T4_C_E5",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland asks for the same channel",
+              "insight": "Eastern Europe's people-to-people contacts start early.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "EARLY_REUNIFICATION"
+          ],
+          "situation": "Your reunification bargain has held in this timeline. Now Soviet and Western demands test German neutrality. Treat the three strategies below as responses to a new access crisis in Berlin."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "The Wall",
+          "deck": "East Germany is bleeding 2,000 people a day through Berlin."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: the Wall was his defeat dressed as victory"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Kennedy's guarantee is words and troops, not action"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T4_B",
+          "lines": {
+            "FRG_T4_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T4_B": "This raises the pressure. Be ready for the other side to answer.",
+            "FRG_T4_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T4_C",
+          "lines": {
+            "FRG_T4_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T4_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "FRG_T4_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T4_A",
+          "lines": {
+            "FRG_T4_A": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T4_B": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T4_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T4_C",
+          "lines": {
+            "FRG_T4_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "FRG_T4_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "FRG_T4_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T5",
+      "turn": 5,
+      "year": "1966–69",
+      "title": "The Grand Coalition and the Streets",
+      "situation": "Recession, the far-right NPD in state parliaments, students in the streets, an emergency-powers law. Kiesinger (a former Nazi party member) leads with Brandt as foreign minister. Prague Spring is crushed next door.",
+      "choices": [
+        {
+          "id": "FRG_T5_A",
+          "label": "Emergency Laws + Cautious Opening to the East",
+          "summary": "Emergency Laws + Cautious Opening to the East",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 4,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T5_A_E1",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Emergency laws pass; the student movement radicalizes",
+              "insight": "the RAF terror of the 1970s is born in this anger",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_A_E2",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "You condemn the invasion but keep talking to Moscow",
+              "insight": "realism over rage",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_A_E3",
+              "place": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "text": "The '68 generation shapes German culture: pacifism, Green politics, coming to terms with the Nazi past",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_A_E4",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Brandt's first trade contacts",
+              "insight": "the seeds of Ostpolitik",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US, drowning in Vietnam, is glad you're quiet.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T5_B",
+          "label": "Confront the Past Hard",
+          "summary": "Confront the Past Hard — Purge Ex-Nazis From Government",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -8,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T5_B_E1",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Kiesinger falls; a younger cabinet; the 1968 \"Nazi in the chancellery\" slap becomes a revolution instead",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_B_E2",
+              "place": "Jerusalem",
+              "lat": 31.77,
+              "lng": 35.22,
+              "text": "Israel and Germany deepen ties fast; reparations expanded",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "FRG_T5_B_E3",
+              "place": "Vienna",
+              "lat": 48.21,
+              "lng": 16.37,
+              "text": "Austria is shamed into its own reckoning 20 years before Waldheim",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Soviet propaganda loses its \"fascist Bonn\" line",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_B_E5",
+              "place": "Munich",
+              "lat": 48.14,
+              "lng": 11.58,
+              "text": "The far-right NPD collapses; a populist backlash brews in the 1980s instead.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T5_C",
+          "label": "Send Troops to Vietnam as LBJ Asks",
+          "summary": "Send Troops to Vietnam as LBJ Asks",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -15,
+            "ECON": -5,
+            "INFLUENCE": 2
+          },
+          "flags": [
+            "VIETNAM_TOTAL"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T5_C_E1",
+              "place": "Saigon",
+              "lat": 10.82,
+              "lng": 106.63,
+              "text": "A German brigade",
+              "insight": "the first Germans in combat since 1945; outrage across Europe",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "FRG_T5_C_E2",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The Grand Coalition collapses; the SPD splits",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "\"German militarism\" propaganda is proven right",
+              "insight": "Ostpolitik is impossible for a decade",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T5_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "LBJ is grateful; nobody else is",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T5_C_E5",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The GDR's legitimacy soars",
+              "insight": "it's the \"peaceful Germany.\"",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "The Grand Coalition and the Streets",
+          "deck": "Recession, the far-right NPD in state parliaments, students in the streets, an emergency-powers law."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Prague",
+          "deck": "At stake: realism over rage"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T5_A",
+          "lines": {
+            "FRG_T5_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T5_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T5_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T5_A",
+          "lines": {
+            "FRG_T5_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T5_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T5_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T5_A",
+          "lines": {
+            "FRG_T5_A": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T5_B": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T5_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T5_B",
+          "lines": {
+            "FRG_T5_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T5_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T5_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T6",
+      "turn": 6,
+      "year": "1970–72",
+      "title": "Ostpolitik",
+      "situation": "Chancellor Brandt proposes treaties with Moscow and Warsaw recognizing the postwar borders, and a treaty with East Germany short of full recognition. The CDU says it's surrender; refugees from the lost eastern lands are furious. A no-confidence vote is coming.",
+      "choices": [
+        {
+          "id": "FRG_T6_A",
+          "label": "Sign the Eastern Treaties",
+          "summary": "Sign the Eastern Treaties",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -12,
+            "STABILITY": -4,
+            "ECON": 5,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T6_A_E1",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Brandt kneels at the Ghetto memorial",
+              "insight": "a photograph that reconciled two peoples",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Moscow Treaty; Soviet gas pipelines to Germany begin",
+              "insight": "energy interdependence that lasts until 2022",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_A_E3",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The Basic Treaty; both Germanies join the UN in 1973",
+              "insight": "two states, one nation",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_A_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The 1972 no-confidence vote fails by two votes (the Stasi bribed a deputy)",
+              "insight": "Brandt wins the election in a landslide",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_A_E5",
+              "place": "Helsinki",
+              "lat": 60.17,
+              "lng": 24.94,
+              "text": "Your treaties make the 1975 Helsinki Accords possible",
+              "insight": "with the human-rights clause that undermines the East.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T6_B",
+          "label": "Refuse — No Recognition of Lost Territories",
+          "summary": "Refuse — No Recognition of Lost Territories",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 8,
+            "STABILITY": 2,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T6_B_E1",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland remains hostile; the border question haunts Europe until 1990",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "No gas deal; the USSR's hard-currency crisis arrives earlier",
+              "insight": "collapse might come sooner, or a harder regime",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_B_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Brandt falls; a CDU government returns",
+              "insight": "Germany is the last Cold Warrior in Europe",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon's détente proceeds over your head",
+              "insight": "you're isolated from your own protector",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T6_B_E5",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The GDR, unrecognized, stays a garrison state",
+              "insight": "fewer visits, more shootings at the Wall.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T6_C",
+          "label": "Go Further — Propose a German Confederation Now",
+          "summary": "Go Further — Propose a German Confederation Now",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -6,
+            "STABILITY": -10,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T6_C_E1",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Honecker rejects it but the idea is planted; East German dissidents cite it in 1989",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev suspects a trap; tightens the GDR",
+              "insight": "Ostpolitik is slower, not faster",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kissinger fears a neutral Germany; US–German rift",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T6_C_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The refugee associations riot; the government survives narrowly",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T6_C_E5",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Pompidou fears a big Germany",
+              "insight": "French support for the EEC's expansion (Britain) grows as a counterweight.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "Ostpolitik",
+          "deck": "Chancellor Brandt proposes treaties with Moscow and Warsaw recognizing the postwar borders, and a treaty with East Germany short of full recognition."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: energy interdependence that lasts until 2022"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: energy interdependence that lasts until 2022"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T6_B",
+          "lines": {
+            "FRG_T6_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T6_B": "This raises the pressure. Be ready for the other side to answer.",
+            "FRG_T6_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T6_A",
+          "lines": {
+            "FRG_T6_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T6_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "FRG_T6_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T6_A",
+          "lines": {
+            "FRG_T6_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "FRG_T6_B": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T6_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T6_A",
+          "lines": {
+            "FRG_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T6_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "FRG_T6_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T7",
+      "turn": 7,
+      "year": "1983",
+      "title": "The Euromissiles",
+      "situation": "Soviet SS-20s can hit every German city. NATO's \"double-track\" decision: deploy Pershing II and cruise missiles unless Moscow removes the SS-20s. Half a million Germans march against them. The Greens have entered the Bundestag. Chancellor Kohl must vote.",
+      "choices": [
+        {
+          "id": "FRG_T7_A",
+          "label": "Deploy the Missiles",
+          "summary": "Deploy the Missiles",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 12,
+            "STABILITY": -8,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T7_A_E1",
+              "place": "Mutlangen",
+              "lat": 48.83,
+              "lng": 9.79,
+              "text": "Pershing IIs arrive November 1983",
+              "insight": "Moscow walks out of arms talks",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Andropov's Politburo fears a decapitation strike",
+              "insight": "Operation RYaN; the Able Archer scare",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_A_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The Greens become a permanent party",
+              "insight": "Germany's politics gain a fourth pole",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan gains leverage; the INF Treaty of 1987 removes all of them",
+              "insight": "you deployed missiles to get rid of missiles",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T7_A_E5",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Honecker, worried, opens a \"German-German dialogue\"",
+              "insight": "both Germanies want to avoid being the battlefield.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T7_B",
+          "label": "Refuse — Nuclear-Free Germany",
+          "summary": "Refuse — Nuclear-Free Germany",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -8,
+            "STABILITY": 6,
+            "INFLUENCE": -15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T7_B_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan threatens to withdraw US troops",
+              "insight": "the alliance's worst crisis",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T7_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The SS-20s stay; Europe is hostage; the INF Treaty never happens",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_B_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Kohl's coalition falls; an SPD-Green government in 1983",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_B_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France, fearing German neutralism, doubles its own nuclear force",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_B_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher takes the missiles Germany refused",
+              "insight": "Britain becomes the front line.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T7_C",
+          "label": "Deploy AND Open a Back Channel to Honecker",
+          "summary": "Deploy AND Open a Back Channel to Honecker",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 6,
+            "STABILITY": -4,
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T7_C_E1",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Billion-mark loans (as Franz Josef Strauß actually arranged) keep the GDR solvent",
+              "insight": "dependency grows",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev's later reforms find a GDR already half-hooked on Western money",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_C_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Both camps are angry; Kohl survives",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T7_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US is uneasy but tolerates it",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T7_C_E5",
+              "place": "Leipzig",
+              "lat": 51.34,
+              "lng": 12.37,
+              "text": "Church peace groups get room to grow",
+              "insight": "the 1989 Monday demonstrations start here.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "The Euromissiles",
+          "deck": "Soviet SS-20s can hit every German city."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: Operation RYaN; the Able Archer scare"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: you deployed missiles to get rid of missiles"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T7_A",
+          "lines": {
+            "FRG_T7_A": "This raises the pressure. Be ready for the other side to answer.",
+            "FRG_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T7_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T7_B",
+          "lines": {
+            "FRG_T7_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "FRG_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T7_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T7_A",
+          "lines": {
+            "FRG_T7_A": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T7_B": "The immediate budget holds. Watch the longer-term costs.",
+            "FRG_T7_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T7_C",
+          "lines": {
+            "FRG_T7_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T7_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "FRG_T7_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "FRG_T8",
+      "turn": 8,
+      "year": "1989–90",
+      "title": "The Ten-Point Plan",
+      "situation": "The Wall opened November 9. East Germans chant \"We are one people.\" Gorbachev is wavering; Thatcher and Mitterrand are frightened; Bush is supportive. Kohl must decide how fast — and whether a united Germany stays in NATO.",
+      "choices": [
+        {
+          "id": "FRG_T8_A",
+          "label": "Fast Unification, Inside NATO, Pay Moscow",
+          "summary": "Fast Unification, Inside NATO, Pay Moscow",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 10,
+            "ECON": -8,
+            "INFLUENCE": 20
+          },
+          "flags": [
+            "GORBY_REFORM"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T8_A_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "October 3, 1990",
+              "insight": "one Germany, in NATO, with 380,000 Soviet troops paid to leave",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev accepts DM 15 billion and a verbal assurance on NATO",
+              "insight": "the assurance is disputed for 30 years",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_A_E3",
+              "place": "Leipzig",
+              "lat": 51.34,
+              "lng": 12.37,
+              "text": "\"One people\" wins over reformers who wanted a better GDR",
+              "insight": "a state simply dissolves",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_A_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Mitterrand's price: the euro",
+              "insight": "a united Germany bound into a common currency",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_A_E5",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "The Oder-Neisse border is finally, formally recognized",
+              "insight": "Poland relaxes.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T8_B",
+          "label": "Slow Confederation — Two States for a Decade",
+          "summary": "Slow Confederation — Two States for a Decade",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -4,
+            "STABILITY": -6,
+            "ECON": 4,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "FRG_T8_B_E1",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The GDR reforms as a separate democracy; economic collapse brings unification by 1995 anyway",
+              "insight": "messier, poorer",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev is relieved; the August 1991 coup has one fewer grievance",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher is delighted; Kohl, not",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_B_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "The Bundestag's impatience with \"wait\" hands the 1990 election to a \"unify now\" challenger",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_B_E5",
+              "place": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "text": "No euro deal yet",
+              "insight": "the currency question waits.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "FRG_T8_C",
+          "label": "Unify Fast, Neutral, Out of NATO",
+          "summary": "Unify Fast, Neutral, Out of NATO",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -10,
+            "STABILITY": 4,
+            "INFLUENCE": 2
+          },
+          "flags": [
+            "FRG_NEUTRAL"
+          ],
+          "effects": [
+            {
+              "id": "FRG_T8_C_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "A united, neutral Germany of 80 million",
+              "insight": "Europe's giant with no alliance",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Bush calls it the worst outcome; NATO's purpose is questioned",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Americas"
+            },
+            {
+              "id": "FRG_T8_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev's dream",
+              "insight": "a Soviet win from a Soviet collapse",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_C_E4",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland, stuck between a neutral Germany and a shaky USSR, begs for NATO",
+              "insight": "enlargement comes sooner",
+              "region": "Europe"
+            },
+            {
+              "id": "FRG_T8_C_E5",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France reconsiders its own NATO absence",
+              "insight": "and its bomb doctrine.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Bonn",
+          "name": "The National Dispatch",
+          "headline": "The Ten-Point Plan",
+          "deck": "The Wall opened November 9."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: the assurance is disputed for 30 years"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the assurance is disputed for 30 years"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "FRG_T8_A",
+          "lines": {
+            "FRG_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T8_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "FRG_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "FRG_T8_C",
+          "lines": {
+            "FRG_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T8_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "FRG_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "FRG_T8_B",
+          "lines": {
+            "FRG_T8_A": "We will pay for this. Decide what domestic spending can wait.",
+            "FRG_T8_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "FRG_T8_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "FRG_T8_A",
+          "lines": {
+            "FRG_T8_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T8_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "FRG_T8_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    }
+  ]
+}

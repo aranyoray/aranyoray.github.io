@@ -1,0 +1,2006 @@
+{
+  "id": "IND",
+  "name": "India",
+  "capital": "New Delhi",
+  "lat": 28.61,
+  "lng": 77.21,
+  "intro": "It's August 1947. You are free at midnight — and split in two at the same instant. Trains arrive full of the dead. Kashmir is already in dispute. You have 340 million people, almost no industry, and a leader, Nehru, who thinks the world is about to divide into two armed camps and India should join neither. Both camps will try to buy you. Choose what \"non-aligned\" means when the bills come due.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 35,
+    "ECON": 25,
+    "INFLUENCE": 40
+  },
+  "nodes": [
+    {
+      "id": "IND_T1",
+      "turn": 1,
+      "year": "1947–48",
+      "title": "Midnight and Kashmir",
+      "situation": "Partition violence kills up to a million. Pakistani tribal fighters invade Kashmir; the Maharaja accedes to India. Nehru wants a UN plebiscite; Patel wants the army to finish it.",
+      "choices": [
+        {
+          "id": "IND_T1_A",
+          "label": "Take Kashmir to the UN, Accept a Ceasefire…",
+          "summary": "Take Kashmir to the UN, Accept a Ceasefire Line",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 4,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T1_A_E1",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "The 1949 ceasefire line becomes the Line of Control",
+              "insight": "a frozen war for 75 years",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_A_E2",
+              "place": "New York",
+              "lat": 40.75,
+              "lng": -73.97,
+              "text": "India learns the UN is a great-power tool; its faith in international law is bruised",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T1_A_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan's identity forms around the Kashmir wound",
+              "insight": "the army becomes the state",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_A_E4",
+              "place": "Washington/Moscow",
+              "lat": 45,
+              "lng": -20,
+              "text": "Both offer to mediate; both are refused",
+              "insight": "non-alignment's first act",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T1_A_E5",
+              "place": "Amritsar",
+              "lat": 31.63,
+              "lng": 74.87,
+              "text": "Refugee resettlement succeeds better than anyone expected",
+              "insight": "the state's first competence test.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T1_B",
+          "label": "Push the Army to the Border",
+          "summary": "Push the Army to the Border — Take All of Kashmir",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 4,
+            "STABILITY": -4,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T1_B_E1",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "Full Indian control by 1949; a permanent Muslim insurgency",
+              "insight": "Kashmir as Ireland",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_B_E2",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan turns to the US in 1948, not 1954",
+              "insight": "SEATO/CENTO early; the US–Pakistan military alliance is deeper",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_B_E3",
+              "place": "Lahore",
+              "lat": 31.55,
+              "lng": 74.34,
+              "text": "A second India–Pakistan war in 1950",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_B_E4",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Britain, still refereeing the Commonwealth, sides with Pakistan",
+              "insight": "India considers leaving",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T1_B_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China, watching, revises its own Himalayan claims",
+              "insight": "the 1962 war may come as 1955.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T1_C",
+          "label": "Accept Partition of Kashmir Along Religious Lines Now",
+          "summary": "Accept Partition of Kashmir Along Religious Lines Now",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -6,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T1_C_E1",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "The Valley goes to Pakistan, Jammu and Ladakh to India; a settled border by 1950",
+              "insight": "Nehru is called a traitor",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_C_E2",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "No Kashmir obsession; Pakistan's army is smaller, democracy stronger",
+              "insight": "maybe",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_C_E3",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Hindu nationalists gain; Gandhi's assassination (Jan 1948) is followed by riots",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T1_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US rewards the settlement with aid; India is a Cold War prize",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T1_C_E5",
+              "place": "Dhaka",
+              "lat": 23.81,
+              "lng": 90.41,
+              "text": "East Pakistan, watching the West get Kashmir, feels ignored",
+              "insight": "the 1971 split comes early.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Midnight and Kashmir",
+          "deck": "Partition violence kills up to a million."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from New York",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "New York",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T1_B",
+          "lines": {
+            "IND_T1_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T1_B": "This raises the pressure. Be ready for the other side to answer.",
+            "IND_T1_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T1_A",
+          "lines": {
+            "IND_T1_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T1_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "IND_T1_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T1_A",
+          "lines": {
+            "IND_T1_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T1_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T1_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T1_A",
+          "lines": {
+            "IND_T1_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T1_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T1_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T2",
+      "turn": 2,
+      "year": "1950–54",
+      "title": "Panchsheel",
+      "situation": "Korea is at war; the US wants a vote against China; China has occupied Tibet. Nehru drafts \"Five Principles of Peaceful Coexistence\" with Zhou Enlai. The US offers Pakistan a military alliance.",
+      "choices": [
+        {
+          "id": "IND_T2_A",
+          "label": "Recognize China's Tibet, Sign Panchsheel, Mediate Korea",
+          "summary": "Recognize China's Tibet, Sign Panchsheel, Mediate Korea",
+          "historical": true,
+          "meterDelta": {
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T2_A_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "\"Hindi-Chini bhai-bhai\"",
+              "insight": "India is China's bridge to the world for 8 years; the border is never settled",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_A_E2",
+              "place": "Panmunjom",
+              "lat": 37.96,
+              "lng": 126.68,
+              "text": "India chairs the POW repatriation commission",
+              "insight": "non-alignment earns a real job",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Dulles calls neutrality \"immoral\"; arms flow to Pakistan in 1954",
+              "insight": "the subcontinent's arms race begins",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T2_A_E4",
+              "place": "Lhasa",
+              "lat": 29.65,
+              "lng": 91.17,
+              "text": "India abandons its Tibetan buffer",
+              "insight": "the 1959 uprising and the Dalai Lama's flight follow",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_A_E5",
+              "place": "Bandung, Indonesia",
+              "lat": -6.9,
+              "lng": 107.6,
+              "text": "Nehru and Zhou co-star at the 1955 Afro-Asian conference",
+              "insight": "the Third World finds a voice.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T2_B",
+          "label": "Back Tibet's Autonomy, Refuse to Recognize the Occupation",
+          "summary": "Back Tibet's Autonomy, Refuse to Recognize the Occupation",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 3,
+            "STABILITY": 2,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T2_B_E1",
+              "place": "Lhasa",
+              "lat": 29.65,
+              "lng": 91.17,
+              "text": "Tibetan resistance gets Indian support; China's occupation is bloodier, longer",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_B_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China marks India as hostile in 1950",
+              "insight": "the Himalayan road-building starts now",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US quietly funds Tibetan guerrillas through India (it did through Nepal)",
+              "insight": "India is a CIA partner",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T2_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin backs China; India loses its Soviet option",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T2_B_E5",
+              "place": "Kathmandu",
+              "lat": 27.71,
+              "lng": 85.32,
+              "text": "Nepal becomes the front line.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T2_C",
+          "label": "Join the West — Accept SEATO Membership",
+          "summary": "Join the West — Accept SEATO Membership",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -5,
+            "ECON": 6,
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T2_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "India, not Pakistan, is America's South Asian ally",
+              "insight": "aid triples",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T2_C_E2",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan, orphaned, turns to China a decade early",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_C_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Zhou's charm offensive ends; border clashes in 1954",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T2_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev's 1955 India visit never happens; Soviet steel plants (Bhilai) go to Egypt",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T2_C_E5",
+              "place": "Bandung",
+              "lat": -6.9,
+              "lng": 107.6,
+              "text": "The Non-Aligned Movement forms around Nasser and Tito, without India",
+              "insight": "smaller, angrier.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Panchsheel",
+          "deck": "Korea is at war; the US wants a vote against China; China has occupied Tibet."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Panmunjom",
+          "deck": "At stake: non-alignment earns a real job"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the subcontinent's arms race begins"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T2_B",
+          "lines": {
+            "IND_T2_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T2_B": "This raises the pressure. Be ready for the other side to answer.",
+            "IND_T2_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T2_A",
+          "lines": {
+            "IND_T2_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T2_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "IND_T2_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T2_C",
+          "lines": {
+            "IND_T2_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T2_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T2_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T2_A",
+          "lines": {
+            "IND_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T2_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T2_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T3",
+      "turn": 3,
+      "year": "1956",
+      "title": "Suez and Budapest",
+      "situation": "Britain invades Egypt; the USSR crushes Hungary. The West asks why you condemn Suez loudly and Hungary softly. Krishna Menon at the UN abstains on Hungary.",
+      "choices": [
+        {
+          "id": "IND_T3_A",
+          "label": "Condemn Suez Hard, Hungary Softly",
+          "summary": "Condemn Suez Hard, Hungary Softly",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 2,
+            "INFLUENCE": -4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T3_A_E1",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser becomes your closest partner",
+              "insight": "the NAM's Nehru–Nasser–Tito triad",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "IND_T3_A_E2",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "Western opinion sours; \"non-aligned means pro-Soviet\" is the charge for decades",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_A_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev rewards you",
+              "insight": "Bhilai steel plant, MiGs later",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower, who opposed Suez too, is puzzled but keeps aid flowing",
+              "insight": "the 1950s US–India food aid (PL-480) continues",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T3_A_E5",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "Tito, who faced the same choice, shares your dilemma",
+              "insight": "the NAM gains a doctrine: judge every case.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "IND_T3_B",
+          "label": "Condemn Both Equally",
+          "summary": "Condemn Both Equally",
+          "historical": false,
+          "meterDelta": {
+            "INFLUENCE": 8
+          },
+          "flags": [
+            "NAM_STRONG"
+          ],
+          "effects": [
+            {
+              "id": "IND_T3_B_E1",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "India's credibility as an honest broker soars; Nagy's supporters cite you",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev is stung; the Bhilai deal is delayed",
+              "insight": "but not cancelled; the USSR needs India more than the reverse",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "US liberals champion India; aid rises",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T3_B_E4",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser grumbles but stays",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "IND_T3_B_E5",
+              "place": "New York",
+              "lat": 40.75,
+              "lng": -73.97,
+              "text": "The UN's non-aligned bloc forms around India as a genuine third force",
+              "insight": "the 1960s NAM has teeth.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "IND_T3_C",
+          "label": "Side With the Soviets Openly on Both",
+          "summary": "Side With the Soviets Openly on Both",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -3,
+            "ECON": 4,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T3_C_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Full Soviet partnership in 1956",
+              "insight": "arms, plants, oil",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "PL-480 food aid is cut; the 1960s famines are worse",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T3_C_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China sees an Indo-Soviet axis and hardens on the border",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T3_C_E4",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "The Commonwealth nearly expels India",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T3_C_E5",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser follows you; the Middle East tilts Soviet faster.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Suez and Budapest",
+          "deck": "Britain invades Egypt; the USSR crushes Hungary."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: Bhilai steel plant, MiGs later"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the 1950s US–India food aid (PL-480) continues"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T3_A",
+          "lines": {
+            "IND_T3_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T3_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T3_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T3_A",
+          "lines": {
+            "IND_T3_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T3_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T3_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T3_C",
+          "lines": {
+            "IND_T3_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T3_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T3_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T3_B",
+          "lines": {
+            "IND_T3_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "IND_T3_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T3_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T4",
+      "turn": 4,
+      "year": "1962",
+      "title": "The Himalayan Shock",
+      "situation": "Your Forward Policy has pushed posts into disputed territory; China has warned. Your army is unprepared; Defense Minister Menon says China won't attack. The generals say it will. Cuba is in crisis; nobody is watching.",
+      "choices": [
+        {
+          "id": "IND_T4_A",
+          "label": "Forward Policy, Get Defeated, Ask the West for…",
+          "summary": "Forward Policy, Get Defeated, Ask the West for Arms",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 3,
+            "STABILITY": -12,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T4_A_E1",
+              "place": "Tawang",
+              "lat": 27.59,
+              "lng": 91.87,
+              "text": "The army collapses in a month; China withdraws voluntarily",
+              "insight": "humiliation without conquest",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_A_E2",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Nehru is broken and dies in 1964; India doubles its army and starts a bomb program",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy airlifts arms; Pakistan, furious, turns to China",
+              "insight": "the Sino-Pak axis is born",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T4_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev, busy with Cuba, backs China",
+              "insight": "then reverses; India's Soviet tilt deepens after",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T4_A_E5",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Ayub Khan concludes India is weak",
+              "insight": "the 1965 war is planned here.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T4_B",
+          "label": "Pull Back the Posts, Negotiate a Swap (Aksai…",
+          "summary": "Pull Back the Posts, Negotiate a Swap (Aksai Chin ↔ Arunachal)",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -3,
+            "STABILITY": -4,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T4_B_E1",
+              "place": "Tawang",
+              "lat": 27.59,
+              "lng": 91.87,
+              "text": "No war; a settled border; Nehru is denounced as an appeaser at home",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_B_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Zhou's offer (real, 1960) is accepted",
+              "insight": "China and India are the Asian pillars of the NAM",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_B_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan, denied a Chinese ally, is contained",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "India needs no US arms; non-alignment survives intact",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T4_B_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Nehru's Congress loses seats in 1962 but he lives to 1964 in better health",
+              "insight": "his successor is not chosen in panic.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T4_C",
+          "label": "Prepare Properly",
+          "summary": "Prepare Properly — Delay the Forward Policy, Build the Army First",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 3,
+            "ECON": -6,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T4_C_E1",
+              "place": "Tawang",
+              "lat": 27.59,
+              "lng": 91.87,
+              "text": "The war comes in 1964 instead and is a stalemate",
+              "insight": "no rout, no shock",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_C_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "A stronger India means China negotiates",
+              "insight": "or makes the Sino-Pak pact earlier",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T4_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "US arms come before the war, not after",
+              "insight": "India is closer to the West already",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T4_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev sells MiGs in 1962",
+              "insight": "India's Soviet arms dependency starts the same, for different reasons",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T4_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Menon is fired before, not after",
+              "insight": "the civil-military rift heals.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "The Himalayan Shock",
+          "deck": "Your Forward Policy has pushed posts into disputed territory; China has warned."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: then reverses; India's Soviet tilt deepens after"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the Sino-Pak axis is born"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T4_A",
+          "lines": {
+            "IND_T4_A": "This raises the pressure. Be ready for the other side to answer.",
+            "IND_T4_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T4_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T4_B",
+          "lines": {
+            "IND_T4_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "IND_T4_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T4_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T4_A",
+          "lines": {
+            "IND_T4_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T4_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T4_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T4_B",
+          "lines": {
+            "IND_T4_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "IND_T4_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T4_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T5",
+      "turn": 5,
+      "year": "1965–66",
+      "title": "Tashkent",
+      "situation": "Pakistan infiltrates Kashmir (Operation Gibraltar); you counterattack toward Lahore. The US cuts arms to both; the USSR offers to mediate at Tashkent. Shastri must decide what to accept. Famine looms; the US ties food aid to policy.",
+      "choices": [
+        {
+          "id": "IND_T5_A",
+          "label": "Accept the Tashkent Ceasefire, Return Captured Ground",
+          "summary": "Accept the Tashkent Ceasefire, Return Captured Ground",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -4,
+            "STABILITY": -4,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T5_A_E1",
+              "place": "Tashkent",
+              "lat": 41.3,
+              "lng": 69.24,
+              "text": "Shastri dies the night after signing; Indira Gandhi becomes PM",
+              "insight": "a dynasty by accident",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T5_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The USSR is now the subcontinent's referee",
+              "insight": "the US is out",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T5_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Johnson's \"ship-to-mouth\" food aid humiliates India; the Green Revolution is born from that humiliation",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T5_A_E4",
+              "place": "Lahore",
+              "lat": 31.55,
+              "lng": 74.34,
+              "text": "The war changes nothing on the map",
+              "insight": "Pakistan's army learns nothing",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T5_A_E5",
+              "place": "Dhaka",
+              "lat": 23.81,
+              "lng": 90.41,
+              "text": "East Pakistan, undefended in the war, realizes the West won't protect it",
+              "insight": "1971's seed.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T5_B",
+          "label": "Reject Tashkent",
+          "summary": "Reject Tashkent — Keep Haji Pir and the Lahore Approaches",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 6,
+            "STABILITY": 4,
+            "INFLUENCE": -4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T5_B_E1",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "India holds the infiltration routes; Kashmir is quieter in the 1970s–80s",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T5_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Kosygin is insulted; Soviet arms slow",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T5_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US tilts to Pakistan sooner",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T5_B_E4",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Ayub falls in 1966, not 1969; Bhutto's rise is faster",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T5_B_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Shastri lives; no Indira in 1966",
+              "insight": "India's politics take a very different, less centralized path.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T5_C",
+          "label": "Accept Tashkent AND Sign a Soviet Friendship Treaty…",
+          "summary": "Accept Tashkent AND Sign a Soviet Friendship Treaty Now (1966, not 1971)",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 2,
+            "ECON": 4,
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T5_C_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A formal Soviet ally; Bhilai-scale projects double",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T5_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Johnson ends food aid; India's 1966–67 famine is worse",
+              "insight": "up to 1 million more deaths",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T5_C_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China–Pakistan ties become a formal alliance",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T5_C_E4",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "The NAM splits; India is called a Soviet client openly",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T5_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "The Green Revolution accelerates from necessity",
+              "insight": "self-sufficiency by 1972.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Tashkent",
+          "deck": "Pakistan infiltrates Kashmir (Operation Gibraltar); you counterattack toward Lahore."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: the US is out"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Economic dependence gives the country supplying money, fuel or trade political leverage."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T5_B",
+          "lines": {
+            "IND_T5_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T5_B": "This raises the pressure. Be ready for the other side to answer.",
+            "IND_T5_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T5_A",
+          "lines": {
+            "IND_T5_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T5_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "IND_T5_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T5_C",
+          "lines": {
+            "IND_T5_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T5_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T5_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T5_A",
+          "lines": {
+            "IND_T5_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T5_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "IND_T5_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T6",
+      "turn": 6,
+      "year": "1971–74",
+      "title": "Bangladesh and the Bomb",
+      "situation": "Pakistan's army is massacring Bengalis in the East; 10 million refugees have crossed into India. Nixon is backing Pakistan (it's his China go-between). You've signed a treaty with Moscow. Your scientists can test a bomb.",
+      "choices": [
+        {
+          "id": "IND_T6_A",
+          "label": "Sign With Moscow, Liberate Bangladesh, Test the \"Peaceful\"…",
+          "summary": "Sign With Moscow, Liberate Bangladesh, Test the \"Peaceful\" Bomb in 1974",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 8,
+            "STABILITY": 10,
+            "ECON": -8,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T6_A_E1",
+              "place": "Dhaka",
+              "lat": 23.81,
+              "lng": 90.41,
+              "text": "A 13-day war; 93,000 Pakistani POWs; Bangladesh is born",
+              "insight": "India's greatest strategic victory",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_A_E2",
+              "place": "Bay of Bengal",
+              "lat": 15.0,
+              "lng": 88.0,
+              "text": "Nixon sends the USS Enterprise; a Soviet fleet shadows it",
+              "insight": "the closest India came to a superpower war",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_A_E3",
+              "place": "Pokhran",
+              "lat": 27.09,
+              "lng": 71.75,
+              "text": "\"Smiling Buddha,\" May 1974",
+              "insight": "Pakistan's Bhutto vows to \"eat grass\" for a bomb; he gets one",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon and Kissinger's tilt to Pakistan is remembered in India for 40 years; the US–India relationship stays cold until 2005",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T6_A_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China, the intended audience for 1974, accelerates aid to Pakistan's nuclear program.",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T6_B",
+          "label": "Liberate Bangladesh, Skip the Bomb",
+          "summary": "Liberate Bangladesh, Skip the Bomb",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 8,
+            "ECON": -4,
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T6_B_E1",
+              "place": "Pokhran",
+              "lat": 27.09,
+              "lng": 71.75,
+              "text": "No test; Pakistan's program has no trigger",
+              "insight": "maybe",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Carter later rewards India with nuclear cooperation; the 2005 deal happens in 1978",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T6_B_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Bhutto still pursues a bomb (he decided in 1965) but with less urgency and funding",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_B_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China's aid to Pakistan is slower",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_B_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Indira's popularity is slightly lower without \"Smiling Buddha\"",
+              "insight": "the Emergency of 1975 may still come.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T6_C",
+          "label": "Stop at Refugee Relief",
+          "summary": "Stop at Refugee Relief — No War, No Treaty",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -10,
+            "ECON": -12,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T6_C_E1",
+              "place": "Dhaka",
+              "lat": 23.81,
+              "lng": 90.41,
+              "text": "The genocide continues; a longer guerrilla war; Bangladesh independent by 1975 with a million more dead",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_C_E2",
+              "place": "Kolkata",
+              "lat": 22.57,
+              "lng": 88.36,
+              "text": "10 million refugees stay; West Bengal's politics collapse into violence",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T6_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon is pleased; US aid to India rises",
+              "insight": "the \"tilt\" pays",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T6_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The USSR courts Pakistan instead",
+              "insight": "its 1970s South Asia policy flips",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T6_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Indira is attacked as weak; her authoritarian turn comes sooner.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Bangladesh and the Bomb",
+          "deck": "Pakistan's army is massacring Bengalis in the East; 10 million refugees have crossed into India."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Bay of Bengal",
+          "deck": "At stake: the closest India came to a superpower war"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T6_A",
+          "lines": {
+            "IND_T6_A": "This raises the pressure. Be ready for the other side to answer.",
+            "IND_T6_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T6_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T6_B",
+          "lines": {
+            "IND_T6_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "IND_T6_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T6_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T6_B",
+          "lines": {
+            "IND_T6_A": "We will pay for this. Decide what domestic spending can wait.",
+            "IND_T6_B": "We will pay for this. Decide what domestic spending can wait.",
+            "IND_T6_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T6_A",
+          "lines": {
+            "IND_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T6_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T6_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T7",
+      "turn": 7,
+      "year": "1979–80",
+      "title": "Afghanistan Next Door",
+      "situation": "The Soviets have invaded Afghanistan. The US is arming Pakistan (and its nuclear program gets a pass). Indira Gandhi has just returned to power. The NAM wants a stance; Moscow wants your silence.",
+      "choices": [
+        {
+          "id": "IND_T7_A",
+          "label": "Mild Criticism, Keep the Soviet Tie",
+          "summary": "Mild Criticism, Keep the Soviet Tie",
+          "historical": true,
+          "meterDelta": {
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T7_A_E1",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "India is the only major democracy not to condemn the invasion",
+              "insight": "the NAM loses moral standing",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_A_E2",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "US aid and F-16s flow to Pakistan; its bomb is ignored",
+              "insight": "India's nuclear fears rise",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_A_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The USSR rewards you with the best arms it sells",
+              "insight": "MiG-29s, submarines",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T7_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan's people write India off",
+              "insight": "the estrangement peaks",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T7_A_E5",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Cuba, as NAM chair, does the same",
+              "insight": "the NAM's \"non\" is questioned worldwide.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "IND_T7_B",
+          "label": "Condemn the Invasion, Lead the NAM Against It",
+          "summary": "Condemn the Invasion, Lead the NAM Against It",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -2,
+            "STABILITY": 2,
+            "INFLUENCE": 10
+          },
+          "flags": [
+            "NAM_STRONG"
+          ],
+          "effects": [
+            {
+              "id": "IND_T7_B_E1",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "The NAM's 1980 resolution isolates Moscow; the Soviets are more cautious in the region",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Arms sales pause, then resume",
+              "insight": "the USSR has no other big customer",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T7_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Carter, then Reagan, see India as a partner; F-16s go to Pakistan anyway (Afghanistan needs a base)",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T7_B_E4",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan is annoyed at losing its \"India is Soviet\" argument",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_B_E5",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "The NAM is revitalized",
+              "insight": "its 1980s are its strongest.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "IND_T7_C",
+          "label": "Align With Moscow Openly",
+          "summary": "Align With Moscow Openly — Recognize the Kabul Regime",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -2,
+            "ECON": 5,
+            "INFLUENCE": -15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T7_C_E1",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "India runs aid missions under Soviet cover; the mujahideen mark India as an enemy",
+              "insight": "Kashmir's 1989 insurgency is fed by Afghan veterans sooner",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Sanctions on India; a full Pakistan alliance",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T7_C_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan's bomb gets quiet US blessing",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China–Pakistan–US axis is complete",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T7_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "The NAM chairmanship (1983) is a farce.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "Afghanistan Next Door",
+          "deck": "The Soviets have invaded Afghanistan."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: MiG-29s, submarines"
+        },
+        {
+          "city": "Havana",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the NAM's \"non\" is questioned worldwide."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T7_A",
+          "lines": {
+            "IND_T7_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T7_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T7_B",
+          "lines": {
+            "IND_T7_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T7_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T7_C",
+          "lines": {
+            "IND_T7_A": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T7_B": "The immediate budget holds. Watch the longer-term costs.",
+            "IND_T7_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T7_B",
+          "lines": {
+            "IND_T7_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "IND_T7_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T7_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "IND_T8",
+      "turn": 8,
+      "year": "1987–91",
+      "title": "The Reckoning",
+      "situation": "Rajiv Gandhi's army is bogged down in Sri Lanka. Kashmir is erupting. The USSR — your patron, your arms supplier, your trade partner — is dissolving. Foreign reserves cover two weeks of imports. Manmohan Singh, the new finance minister, proposes tearing up the License Raj.",
+      "choices": [
+        {
+          "id": "IND_T8_A",
+          "label": "Withdraw From Sri Lanka, Liberalize the Economy in…",
+          "summary": "Withdraw From Sri Lanka, Liberalize the Economy in 1991",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -6,
+            "ECON": 15,
+            "INFLUENCE": 8
+          },
+          "flags": [
+            "GORBY_REFORM"
+          ],
+          "effects": [
+            {
+              "id": "IND_T8_A_E1",
+              "place": "Mumbai",
+              "lat": 19.08,
+              "lng": 72.88,
+              "text": "The 1991 reforms: tariffs cut, licenses abolished",
+              "insight": "300 million exit poverty over 25 years",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_A_E2",
+              "place": "Colombo",
+              "lat": 6.93,
+              "lng": 79.86,
+              "text": "The IPKF leaves; the Tamil Tigers assassinate Rajiv in 1991",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_A_E3",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "The insurgency explodes; 40,000 die over two decades",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The USSR is gone; India's arms and oil lines are cut",
+              "insight": "it turns to Israel, then the US",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T8_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A slow thaw; the 1998 nuclear tests interrupt it; the 2005 nuclear deal completes it.",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "IND_T8_B",
+          "label": "Stay in Sri Lanka, Protect the License Raj",
+          "summary": "Stay in Sri Lanka, Protect the License Raj",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -12,
+            "ECON": -10,
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T8_B_E1",
+              "place": "Colombo",
+              "lat": 6.93,
+              "lng": 79.86,
+              "text": "A Vietnam-scale quagmire; India's army bleeds for a decade",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_B_E2",
+              "place": "Mumbai",
+              "lat": 19.08,
+              "lng": 72.88,
+              "text": "IMF bailout with harsher terms; reforms come anyway, in 1994, with less choice",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The rupee-ruble trade's collapse is catastrophic",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T8_B_E4",
+              "place": "Srinagar",
+              "lat": 34.08,
+              "lng": 74.8,
+              "text": "With the army in Sri Lanka, Kashmir is worse",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_B_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China's economy pulls decisively ahead",
+              "insight": "India's \"lost decade.\"",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "IND_T8_C",
+          "label": "Liberalize AND Pivot Hard to the US Now",
+          "summary": "Liberalize AND Pivot Hard to the US Now",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -4,
+            "ECON": 18,
+            "INFLUENCE": 12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "IND_T8_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A strategic partnership in 1992, not 2005",
+              "insight": "India is America's \"China hedge\" early",
+              "region": "Americas"
+            },
+            {
+              "id": "IND_T8_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Russia's arms sales collapse; India buys American",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "IND_T8_C_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan, losing its US patron to India, deepens ties with China and the Taliban",
+              "insight": "the 1990s are more dangerous",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_C_E4",
+              "place": "Mumbai",
+              "lat": 19.08,
+              "lng": 72.88,
+              "text": "US capital floods in; the IT boom starts in 1995, not 2000",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "IND_T8_C_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China sees an Indo-US encirclement in the 1990s",
+              "insight": "border tensions rise early.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "New Delhi",
+          "name": "The National Dispatch",
+          "headline": "The Reckoning",
+          "deck": "Rajiv Gandhi's army is bogged down in Sri Lanka."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: it turns to Israel, then the US"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A threat to one side changes the other side’s calculations, encouraging it to build or seek protection."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "IND_T8_A",
+          "lines": {
+            "IND_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T8_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "IND_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "IND_T8_A",
+          "lines": {
+            "IND_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T8_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "IND_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "IND_T8_C",
+          "lines": {
+            "IND_T8_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "IND_T8_B": "We will pay for this. Decide what domestic spending can wait.",
+            "IND_T8_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "IND_T8_C",
+          "lines": {
+            "IND_T8_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "IND_T8_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "IND_T8_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    }
+  ]
+}

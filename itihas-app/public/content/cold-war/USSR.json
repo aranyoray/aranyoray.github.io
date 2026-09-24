@@ -1,0 +1,2303 @@
+{
+  "id": "USSR",
+  "name": "Soviet Union",
+  "capital": "Moscow",
+  "lat": 55.76,
+  "lng": 37.62,
+  "intro": "It's 1947. You lost 27 million people beating Hitler and you will never let Germany threaten you again. You have no bomb — yet. America has one, plus the world's only healthy economy. Your buffer states in Eastern Europe are unstable; your own people are exhausted and starving. Stalin's Politburo watches every choice. Secure the motherland, spread the revolution if you can — and don't get nuked.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 45,
+    "ECON": 35,
+    "INFLUENCE": 55
+  },
+  "nodes": [
+    {
+      "id": "USSR_T1",
+      "turn": 1,
+      "year": "1948",
+      "title": "The Berlin Question",
+      "situation": "The Western Allies just introduced a new currency in their German zones — a step toward a separate West German state, which you view as a violation of Potsdam. West Berlin sits 100 miles inside your zone, entirely dependent on rail and road access you control. Your bomb is 18 months away. Marshall money is flooding Western Europe.",
+      "choices": [
+        {
+          "id": "USSR_T1_A",
+          "label": "Blockade Berlin",
+          "summary": "Cut all land access. Force the West to choose between abandoning the city and starting a war.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 12,
+            "STABILITY": 3,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T1_A_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "277,000 airlift flights supply the city; after 11 months you lift the blockade, humiliated.",
+              "insight": "You tested Western will and gave them a moral victory they could film.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_A_E2",
+              "place": "Washington, DC",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "NATO is signed in April 1949 — the blockade convinced Congress.",
+              "insight": "Pressure created the alliance it was meant to prevent.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T1_A_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West Germany founded May 1949; you answer with East Germany in October.",
+              "insight": "Germany's division was mutual, but you moved second.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_A_E4",
+              "place": "Belgrade, Yugoslavia",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "Tito, watching you bully Berlin, breaks with Moscow and survives with Western aid.",
+              "insight": "Coercion of allies creates defectors.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_A_E5",
+              "place": "Semipalatinsk, Kazakhstan",
+              "lat": 50.41,
+              "lng": 80.23,
+              "text": "Political urgency accelerates the bomb: first test August 1949.",
+              "insight": "Nuclear timelines respond to fear.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T1_A_E6",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland's Gomułka is purged for \"nationalist deviation\" as you tighten the bloc.",
+              "insight": "External confrontation triggers internal purges.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T1_B",
+          "label": "Accept Marshall Aid for Eastern Europe",
+          "summary": "Let Czechoslovakia and Poland join; take the dollars; don't blockade.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -12,
+            "STABILITY": -8,
+            "ECON": 14,
+            "INFLUENCE": -15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T1_B_E1",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "Czechoslovakia stays a mixed democracy into the 1950s; the 1948 coup never happens.",
+              "insight": "Economic openness and one-party control cannot coexist for long.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin's rivals whisper that he's \"sold the revolution\"; Beria and Zhdanov's factions fight openly.",
+              "insight": "Retreat is a domestic risk for dictators too.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Congress attaches strings: open books, free elections. You refuse the second.",
+              "insight": "Aid was a tool of leverage, never a gift.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T1_B_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao, seeing a \"soft\" Moscow, keeps his distance and courts Washington in 1949.",
+              "insight": "Mao's 1949 \"lean to one side\" was a choice, not a given.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T1_B_E5",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Germany remains a single, neutral, demilitarized state under four-power control.",
+              "insight": "Stalin's 1952 offer of a neutral Germany becomes real four years early.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_B_E6",
+              "place": "Kyiv",
+              "lat": 50.45,
+              "lng": 30.52,
+              "text": "Reconstruction accelerates; the 1946–47 famine's aftershocks are shorter.",
+              "insight": "Ideological purity had a body count.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T1_C",
+          "label": "Seize West Berlin",
+          "summary": "Send in troops; present the West with a fait accompli before it can react.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 40,
+            "STABILITY": -5,
+            "INFLUENCE": -20
+          },
+          "flags": [
+            "BERLIN_WAR"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T1_C_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "10,000 Western troops fight house-to-house; the US airlifts reinforcements under fire.",
+              "insight": "The West had few troops in Berlin but could not be seen to run.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_C_E2",
+              "place": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "text": "US B-29s, \"atomic-capable,\" deploy to Europe — some actually carrying bombs this time.",
+              "insight": "Your bomb was still a year away; theirs was real.",
+              "chance": {
+                "flag": "NUKE_USED",
+                "historian": 0.2,
+                "student": 0.1,
+                "successText": "A nuclear weapon is used. The crisis has crossed a threshold; leaders now face the danger of a wider exchange.",
+                "failureText": "Leaders stop short of nuclear use in this run. The confrontation still damages trust and raises the risk of another crisis."
+              },
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_C_E3",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "French Communists are banned; Western Europe unites in fear.",
+              "insight": "Nothing consolidates an alliance like an attack.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin's health collapses under the strain; a succession crisis begins in 1949 instead of 1953.",
+              "insight": "Wars stress leaders as well as nations.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_C_E5",
+              "place": "Vienna",
+              "lat": 48.21,
+              "lng": 16.37,
+              "text": "Austria's four-power occupation collapses into a second Berlin.",
+              "insight": "Every divided city becomes a front.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T1_C_E6",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "MacArthur is given authority to rearm Japan immediately.",
+              "insight": "A war in Europe militarizes Asia.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "The Berlin Question",
+          "deck": "The Western Allies just introduced a new currency in their German zones — a step toward a separate West German state, which you view as a violation of Potsdam."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: Pressure created the alliance it was meant to prevent."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Pressure created the alliance it was meant to prevent."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T1_C",
+          "lines": {
+            "USSR_T1_A": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T1_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T1_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T1_B",
+          "lines": {
+            "USSR_T1_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T1_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T1_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T1_B",
+          "lines": {
+            "USSR_T1_A": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T1_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "USSR_T1_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T1_A",
+          "lines": {
+            "USSR_T1_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T1_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T1_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T2",
+      "turn": 2,
+      "year": "1950",
+      "title": "Kim's Request",
+      "situation": "Kim Il-sung has visited Moscow three times begging permission to unify Korea by force. He says the South will collapse in three weeks and the Americans won't intervene — Secretary Acheson just left Korea outside the US \"defense perimeter.\" You have the bomb now. Mao has just won China. Approving Kim means risk; refusing means looking weak in front of the new Chinese comrade.",
+      "choices": [
+        {
+          "id": "USSR_T2_A",
+          "label": "Approve, But Make Mao Own It",
+          "summary": "Green-light Kim, supply weapons and pilots secretly, insist China intervenes if it goes wrong.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 8,
+            "ECON": -3,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T2_A_E1",
+              "place": "Pyongyang",
+              "lat": 39.02,
+              "lng": 125.75,
+              "text": "Kim nearly wins, then loses everything to Inchon; China saves him; Korea is frozen at the 38th parallel.",
+              "insight": "Proxy wars rarely go the way the proxy promises.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_A_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China spends 180,000 dead saving Korea and resents your caution forever.",
+              "insight": "The Sino-Soviet split started on Korean battlefields.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "US defense budget triples; NSC-68 is funded.",
+              "insight": "You handed the Pentagon its budget for the next forty years.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T2_A_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West German rearmament is approved out of fear of a \"European Korea.\"",
+              "insight": "Your worst nightmare — armed Germans — came from a war in Asia.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T2_A_E5",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "The US fleet guards Taiwan; Mao's invasion is cancelled forever.",
+              "insight": "Korea decided the Chinese civil war's last battle by preventing it.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_A_E6",
+              "place": "Sea of Japan",
+              "lat": 39.0,
+              "lng": 134.0,
+              "text": "Soviet pilots secretly fly MiGs in Korean markings; both sides hide the direct clash.",
+              "insight": "Superpowers fought each other in Korea and both agreed to lie about it.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T2_B",
+          "label": "Refuse Kim",
+          "summary": "Tell him no. Korea stays divided; you focus on Europe.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -5,
+            "STABILITY": 2,
+            "INFLUENCE": -6
+          },
+          "flags": [
+            "KOREA_AVOIDED"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T2_B_E1",
+              "place": "Pyongyang",
+              "lat": 39.02,
+              "lng": 125.75,
+              "text": "Kim seethes and turns to Mao for a patron; North Korea becomes a Chinese client.",
+              "insight": "Say no to a client and someone else says yes.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Without Korea, NSC-68's massive rearmament is never funded; the US stays at 1949 force levels.",
+              "insight": "A quiet 1950 keeps America small.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T2_B_E3",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "With no \"Asian communism on the march\" panic, the US funds France's Indochina war far less.",
+              "insight": "Vietnam's US involvement was a Korea aftershock.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_B_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "No German rearmament panic; the Bundeswehr forms years later, smaller.",
+              "insight": "Fear drives armies; calm delays them.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T2_B_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao invades Taiwan in 1951 with no US fleet blocking him — and succeeds.",
+              "insight": "The 7th Fleet moved into the strait because of Korea.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_B_E6",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan's \"Korea boom\" never comes; recovery is 3–4 years slower.",
+              "insight": "Japan's economic miracle was jump-started by war procurement.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T2_C",
+          "label": "Go In Openly",
+          "summary": "Send Soviet divisions, not just pilots. Win Korea fast.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 35,
+            "STABILITY": -8,
+            "ECON": -10,
+            "INFLUENCE": -5
+          },
+          "flags": [
+            "KOREA_SECOND_WAR"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T2_C_E1",
+              "place": "Busan",
+              "lat": 35.18,
+              "lng": 129.08,
+              "text": "Soviet armor reaches the sea before US reinforcements; Korea unified under Kim in weeks.",
+              "insight": "Speed sometimes wins before the other side decides to fight.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Truman authorizes nuclear use on Soviet forces in Korea.",
+              "insight": "Direct superpower combat removes the buffer that kept Korea limited.",
+              "chance": {
+                "flag": "NUKE_USED",
+                "historian": 0.3,
+                "student": 0.15,
+                "successText": "A nuclear weapon is used. The crisis has crossed a threshold; leaders now face the danger of a wider exchange.",
+                "failureText": "Leaders stop short of nuclear use in this run. The confrontation still damages trust and raises the risk of another crisis."
+              },
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T2_C_E3",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan is rearmed immediately and US nuclear weapons are stationed there.",
+              "insight": "Your gain in Korea is a nuclear neighbor.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao is furious you didn't let China lead; he sees a Soviet army on his border.",
+              "insight": "Winning too visibly frightens your own allies.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T2_C_E5",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "NATO calls up reserves; the West assumes Europe is next.",
+              "insight": "Every move is read as a rehearsal for the main event.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T2_C_E6",
+              "place": "Helsinki",
+              "lat": 60.17,
+              "lng": 24.94,
+              "text": "Finland, frightened, accepts tighter \"Finlandization.\"",
+              "insight": "Neighbors of a winning bully bend.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "Kim's Request",
+          "deck": "Kim Il-sung has visited Moscow three times begging permission to unify Korea by force."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: You handed the Pentagon its budget for the next forty years."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: You handed the Pentagon its budget for the next forty years."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T2_C",
+          "lines": {
+            "USSR_T2_A": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T2_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T2_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T2_B",
+          "lines": {
+            "USSR_T2_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T2_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T2_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T2_B",
+          "lines": {
+            "USSR_T2_A": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T2_B": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T2_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T2_A",
+          "lines": {
+            "USSR_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "USSR_T2_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T2_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T3",
+      "turn": 3,
+      "year": "1956",
+      "title": "Hungary",
+      "situation": "Your secret speech denouncing Stalin has cracked the bloc. Poland just forced you to accept a reformist leader. Now Hungary has gone further: a new government under Nagy has declared neutrality and asked to leave the Warsaw Pact. Crowds are lynching secret policemen. The West is distracted by the Suez invasion. Mao says crush it. Your own Presidium is split.",
+      "choices": [
+        {
+          "id": "USSR_T3_A",
+          "label": "Crush Hungary",
+          "summary": "17 divisions, Operation Whirlwind. Install Kádár. Execute Nagy later.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 10,
+            "STABILITY": 5,
+            "INFLUENCE": -12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T3_A_E1",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "2,500 Hungarians and 700 Soviet troops die; 200,000 refugees flee west.",
+              "insight": "You kept the bloc but lost the argument — and the Western communist parties.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_A_E2",
+              "place": "Rome",
+              "lat": 41.9,
+              "lng": 12.5,
+              "text": "The Italian Communist Party loses a third of its members in a year.",
+              "insight": "Tanks in Budapest converted more Europeans than any CIA program.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_A_E3",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Suez cover means the West can't condemn you credibly; Nasser thanks you anyway.",
+              "insight": "Two crises in one week cancel out moral high ground for everyone.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T3_A_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao takes credit for stiffening you and begins to see himself as the senior communist.",
+              "insight": "Hungary shifted the balance of ideological authority toward Beijing.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T3_A_E5",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Gomułka keeps his reforms but stops all talk of leaving the Pact.",
+              "insight": "One example is enough.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_A_E6",
+              "place": "Munich",
+              "lat": 48.14,
+              "lng": 11.58,
+              "text": "Radio Free Europe is chastened; the West quietly accepts your sphere.",
+              "insight": "The 1956 lesson for the West: don't promise what you won't deliver.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T3_B",
+          "label": "Let Hungary Go Neutral (Austrian model)",
+          "summary": "Withdraw. Accept a neutral Hungary as you did Austria in 1955.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -10,
+            "STABILITY": -10,
+            "INFLUENCE": -8
+          },
+          "flags": [
+            "HUNGARY_FREE"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T3_B_E1",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "Hungary becomes a second Austria: neutral, mixed economy, Western tourists by 1960.",
+              "insight": "Neutral states didn't join NATO; the danger was to the bloc's logic, not your borders.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_B_E2",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland demands the same deal in 1957; Gomułka is overwhelmed by his own crowds.",
+              "insight": "Precedent is the empire's enemy.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_B_E3",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Ulbricht panics; mass flight west doubles.",
+              "insight": "The weakest satellite feels every tremor.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The \"anti-Party group\" (Molotov, Malenkov) moves to remove Khrushchev in 1957 — and succeeds.",
+              "insight": "Historically they tried and failed; with Hungary lost, they'd have had the army.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_B_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao openly calls you a revisionist; the Sino-Soviet split arrives five years early.",
+              "insight": "Weakness toward the West is unforgivable to a revolutionary ally.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T3_B_E6",
+              "place": "Vienna",
+              "lat": 48.21,
+              "lng": 16.37,
+              "text": "Austria and Hungary form a neutral corridor that becomes a model for a wider \"Central European zone\" plan.",
+              "insight": "The Rapacki Plan for a nuclear-free Central Europe gets real traction.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T3_C",
+          "label": "Crush Hungary AND Send \"Volunteers\" to Egypt",
+          "summary": "Use the moment: intervene in Suez too, as you threatened.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 30,
+            "ECON": -8,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T3_C_E1",
+              "place": "Port Said, Egypt",
+              "lat": 31.26,
+              "lng": 32.3,
+              "text": "Soviet pilots clash with British and French aircraft; the first NATO–Soviet shooting since 1945.",
+              "insight": "Your 1956 rocket threats were bluff; making them real changes everything.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T3_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower, who was pressuring his own allies, now must back them; Suez becomes an East–West war.",
+              "insight": "Your intervention rescues the alliance you were splitting.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T3_C_E3",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser becomes your client outright; Egypt hosts Soviet bases from 1957.",
+              "insight": "Bases bought in 1956 cost you Egypt's loyalty in 1972 anyway.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T3_C_E4",
+              "place": "Tel Aviv",
+              "lat": 32.08,
+              "lng": 34.78,
+              "text": "Israel, facing Soviet troops, seeks a US alliance a decade early.",
+              "insight": "Enemies' enemies become friends fast.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T3_C_E5",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "Hungary is crushed with fewer eyes watching.",
+              "insight": "Bigger crises hide smaller ones.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T3_C_E6",
+              "place": "Ankara",
+              "lat": 39.93,
+              "lng": 32.87,
+              "text": "Turkey mobilizes on your Caucasus border; you must split forces.",
+              "insight": "Two-front pressure is the Soviet nightmare since 1941.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "Hungary",
+          "deck": "Your secret speech denouncing Stalin has cracked the bloc."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Rome",
+          "deck": "At stake: Tanks in Budapest converted more Europeans than any CIA program."
+        },
+        {
+          "city": "Beijing",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Hungary shifted the balance of ideological authority toward Beijing."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T3_C",
+          "lines": {
+            "USSR_T3_A": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T3_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T3_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T3_B",
+          "lines": {
+            "USSR_T3_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T3_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T3_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T3_A",
+          "lines": {
+            "USSR_T3_A": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T3_B": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T3_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T3_C",
+          "lines": {
+            "USSR_T3_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T3_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T3_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T4",
+      "turn": 4,
+      "year": "1962",
+      "title": "Anadyr",
+      "situation": "Your missiles are in Cuba and the Americans have found them. Kennedy has announced a blockade and demands removal. Your commanders in Cuba have tactical nuclear weapons. Castro is urging you to strike first if invaded. The US has 5,000 warheads to your 300 — the \"missile gap\" was a myth, and you know it. Back down, fight, or bargain?",
+      "choices": [
+        {
+          "id": "USSR_T4_A",
+          "label": "Withdraw for a Secret Turkey Deal",
+          "summary": "Pull the missiles for a US no-invasion pledge and quiet removal of Jupiters.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -20,
+            "STABILITY": -10,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T4_A_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "You're ousted in 1964; Brezhnev launches the buildup that reaches parity by 1970.",
+              "insight": "Humiliation bought the arms race.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_A_E2",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Castro, uninformed, rages — but the no-invasion pledge is why Cuba survives to today.",
+              "insight": "Your \"defeat\" is the reason Castro died in bed.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_A_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao calls it \"adventurism then capitulationism\"; the split is now public.",
+              "insight": "You can't please a revolutionary ally by making peace.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T4_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy learns caution; the Hotline and Test Ban Treaty follow.",
+              "insight": "Both sides learned from terror.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_A_E5",
+              "place": "Izmir",
+              "lat": 38.42,
+              "lng": 27.14,
+              "text": "Jupiters gone by April 1963. You got what you wanted and got no credit.",
+              "insight": "Secret wins don't buy legitimacy.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_A_E6",
+              "place": "Kyiv",
+              "lat": 50.45,
+              "lng": 30.52,
+              "text": "Ukrainian and Russian factories get a decade of missile orders; the \"military-industrial\" cities boom.",
+              "insight": "Arms races reshape economic geography.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T4_B",
+          "label": "Refuse — Run the Blockade",
+          "summary": "Order ships through; if fired on, respond.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 40,
+            "STABILITY": -5,
+            "INFLUENCE": -5
+          },
+          "flags": [
+            "CUBA_MISSILES_STAY"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T4_B_E1",
+              "place": "Caribbean",
+              "lat": 22.0,
+              "lng": -75.0,
+              "text": "A Soviet freighter is fired on; a submarine captain (as nearly happened with B-59) launches a nuclear torpedo.",
+              "insight": "In 1962 one man, Vasili Arkhipov, vetoed exactly this.",
+              "chance": {
+                "flag": "NUKE_USED",
+                "historian": 0.45,
+                "student": 0.25,
+                "successText": "A nuclear weapon is used. The crisis has crossed a threshold; leaders now face the danger of a wider exchange.",
+                "failureText": "Leaders stop short of nuclear use in this run. The confrontation still damages trust and raises the risk of another crisis."
+              },
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_B_E2",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "US airstrikes hit the sites; Soviet troops fire tactical nukes at the invasion fleet.",
+              "insight": "Your commanders had authority the Americans didn't know about.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_B_E3",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "You seize West Berlin per your contingency plan.",
+              "insight": "Berlin was always the intended trade.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_B_E4",
+              "place": "Ankara",
+              "lat": 39.93,
+              "lng": 32.87,
+              "text": "Your strike on Jupiters triggers NATO Article 5.",
+              "insight": "Treaties automate escalation.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_B_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "SAC goes to DEFCON 2 — then 1.",
+              "insight": "Both sides' war plans were \"all or nothing.\"",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_B_E6",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao praises your courage — from a safe distance.",
+              "insight": "Allies who cheer escalation rarely share the fallout.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T4_C",
+          "label": "Never Deploy — Press Berlin Instead",
+          "summary": "Skip Cuba entirely; squeeze West Berlin's access with a new blockade in 1962.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 15,
+            "STABILITY": 3,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T4_C_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Second blockade; this time NATO moves armored columns down the autobahn.",
+              "insight": "The West's Berlin plans in 1961–62 included fighting on the ground.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_C_E2",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Cuba, feeling exposed, becomes more radical and exports revolution to Latin America harder.",
+              "insight": "An unprotected ally overcompensates.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy, without a Cuban \"win,\" faces Republicans as weak; he loses seats in 1962.",
+              "insight": "The crisis he survived made him.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T4_C_E4",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West Germany accepts a peace-treaty framework recognizing the GDR to end the crisis.",
+              "insight": "Your actual 1961 goal — recognition — becomes achievable.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T4_C_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "No Cuban \"capitulation\" for Mao to cite; the split slows.",
+              "insight": "Fewer visible humiliations, fewer excuses for enemies.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T4_C_E6",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "You survive as leader into the late 1960s; Brezhnev never rises.",
+              "insight": "Leaders fall on foreign policy as often as domestic.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "KOREA_AVOIDED"
+          ],
+          "situation": "You avoided a war in Korea, but the nuclear imbalance remains. Cuba offers a way to challenge Washington near its own coast. Decide whether to negotiate a withdrawal, confront the US, or put pressure on Berlin instead."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "Anadyr",
+          "deck": "Your missiles are in Cuba and the Americans have found them."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: Both sides learned from terror."
+        },
+        {
+          "city": "Havana",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Your \"defeat\" is the reason Castro died in bed."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T4_B",
+          "lines": {
+            "USSR_T4_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T4_B": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T4_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T4_A",
+          "lines": {
+            "USSR_T4_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T4_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T4_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T4_A",
+          "lines": {
+            "USSR_T4_A": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T4_B": "The immediate budget holds. Watch the longer-term costs.",
+            "USSR_T4_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T4_C",
+          "lines": {
+            "USSR_T4_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T4_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T4_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T5",
+      "turn": 5,
+      "year": "1968",
+      "title": "Prague Spring",
+      "situation": "Czechoslovakia's Dubček has abolished censorship and is talking about \"socialism with a human face.\" He swears loyalty to the Warsaw Pact — but Ulbricht and Gomułka say the contagion will spread. Your economy needs the reforms Dubček is trying. Vietnam is bleeding the Americans; your position has never been stronger. Tanks, tolerance, or reform yourself?",
+      "choices": [
+        {
+          "id": "USSR_T5_A",
+          "label": "Invade",
+          "summary": "Warsaw Pact forces occupy; \"Brezhnev Doctrine\" announced.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 6,
+            "STABILITY": 5,
+            "ECON": -3,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T5_A_E1",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "20 years of \"normalization\"; a generation of the best minds emigrate or are silenced.",
+              "insight": "Stability bought with stagnation.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_A_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao concludes you'll invade him next; the 1969 border war follows and Nixon's opening becomes possible.",
+              "insight": "Prague led to Nixon in China.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T5_A_E3",
+              "place": "Bucharest",
+              "lat": 44.43,
+              "lng": 26.1,
+              "text": "Ceaușescu refuses to join the invasion and becomes the West's favorite communist.",
+              "insight": "Defiance of Moscow bought Romania decades of Western indulgence.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_A_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Western communist parties break with you (\"Eurocommunism\").",
+              "insight": "Tanks in Prague killed Moscow's ideological authority in the West.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_A_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Kosygin's economic reforms die with Dubček's; the stagnation era begins.",
+              "insight": "You crushed the experiment you needed.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_A_E6",
+              "place": "Helsinki",
+              "lat": 60.17,
+              "lng": 24.94,
+              "text": "Détente survives anyway; the West signs Helsinki in 1975 — with a human-rights clause that later bites you.",
+              "insight": "Your one concession at Helsinki became the dissidents' charter.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T5_B",
+          "label": "Tolerate — Let Prague Experiment",
+          "summary": "Keep Dubček inside the Pact; treat it as a contained trial.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -8,
+            "STABILITY": -8,
+            "ECON": 6,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "PRAGUE_FREE"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T5_B_E1",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "Czechoslovakia becomes the bloc's Hungary-1980s a decade early: market elements, open press, still in the Pact.",
+              "insight": "Reform within alliance was tested in Yugoslavia and worked for decades.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_B_E2",
+              "place": "East Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Ulbricht, unable to compete, is replaced by a reformer under Moscow's pressure.",
+              "insight": "Once one satellite reforms, the hardliners lose their argument.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Reformers around Kosygin win the 1970 economic debates; growth continues into the 1970s.",
+              "insight": "Your own stagnation was a choice.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_B_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao sees a \"revisionist\" bloc but not a threatening one; the 1969 border clashes stay small.",
+              "insight": "Less fear, less war.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T5_B_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon has less reason to court China; détente comes directly, sooner.",
+              "insight": "Triangular diplomacy needs a triangle.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T5_B_E6",
+              "place": "Kraków, Poland",
+              "lat": 50.06,
+              "lng": 19.94,
+              "text": "Polish workers demand the Czech deal; 1970 strikes are settled peacefully.",
+              "insight": "Reform pressure spreads whether you allow it or not.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T5_C",
+          "label": "Invade Prague, Reform at Home",
+          "summary": "Crush Dubček to hold the bloc, then push Kosygin's market reforms hard in the USSR.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 6,
+            "STABILITY": -3,
+            "ECON": 8,
+            "INFLUENCE": -6
+          },
+          "flags": [
+            "USSR_CHINESE_PATH"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T5_C_E1",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "Occupied; Czechs note bitterly that Moscow does what it forbade them.",
+              "insight": "Hypocrisy erodes empires slower than weakness, but it erodes them.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_C_E2",
+              "place": "Novosibirsk",
+              "lat": 55.01,
+              "lng": 82.94,
+              "text": "Enterprise autonomy and profit indicators spread; Soviet growth stays above 4% through the 1970s.",
+              "insight": "This is roughly China's 1980s path, tried 15 years earlier.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T5_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The party apparatus resists; a compromise \"reform with rigor\" emerges.",
+              "insight": "Bureaucracies that run an economy won't vote to shrink themselves.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T5_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Deng's later reformers study your model.",
+              "insight": "Ideas cross ideological borders.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T5_C_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A stronger Soviet economy makes détente less attractive to hawks and more necessary to doves.",
+              "insight": "Economic power changes how negotiation looks.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T5_C_E6",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland copies the reforms; 1970 and 1980 worker uprisings never materialize.",
+              "insight": "Bread beats banners.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "Prague Spring",
+          "deck": "Czechoslovakia's Dubček has abolished censorship and is talking about \"socialism with a human face.\" He swears loyalty to the Warsaw Pact — but Ulbricht and Gomułka say the contagion will spread."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Beijing",
+          "deck": "At stake: Prague led to Nixon in China."
+        },
+        {
+          "city": "Beijing",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Prague led to Nixon in China."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T5_A",
+          "lines": {
+            "USSR_T5_A": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T5_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T5_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T5_B",
+          "lines": {
+            "USSR_T5_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T5_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T5_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T5_C",
+          "lines": {
+            "USSR_T5_A": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T5_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "USSR_T5_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T5_B",
+          "lines": {
+            "USSR_T5_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T5_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "USSR_T5_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T6",
+      "turn": 6,
+      "year": "1972",
+      "title": "The Triangle",
+      "situation": "Nixon has been to Beijing. Mao — who fought you on the Ussuri in 1969 — is now shaking hands with the Americans. Nixon is coming to Moscow next, offering SALT and grain. Your harvest failed. Your generals want to strike China's nuclear sites before it's too late; Brezhnev's diplomats want détente. Pick one.",
+      "choices": [
+        {
+          "id": "USSR_T6_A",
+          "label": "Détente — SALT I, Grain, Recognition",
+          "summary": "Sign the treaties, buy the wheat, secure Europe's borders at Helsinki.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -15,
+            "ECON": 8,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T6_A_E1",
+              "place": "Helsinki",
+              "lat": 60.17,
+              "lng": 24.94,
+              "text": "1975 Final Act recognizes your borders — and commits you to human rights.",
+              "insight": "You got legitimacy; dissidents got a weapon.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T6_A_E2",
+              "place": "Wichita, USA",
+              "lat": 37.69,
+              "lng": -97.34,
+              "text": "You buy 10 million tons of American wheat; US food prices spike.",
+              "insight": "Détente was a bread deal.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T6_A_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao, fearing US–Soviet condominium, doubles down on the US opening.",
+              "insight": "Your peace with Washington pushed Beijing toward Washington too.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_A_E4",
+              "place": "Luanda, Angola",
+              "lat": -8.84,
+              "lng": 13.23,
+              "text": "With Europe secured, you expand into Africa; Cuban troops fly to Angola in 1975.",
+              "insight": "Détente in Europe freed you to compete in the Third World — which killed détente.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T6_A_E5",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Sadat, feeling ignored, expels 20,000 Soviet advisors and turns to the US.",
+              "insight": "Superpower deals leave clients feeling sold.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "USSR_T6_A_E6",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Oil revenues from the 1973 shock let you avoid reform for 15 years.",
+              "insight": "Windfalls postpone reckonings.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T6_B",
+          "label": "Reject Détente — Strike China's Nuclear Sites",
+          "summary": "Preempt the encirclement.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 35,
+            "STABILITY": -6,
+            "ECON": -10,
+            "INFLUENCE": -20
+          },
+          "flags": [
+            "CHINA_WAR",
+            "NO_DETENTE"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T6_B_E1",
+              "place": "Lop Nur, China",
+              "lat": 40.5,
+              "lng": 90.0,
+              "text": "Your bombers destroy the test site; China's arsenal is set back — and it declares war.",
+              "insight": "Historically you sounded out Washington on this in 1969; they said no.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon gives China intelligence and threatens intervention; the US–China axis is born in fire.",
+              "insight": "Attacking your rival's new friend guarantees the friendship.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T6_B_E3",
+              "place": "Manchuria border",
+              "lat": 48.0,
+              "lng": 130.0,
+              "text": "A million-man Chinese \"people's war\" grinds along 4,000 km of border for years.",
+              "insight": "Geography favored the defender.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_B_E4",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "North Vietnam, dependent on both of you, is forced to choose — and chooses you; China cuts off aid.",
+              "insight": "The 1979 Sino-Vietnamese war arrives early.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_B_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev is removed by a coalition of diplomats and economists as the war stalls.",
+              "insight": "Preemptive wars end leaders.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T6_B_E6",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan debates nuclear weapons openly for the first time.",
+              "insight": "A nuclear war in Asia erases Japan's taboo.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T6_C",
+          "label": "Reconcile with Beijing — Break the Triangle",
+          "summary": "Offer Mao a border settlement, technology, and a joint front against the US.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 5,
+            "ECON": -4,
+            "INFLUENCE": 10
+          },
+          "flags": [
+            "NO_DETENTE"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T6_C_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao accepts a border deal but no alliance; after his death in 1976, Deng takes your technology and your money and opens to the US anyway.",
+              "insight": "China wanted two patrons, not one.",
+              "chance": {
+                "flag": "SINO_SOVIET_HEAL",
+                "historian": 0.6,
+                "student": 0.6,
+                "successText": "Mao accepts a border deal but no alliance; after his death in 1976, Deng takes your technology and your money and opens to the US anyway. In this run, the proposed outcome takes hold.",
+                "failureText": "The proposed outcome does not take hold in this run. Rival leaders resist the pressure; the uncertainty changes their next calculations."
+              },
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The Nixon opening stalls; hawks argue détente was a trap.",
+              "insight": "Without a Sino-Soviet split, the US lost its main lever.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T6_C_E3",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "With both patrons united, Hanoi's 1975 victory comes in 1973.",
+              "insight": "Unity among suppliers shortens proxy wars.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_C_E4",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "India, losing its Soviet counterweight to China, tests nukes sooner and courts the US.",
+              "insight": "Every reconciliation orphans someone.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_C_E5",
+              "place": "Ulaanbaatar, Mongolia",
+              "lat": 47.92,
+              "lng": 106.92,
+              "text": "Soviet divisions withdraw from Mongolia; Mongolia's independence is quietly weakened.",
+              "insight": "Buffer states pay for great-power peace.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T6_C_E6",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan, facing a communist bloc of 1.2 billion, doubles its defense budget and revises Article 9 debates.",
+              "insight": "Unified enemies unify their neighbors.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "The Triangle",
+          "deck": "Nixon has been to Beijing."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Wichita",
+          "deck": "At stake: Détente was a bread deal."
+        },
+        {
+          "city": "Wichita",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Détente was a bread deal."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T6_B",
+          "lines": {
+            "USSR_T6_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T6_B": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T6_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T6_A",
+          "lines": {
+            "USSR_T6_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T6_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T6_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T6_A",
+          "lines": {
+            "USSR_T6_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "USSR_T6_B": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T6_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T6_C",
+          "lines": {
+            "USSR_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "USSR_T6_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T6_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T7",
+      "turn": 7,
+      "year": "1979",
+      "title": "The Afghan Trap",
+      "situation": "Afghanistan's communist government is collapsing in a civil war it started. Its leader Amin has murdered his predecessor and may be talking to the Americans. Iran's revolution has just made your southern border an Islamic republic. The KGB says a limited intervention will take three months. Andropov and Ustinov want to go; Kosygin says it will be your Vietnam. Poland is about to erupt too.",
+      "choices": [
+        {
+          "id": "USSR_T7_A",
+          "label": "Invade Afghanistan",
+          "summary": "100,000 troops; kill Amin; install Karmal.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 18,
+            "STABILITY": -8,
+            "ECON": -8,
+            "INFLUENCE": -15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "USSR_T7_A_E1",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "Nine years, 15,000 dead, 1 million Afghans killed, a generation of veterans who distrust the regime.",
+              "insight": "It was your Vietnam, exactly as Kosygin said.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_A_E2",
+              "place": "Peshawar, Pakistan",
+              "lat": 34.01,
+              "lng": 71.58,
+              "text": "The CIA, Saudis and Pakistan build the mujahideen; bin Laden arrives in 1984.",
+              "insight": "You created the conditions for 2001.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Détente dies; Carter boycotts your Olympics; Reagan is elected on a hard line.",
+              "insight": "One invasion elected your worst enemy.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T7_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Coffins (\"Cargo 200\") and rock music from veterans corrode faith in the system; glasnost's audience is born.",
+              "insight": "Wars teach citizens their government lies.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T7_A_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China joins the US in arming the Afghans; the encirclement you feared is real.",
+              "insight": "Self-fulfilling prophecy.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_A_E6",
+              "place": "Riyadh",
+              "lat": 24.71,
+              "lng": 46.68,
+              "text": "Saudi Arabia floods the oil market in the 1980s, partly to bleed you; your revenues collapse.",
+              "insight": "The oil weapon can point east.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T7_B",
+          "label": "Stay Out — Let Amin Fall",
+          "summary": "Accept a non-communist, possibly Islamist Afghanistan; secure the border.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -6,
+            "STABILITY": 4,
+            "ECON": 5,
+            "INFLUENCE": -8
+          },
+          "flags": [
+            "AFGHAN_SKIPPED"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T7_B_E1",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "Amin falls to a mujahideen coalition in 1981; a weak Islamist government emerges without the anti-Soviet fury.",
+              "insight": "Without an occupier, the resistance has no unifying enemy.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Détente limps on; SALT II is ratified; Reagan wins narrowly on the economy, not foreign policy.",
+              "insight": "The \"Second Cold War\" needed a trigger.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T7_B_E3",
+              "place": "Peshawar",
+              "lat": 34.01,
+              "lng": 71.58,
+              "text": "No jihadist pipeline; Pakistan's military stays weaker; the Arab volunteer movement has no cause.",
+              "insight": "Al-Qaeda's founding myth was your invasion.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "No veterans' disillusionment; the regime's legitimacy erodes more slowly. Reform comes later — or not at all.",
+              "insight": "Pain is what teaches; without pain, no lesson.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T7_B_E5",
+              "place": "Tashkent, Uzbekistan",
+              "lat": 41.3,
+              "lng": 69.24,
+              "text": "Islamic revival spreads north from Afghanistan and Iran into Central Asia anyway.",
+              "insight": "Ideas don't need an army to cross borders.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_B_E6",
+              "place": "Tehran",
+              "lat": 35.69,
+              "lng": 51.39,
+              "text": "Iran, without a Soviet army next door, focuses fully on the Iraq war.",
+              "insight": "Distraction is a strategic gift.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T7_C",
+          "label": "Invade Afghanistan AND Poland (1981)",
+          "summary": "Don't trust Polish generals; send the Pact in to crush Solidarity yourself.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 30,
+            "STABILITY": -12,
+            "ECON": -15,
+            "INFLUENCE": -25
+          },
+          "flags": [
+            "POLAND_INVADED",
+            "GORBY_HARDLINE"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T7_C_E1",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Polish army units fight back; a two-week war leaves thousands dead and Poland under occupation.",
+              "insight": "Poland's own army in 1981 was the largest in the Pact after yours.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T7_C_E2",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West Germany ends Ostpolitik; the gas pipeline deal collapses; you lose hard currency.",
+              "insight": "Occupying Poland cost you the West's money.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T7_C_E3",
+              "place": "Rome",
+              "lat": 41.9,
+              "lng": 12.5,
+              "text": "Pope John Paul II, a Pole, becomes the moral leader of the West; Catholics across Eastern Europe radicalize.",
+              "insight": "Some enemies you can't shoot.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T7_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Full grain embargo and technology ban; Reagan's defense buildup doubles.",
+              "insight": "Two invasions justify any budget.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T7_C_E5",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "Two wars at once; both go worse.",
+              "insight": "Overstretch is how empires end.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T7_C_E6",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Politburo's reformers (Gorbachev) are purged as defeatists; a Stalin-style hardliner rules into the 1990s.",
+              "insight": "Hardline choices harden the future.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "The Afghan Trap",
+          "deck": "Afghanistan's communist government is collapsing in a civil war it started."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: One invasion elected your worst enemy."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: One invasion elected your worst enemy."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T7_C",
+          "lines": {
+            "USSR_T7_A": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T7_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T7_B",
+          "lines": {
+            "USSR_T7_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T7_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T7_B",
+          "lines": {
+            "USSR_T7_A": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T7_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "USSR_T7_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T7_B",
+          "lines": {
+            "USSR_T7_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T7_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T7_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "USSR_T8",
+      "turn": 8,
+      "year": "1985",
+      "title": "Acceleration",
+      "situation": "You are Gorbachev. Three general secretaries died in three years. Growth is zero; oil prices just crashed; Chernobyl will happen next year. The West's Reagan seems both belligerent and, oddly, interested in abolishing nuclear weapons. Eastern Europe is bankrupt. Your options: open the system politically (glasnost), tighten discipline (Andropov's path), or copy Deng — markets first, party control forever.",
+      "choices": [
+        {
+          "id": "USSR_T8_A",
+          "label": "Glasnost + Perestroika + Let Them Go",
+          "summary": "Open the press, negotiate INF, renounce the Brezhnev Doctrine.",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -30,
+            "STABILITY": -25,
+            "ECON": -10,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "GORBY_REFORM"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T8_A_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Wall falls 1989; Germany reunites in NATO 1990; you're promised (verbally) no NATO expansion.",
+              "insight": "Words at a table in 1990 fuel wars in the 2020s.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_A_E2",
+              "place": "Chernobyl, Ukraine",
+              "lat": 51.39,
+              "lng": 30.1,
+              "text": "The disaster, and the cover-up's failure, shows why glasnost was needed and destroys what trust remained.",
+              "insight": "Openness revealed a system too broken to save.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_A_E3",
+              "place": "Vilnius",
+              "lat": 54.69,
+              "lng": 25.28,
+              "text": "Baltic republics declare independence; you hesitate to shoot; the USSR ends December 1991.",
+              "insight": "The empire ended because one man wouldn't order fire.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_A_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Deng watches, concludes political opening was your mistake, and orders Tiananmen.",
+              "insight": "China's path was chosen by watching yours fail.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T8_A_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "August 1991 coup fails; Yeltsin wins; you're out.",
+              "insight": "Reformers who succeed get replaced by the forces they released.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_A_E6",
+              "place": "Sarajevo",
+              "lat": 43.86,
+              "lng": 18.41,
+              "text": "Yugoslavia, no longer needed as a buffer, dissolves into war.",
+              "insight": "The Cold War froze conflicts it didn't solve.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T8_B",
+          "label": "Discipline — Andropov's Path",
+          "summary": "Anti-corruption purges, no political opening, hold the bloc, keep Afghanistan.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 5,
+            "STABILITY": 5,
+            "ECON": -12,
+            "INFLUENCE": -10
+          },
+          "flags": [
+            "GORBY_HARDLINE",
+            "WALL_STANDS"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T8_B_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "The Wall stands; Leipzig protesters are shot in 1989; East Germany survives, poorer every year.",
+              "insight": "Repression works right up until it doesn't — see Romania.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The economy shrinks 3% a year; by 1995 the USSR is a nuclear-armed North Korea.",
+              "insight": "Discipline doesn't fix an economy that can't compute prices.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan's SDI buildup continues; you spend 25% of GDP on defense to match.",
+              "insight": "You cannot win a spending race with an economy a third the size.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T8_B_E4",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Solidarity stays underground; 1989's roundtable never happens; a violent uprising in 1993 instead.",
+              "insight": "Negotiated transitions require someone willing to negotiate.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_B_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "China's boom makes it your creditor by 1995.",
+              "insight": "Refusing reform hands the future to the reformer.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T8_B_E6",
+              "place": "Tallinn, Estonia",
+              "lat": 59.44,
+              "lng": 24.75,
+              "text": "Baltic \"Singing Revolution\" is met with tanks; a long insurgency begins.",
+              "insight": "Empires held by force end in blood.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "USSR_T8_C",
+          "label": "The Chinese Path — Markets First, Party Forever",
+          "summary": "Legalize private farms and firms, keep censorship, keep the bloc by subsidy.",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -8,
+            "STABILITY": 3,
+            "ECON": 12,
+            "INFLUENCE": 0
+          },
+          "flags": [
+            "USSR_CHINESE_PATH",
+            "USSR_SURVIVES"
+          ],
+          "effects": [
+            {
+              "id": "USSR_T8_C_E1",
+              "place": "Shenzhen, China",
+              "lat": 22.54,
+              "lng": 114.06,
+              "text": "Deng and you compare notes; a \"socialist market\" bloc emerges by the mid-1990s.",
+              "insight": "Two authoritarian market states change the whole 21st century.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "USSR_T8_C_E2",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "East Germany opens economically; the Wall becomes porous, then irrelevant by 1995; reunification is negotiated slowly, Germany neutral.",
+              "insight": "A rich GDR had no reason to run.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Growth returns; the party keeps power; corruption explodes.",
+              "insight": "China's problems become yours.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "No \"victory\"; the US faces a reforming rival rather than a collapsing one; defense budgets stay high.",
+              "insight": "The peace dividend never comes.",
+              "region": "Americas"
+            },
+            {
+              "id": "USSR_T8_C_E5",
+              "place": "Kyiv",
+              "lat": 50.45,
+              "lng": 30.52,
+              "text": "Ukraine stays in a prosperous union; no independence, no 2014, no 2022 — and no Ukrainian state.",
+              "insight": "This branch is why the debrief matters: what's \"better\" depends on who you ask.",
+              "region": "Europe"
+            },
+            {
+              "id": "USSR_T8_C_E6",
+              "place": "Chernobyl",
+              "lat": 51.39,
+              "lng": 30.1,
+              "text": "Without glasnost, the disaster is covered up more effectively; more people are exposed.",
+              "insight": "Closed systems kill quietly.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Moscow",
+          "name": "The National Dispatch",
+          "headline": "Acceleration",
+          "deck": "You are Gorbachev."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Chernobyl",
+          "deck": "At stake: Openness revealed a system too broken to save."
+        },
+        {
+          "city": "Beijing",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: China's path was chosen by watching yours fail."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "USSR_T8_B",
+          "lines": {
+            "USSR_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "USSR_T8_B": "This raises the pressure. Be ready for the other side to answer.",
+            "USSR_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "USSR_T8_A",
+          "lines": {
+            "USSR_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "USSR_T8_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "USSR_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "USSR_T8_C",
+          "lines": {
+            "USSR_T8_A": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T8_B": "We will pay for this. Decide what domestic spending can wait.",
+            "USSR_T8_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "USSR_T8_A",
+          "lines": {
+            "USSR_T8_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "USSR_T8_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "USSR_T8_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    }
+  ]
+}

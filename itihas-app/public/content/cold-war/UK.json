@@ -1,0 +1,2004 @@
+{
+  "id": "UK",
+  "name": "United Kingdom",
+  "capital": "London",
+  "lat": 51.51,
+  "lng": -0.13,
+  "intro": "It's 1947. You won the war and went bankrupt doing it. India is leaving; Palestine is a nightmare; the Americans hold your debt. Your bomb program is secret even from most of the cabinet. Are you still a great power, America's partner, or Europe's leader? Pick before the money runs out.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 55,
+    "ECON": 35,
+    "INFLUENCE": 55
+  },
+  "nodes": [
+    {
+      "id": "UK_T1",
+      "turn": 1,
+      "year": "1947",
+      "title": "Bankrupt Empire",
+      "situation": "Winter fuel crisis; convertibility of sterling collapses. Greece, Turkey and Palestine drain the treasury. Marshall is offering aid.",
+      "choices": [
+        {
+          "id": "UK_T1_A",
+          "label": "Hand Greece to the US, Take Marshall Aid,…",
+          "summary": "Hand Greece to the US, Take Marshall Aid, Build the Bomb",
+          "historical": true,
+          "meterDelta": {
+            "ECON": 10,
+            "INFLUENCE": -5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T1_A_E1",
+              "place": "Athens",
+              "lat": 37.98,
+              "lng": 23.73,
+              "text": "The US takes over",
+              "insight": "the Truman Doctrine is born from your telegram",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T1_A_E2",
+              "place": "Aldermaston",
+              "lat": 51.37,
+              "lng": -1.15,
+              "text": "The bomb, secretly funded, tests in 1952",
+              "insight": "a seat at the top table",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T1_A_E3",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Independence rushed to August 1947; Partition kills up to 1 million",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T1_A_E4",
+              "place": "Jerusalem",
+              "lat": 31.77,
+              "lng": 35.22,
+              "text": "You dump Palestine on the UN; war follows in 1948",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T1_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "You become junior partner; the \"special relationship\" is born as a dependency.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "UK_T1_B",
+          "label": "Lead a European Union Now",
+          "summary": "Lead a European Union Now",
+          "historical": false,
+          "meterDelta": {
+            "ECON": 5,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T1_B_E1",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Britain joins the Schuman Plan in 1950",
+              "insight": "the European Community forms around London and Paris",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T1_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US prefers this and pushes Marshall funds through you",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T1_B_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West Germany integrates under British-French leadership",
+              "insight": "less need for US troops",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T1_B_E4",
+              "place": "Canberra",
+              "lat": -35.28,
+              "lng": 149.13,
+              "text": "Commonwealth ties loosen faster",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T1_B_E5",
+              "place": "Aldermaston",
+              "lat": 51.37,
+              "lng": -1.15,
+              "text": "Bomb program slows",
+              "insight": "Europe's nuclear force is Franco-British by 1960.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T1_C",
+          "label": "Hold the Empire — Refuse Retreat",
+          "summary": "Hold the Empire — Refuse Retreat",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -5,
+            "ECON": -15,
+            "INFLUENCE": 3
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T1_C_E1",
+              "place": "Athens",
+              "lat": 37.98,
+              "lng": 23.73,
+              "text": "You stay; the civil war drags; you go deeper into debt",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T1_C_E2",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Independence delayed to 1950; violence is worse",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T1_C_E3",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Egypt's 1952 revolution comes early, aimed at you",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T1_C_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Congress refuses more loans; sterling crisis becomes default",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T1_C_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Rationing lasts until the 1960s.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "Bankrupt Empire",
+          "deck": "Winter fuel crisis; convertibility of sterling collapses."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Aldermaston",
+          "deck": "At stake: a seat at the top table"
+        },
+        {
+          "city": "New Delhi",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T1_A",
+          "lines": {
+            "UK_T1_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T1_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T1_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T1_A",
+          "lines": {
+            "UK_T1_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T1_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T1_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T1_A",
+          "lines": {
+            "UK_T1_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "UK_T1_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "UK_T1_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T1_B",
+          "lines": {
+            "UK_T1_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T1_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T1_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T2",
+      "turn": 2,
+      "year": "1950",
+      "title": "The Lion Follows",
+      "situation": "The US demands troops for Korea and a rearmament program that will break the budget. The NHS is two years old.",
+      "choices": [
+        {
+          "id": "UK_T2_A",
+          "label": "Send Troops, Rearm, Cut the NHS",
+          "summary": "Send Troops, Rearm, Cut the NHS",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -6,
+            "ECON": -8,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T2_A_E1",
+              "place": "Imjin River",
+              "lat": 37.95,
+              "lng": 126.95,
+              "text": "At the Imjin River, the Gloucesters hold against a much larger force. Most survivors are captured.",
+              "insight": "Britain’s costly stand strengthens its claim to be heard in an American-led war.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T2_A_E2",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Prescription charges split Labour; Attlee loses in 1951",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T2_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "You earn a voice in the war",
+              "insight": "and use it to stop MacArthur's nukes",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T2_A_E4",
+              "place": "Kuala Lumpur",
+              "lat": 3.14,
+              "lng": 101.69,
+              "text": "Malaya's insurgency gets less attention; Britain's counter-insurgency doctrine is born under strain",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T2_A_E5",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "You back German rearmament to share the burden.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T2_B",
+          "label": "Refuse Rearmament — Fund the Welfare State",
+          "summary": "Refuse Rearmament — Fund the Welfare State",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 8,
+            "ECON": 4,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T2_B_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Fury; US aid conditioned; the \"special relationship\" cools for a decade",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T2_B_E2",
+              "place": "Imjin",
+              "lat": 37.98,
+              "lng": 126.87,
+              "text": "A token brigade only; Britain's influence over Korea policy vanishes",
+              "insight": "MacArthur's nuclear plan gets no British veto",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T2_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Labour wins 1951; the NHS expands",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T2_B_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Europe, seeing British reluctance, builds its own defense community",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T2_B_E5",
+              "place": "Canberra",
+              "lat": -35.28,
+              "lng": 149.13,
+              "text": "Australia signs ANZUS with the US alone.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "UK_T2_C",
+          "label": "Send Troops But Demand Full Command Partnership",
+          "summary": "Send Troops But Demand Full Command Partnership",
+          "historical": false,
+          "meterDelta": {
+            "ECON": -6,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T2_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Truman refuses joint command but grants consultation rights on nuclear use",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T2_C_E2",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "British forces base in Japan alongside the US",
+              "insight": "a Pacific presence retained",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T2_C_E3",
+              "place": "Hong Kong",
+              "lat": 22.32,
+              "lng": 114.17,
+              "text": "US commitments cover the colony",
+              "insight": "China stays out",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T2_C_E4",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Britain's Middle East forces are thinned",
+              "insight": "the Egyptian revolution succeeds in 1952",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T2_C_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Defense spending overwhelms the budget anyway.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "The Lion Follows",
+          "deck": "The US demands troops for Korea and a rearmament program that will break the budget."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from London",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Kuala Lumpur",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T2_A",
+          "lines": {
+            "UK_T2_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T2_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T2_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T2_A",
+          "lines": {
+            "UK_T2_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T2_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T2_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T2_B",
+          "lines": {
+            "UK_T2_A": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T2_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "UK_T2_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T2_C",
+          "lines": {
+            "UK_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T2_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T2_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T3",
+      "turn": 3,
+      "year": "1956",
+      "title": "Suez",
+      "situation": "Nasser has nationalized the canal. Eden sees Hitler. France and Israel propose a secret plan. Eisenhower has warned you not to.",
+      "choices": [
+        {
+          "id": "UK_T3_A",
+          "label": "Invade Secretly With France and Israel",
+          "summary": "Invade Secretly With France and Israel",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -10,
+            "ECON": -12,
+            "INFLUENCE": -20
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T3_A_E1",
+              "place": "Port Said",
+              "lat": 31.26,
+              "lng": 32.3,
+              "text": "You win militarily and lose everything; the US crashes the pound; you withdraw in weeks",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T3_A_E2",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Eden resigns; Macmillan restores the US link on America's terms",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T3_A_E3",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser is the Arab world's hero",
+              "insight": "Arab nationalism is now anti-British",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T3_A_E4",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France concludes Britain is a US puppet",
+              "insight": "de Gaulle vetoes your EEC entry in 1963",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T3_A_E5",
+              "place": "Accra, Ghana",
+              "lat": 5.6,
+              "lng": -0.19,
+              "text": "African decolonization accelerates",
+              "insight": "17 states independent by 1960.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "UK_T3_B",
+          "label": "Go to the UN, Accept Nationalization",
+          "summary": "Go to the UN, Accept Nationalization",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 3,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T3_B_E1",
+              "place": "Cairo",
+              "lat": 30.04,
+              "lng": 31.24,
+              "text": "Nasser wins anyway",
+              "insight": "but he owes you nothing and needs the West",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T3_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower rewards restraint; the alliance is strengthened",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T3_B_E3",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France and Israel act alone",
+              "insight": "and fail faster",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T3_B_E4",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Eden survives; the empire's retreat is orderly, not panicked",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T3_B_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "The Commonwealth holds together",
+              "insight": "Nehru credits you.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "UK_T3_C",
+          "label": "Invade Openly, Alone, With US Notice",
+          "summary": "Invade Openly, Alone, With US Notice",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -8,
+            "ECON": -15,
+            "INFLUENCE": -15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T3_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower, warned in advance, still cuts you off",
+              "insight": "but slower",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T3_C_E2",
+              "place": "Port Said",
+              "lat": 31.26,
+              "lng": 32.3,
+              "text": "Occupation lasts months; a guerrilla war on the canal",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T3_C_E3",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "Your invasion still gives Moscow cover in Hungary",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T3_C_E4",
+              "place": "Baghdad",
+              "lat": 33.31,
+              "lng": 44.37,
+              "text": "The Iraqi monarchy falls in 1957, a year early, to anti-British officers",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T3_C_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Sterling collapses; IMF bailout.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "Suez",
+          "deck": "Nasser has nationalized the canal."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from London",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Cairo",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Arab nationalism is now anti-British"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T3_A",
+          "lines": {
+            "UK_T3_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T3_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T3_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T3_A",
+          "lines": {
+            "UK_T3_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T3_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T3_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T3_B",
+          "lines": {
+            "UK_T3_A": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T3_B": "The immediate budget holds. Watch the longer-term costs.",
+            "UK_T3_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T3_B",
+          "lines": {
+            "UK_T3_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T3_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T3_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T4",
+      "turn": 4,
+      "year": "1962",
+      "title": "Skybolt",
+      "situation": "The US has cancelled Skybolt, your planned nuclear delivery system. Your independent deterrent is about to become fiction. De Gaulle offers a Franco-British bomb. Kennedy offers Polaris — under NATO command, sort of.",
+      "choices": [
+        {
+          "id": "UK_T4_A",
+          "label": "Take Polaris From Kennedy",
+          "summary": "Take Polaris From Kennedy",
+          "historical": true,
+          "meterDelta": {
+            "ECON": 2,
+            "INFLUENCE": 3
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T4_A_E1",
+              "place": "Nassau",
+              "lat": 25.06,
+              "lng": -77.34,
+              "text": "The deal makes your deterrent dependent on US missiles forever",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T4_A_E2",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "De Gaulle vetoes your EEC entry weeks later",
+              "insight": "\"Britain is not European\"",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_A_E3",
+              "place": "Holy Loch",
+              "lat": 56.0,
+              "lng": -4.9,
+              "text": "US submarines use Holy Loch. Britain’s existing nuclear-disarmament movement gains a new focus.",
+              "insight": "CND formed in 1958, before the Polaris deal. New weapons gave an existing protest movement another target.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The special relationship is formalized as nuclear dependency",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T4_A_E5",
+              "place": "Canberra",
+              "lat": -35.28,
+              "lng": 149.13,
+              "text": "Australia sees Britain as a US satellite; turns to Washington.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "UK_T4_B",
+          "label": "Franco-British Bomb With de Gaulle",
+          "summary": "Franco-British Bomb With de Gaulle",
+          "historical": false,
+          "meterDelta": {
+            "ECON": -5,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T4_B_E1",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "A European deterrent; de Gaulle welcomes you into the EEC in 1963",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy is furious; US–UK intelligence sharing narrows",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T4_B_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "Germany is tempted to join the nuclear club",
+              "insight": "the US panics",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A European bomb changes Soviet targeting",
+              "insight": "Europe is a separate front",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_B_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Sovereignty preserved; costs doubled.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T4_C",
+          "label": "Abandon the Bomb — Spend on Industry",
+          "summary": "Abandon the Bomb — Spend on Industry",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 3,
+            "ECON": 8,
+            "INFLUENCE": -12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T4_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US quietly welcomes fewer nuclear powers",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T4_C_E2",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Britain enters the EEC as an equal (no nuclear rivalry)",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_C_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "1960s \"white heat\" industrial policy gets real money; decline slows",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Britain is removed from Soviet first-strike plans",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T4_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Britain leads non-proliferation",
+              "insight": "India delays its test.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "Skybolt",
+          "deck": "The US has cancelled Skybolt, your planned nuclear delivery system."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Paris",
+          "deck": "At stake: \"Britain is not European\""
+        },
+        {
+          "city": "Canberra",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T4_A",
+          "lines": {
+            "UK_T4_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T4_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T4_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T4_A",
+          "lines": {
+            "UK_T4_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T4_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T4_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T4_C",
+          "lines": {
+            "UK_T4_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "UK_T4_B": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T4_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T4_B",
+          "lines": {
+            "UK_T4_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T4_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T4_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T5",
+      "turn": 5,
+      "year": "1965",
+      "title": "East of Suez",
+      "situation": "Wilson's government is broke. The US wants British troops in Vietnam. Rhodesia has just declared white-minority independence. The Malaysia-Indonesia confrontation drags on.",
+      "choices": [
+        {
+          "id": "UK_T5_A",
+          "label": "Refuse Vietnam, Withdraw East of Suez by 1971",
+          "summary": "Refuse Vietnam, Withdraw East of Suez by 1971",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 4,
+            "ECON": 6,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T5_A_E1",
+              "place": "Saigon",
+              "lat": 10.82,
+              "lng": 106.63,
+              "text": "Not one British soldier",
+              "insight": "LBJ never forgives, but the alliance survives",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T5_A_E2",
+              "place": "Singapore",
+              "lat": 1.35,
+              "lng": 103.82,
+              "text": "British bases close; Singapore builds its own state",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T5_A_E3",
+              "place": "Salisbury, Rhodesia",
+              "lat": -17.83,
+              "lng": 31.05,
+              "text": "Sanctions, not force; UDI lasts 15 years",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T5_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US concludes it's alone in Asia",
+              "insight": "burden-sharing dies",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T5_A_E5",
+              "place": "Bahrain",
+              "lat": 26.23,
+              "lng": 50.59,
+              "text": "Gulf states become US-protected",
+              "insight": "the 1970s oil politics shift.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "UK_T5_B",
+          "label": "Send Troops to Vietnam",
+          "summary": "Send Troops to Vietnam",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -15,
+            "ECON": -8,
+            "INFLUENCE": 4
+          },
+          "flags": [
+            "VIETNAM_TOTAL"
+          ],
+          "effects": [
+            {
+              "id": "UK_T5_B_E1",
+              "place": "Saigon",
+              "lat": 10.82,
+              "lng": 106.63,
+              "text": "10,000 British troops; 2,000 dead; the antiwar movement splits Labour",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T5_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "LBJ rewards you with loans that save the pound (for now)",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T5_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Wilson falls in 1968 to his own left",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T5_B_E4",
+              "place": "Kuala Lumpur",
+              "lat": 3.14,
+              "lng": 101.69,
+              "text": "Malaysia and Australia join too",
+              "insight": "a Commonwealth front",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "UK_T5_B_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Britain becomes a Soviet target of propaganda",
+              "insight": "the Cold War comes home.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T5_C",
+          "label": "Use Force in Rhodesia",
+          "summary": "Use Force in Rhodesia",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -8,
+            "ECON": -6,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T5_C_E1",
+              "place": "Salisbury",
+              "lat": -17.83,
+              "lng": 31.05,
+              "text": "Paratroopers end UDI; a Black-majority Zimbabwe forms in 1966, not 1980",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T5_C_E2",
+              "place": "Pretoria",
+              "lat": -25.75,
+              "lng": 28.19,
+              "text": "Apartheid South Africa is isolated a decade early",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "UK_T5_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US supports you",
+              "insight": "a rare colonial-era approval",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T5_C_E4",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Tory right splits; the Conservative Party realigns",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T5_C_E5",
+              "place": "Lagos",
+              "lat": 6.52,
+              "lng": 3.38,
+              "text": "Nigeria and the Commonwealth back Britain",
+              "insight": "the Commonwealth is revived.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "East of Suez",
+          "deck": "Wilson's government is broke."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Singapore",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Singapore",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T5_A",
+          "lines": {
+            "UK_T5_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T5_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T5_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T5_A",
+          "lines": {
+            "UK_T5_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T5_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T5_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T5_A",
+          "lines": {
+            "UK_T5_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "UK_T5_B": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T5_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T5_C",
+          "lines": {
+            "UK_T5_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T5_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T5_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T6",
+      "turn": 6,
+      "year": "1973",
+      "title": "Into Europe",
+      "situation": "You've joined the EEC. The oil shock hits; miners strike; the three-day week. Nixon's détente leaves you a bystander. Northern Ireland burns.",
+      "choices": [
+        {
+          "id": "UK_T6_A",
+          "label": "Stay In Europe, Ride Out the Crisis",
+          "summary": "Stay In Europe, Ride Out the Crisis",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -8,
+            "ECON": -6,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T6_A_E1",
+              "place": "Brussels",
+              "lat": 50.85,
+              "lng": 4.35,
+              "text": "Britain in the EEC; a 1975 referendum confirms it",
+              "insight": "Europe is your future, uncertainly",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_A_E2",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Heath falls; Wilson returns; inflation hits 25%",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_A_E3",
+              "place": "Belfast",
+              "lat": 54.6,
+              "lng": -5.93,
+              "text": "Troubles peak",
+              "insight": "500 dead in 1972; a war that lasts 25 years",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_A_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kissinger's \"Year of Europe\" is ignored; the US treats you as one of nine",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T6_A_E5",
+              "place": "Riyadh",
+              "lat": 24.71,
+              "lng": 46.68,
+              "text": "You cut deals with Gulf monarchies",
+              "insight": "arms for oil.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "UK_T6_B",
+          "label": "Leave Europe, Renew Atlantic Ties",
+          "summary": "Leave Europe, Renew Atlantic Ties",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 2,
+            "ECON": -4,
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T6_B_E1",
+              "place": "Brussels",
+              "lat": 50.85,
+              "lng": 4.35,
+              "text": "EEC proceeds without you",
+              "insight": "a Franco-German Europe",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon welcomes a loyal ally; trade deals follow",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T6_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Sterling area revived, weakly",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_B_E4",
+              "place": "Belfast",
+              "lat": 54.6,
+              "lng": -5.93,
+              "text": "Without European legal pressure, Northern Ireland policy is harsher",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_B_E5",
+              "place": "Dublin",
+              "lat": 53.35,
+              "lng": -6.26,
+              "text": "Ireland in the EEC, Britain out",
+              "insight": "the border becomes an EU frontier decades early.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T6_C",
+          "label": "Nationalize North Sea Oil, Go Semi-Neutral",
+          "summary": "Nationalize North Sea Oil, Go Semi-Neutral",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 6,
+            "ECON": 10,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T6_C_E1",
+              "place": "Aberdeen",
+              "lat": 57.15,
+              "lng": -2.09,
+              "text": "A Norwegian-style oil fund is created",
+              "insight": "Britain's 1980s look different",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Britain distances from NATO's nuclear planning",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T6_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "You're courted as a \"European neutral\" leader",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_C_E4",
+              "place": "Brussels",
+              "lat": 50.85,
+              "lng": 4.35,
+              "text": "The EEC accepts a semi-detached Britain",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T6_C_E5",
+              "place": "Edinburgh",
+              "lat": 55.95,
+              "lng": -3.19,
+              "text": "Scottish nationalism, fed by oil, surges.",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "Into Europe",
+          "deck": "You've joined the EEC."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from London",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T6_A",
+          "lines": {
+            "UK_T6_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T6_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T6_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T6_A",
+          "lines": {
+            "UK_T6_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T6_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T6_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T6_C",
+          "lines": {
+            "UK_T6_A": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T6_B": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T6_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T6_A",
+          "lines": {
+            "UK_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T6_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T6_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T7",
+      "turn": 7,
+      "year": "1982",
+      "title": "Falklands",
+      "situation": "Argentina's junta has invaded the Falklands. Thatcher is deeply unpopular; the economy is in recession. The US is torn between two allies. Reagan wants Pershing missiles in Britain.",
+      "choices": [
+        {
+          "id": "UK_T7_A",
+          "label": "Retake the Islands, Deploy Cruise Missiles",
+          "summary": "Retake the Islands, Deploy Cruise Missiles",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 15,
+            "ECON": -5,
+            "INFLUENCE": 12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T7_A_E1",
+              "place": "Port Stanley",
+              "lat": -51.7,
+              "lng": -57.85,
+              "text": "255 British and 649 Argentine dead; victory in 10 weeks",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_A_E2",
+              "place": "Buenos Aires",
+              "lat": -34.6,
+              "lng": -58.38,
+              "text": "The junta collapses; democracy returns to Argentina",
+              "insight": "an unintended gift",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan tilts to you; the alliance is reborn",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_A_E4",
+              "place": "Greenham Common",
+              "lat": 51.38,
+              "lng": -1.28,
+              "text": "Women's peace camp becomes the symbol of 1980s protest",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T7_A_E5",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher wins 1983 in a landslide",
+              "insight": "the miners' strike and privatization follow.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T7_B",
+          "label": "Negotiate — Accept Shared Sovereignty",
+          "summary": "Negotiate — Accept Shared Sovereignty",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -15,
+            "INFLUENCE": -12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T7_B_E1",
+              "place": "Port Stanley",
+              "lat": -51.7,
+              "lng": -57.85,
+              "text": "A leaseback deal; islanders furious",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_B_E2",
+              "place": "Buenos Aires",
+              "lat": -34.6,
+              "lng": -58.38,
+              "text": "The junta survives on triumph; repression continues into the late 1980s",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher falls; Labour's Foot wins 1983 on a unilateral-disarmament platform",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T7_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Cruise missiles refused",
+              "insight": "Reagan's INF strategy weakens",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_B_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Politburo notes NATO's second-largest power going soft.",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T7_C",
+          "label": "Retake the Islands, Refuse Cruise Missiles",
+          "summary": "Retake the Islands, Refuse Cruise Missiles",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 10,
+            "ECON": -6,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T7_C_E1",
+              "place": "Port Stanley",
+              "lat": -51.7,
+              "lng": -57.85,
+              "text": "Victory as history",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Reagan, denied bases, moves the missiles to Italy and Germany",
+              "insight": "Germany's peace movement grows",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T7_C_E3",
+              "place": "Bonn",
+              "lat": 50.74,
+              "lng": 7.1,
+              "text": "West Germany feels singled out",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T7_C_E4",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher wins on the war alone; CND's split with Labour never happens",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T7_C_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Andropov sees British \"independence\" as a wedge",
+              "insight": "offers a bilateral deal.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "Falklands",
+          "deck": "Argentina's junta has invaded the Falklands."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Buenos Aires",
+          "deck": "At stake: an unintended gift"
+        },
+        {
+          "city": "Port Stanley",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T7_A",
+          "lines": {
+            "UK_T7_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T7_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T7_A",
+          "lines": {
+            "UK_T7_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T7_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T7_B",
+          "lines": {
+            "UK_T7_A": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T7_B": "The immediate budget holds. Watch the longer-term costs.",
+            "UK_T7_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T7_A",
+          "lines": {
+            "UK_T7_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T7_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T7_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "UK_T8",
+      "turn": 8,
+      "year": "1989",
+      "title": "The Wall and the Lady",
+      "situation": "Gorbachev is a man you can \"do business with.\" The Wall is falling; Kohl wants rapid German unification; Thatcher fears it. Europe is moving toward a single currency.",
+      "choices": [
+        {
+          "id": "UK_T8_A",
+          "label": "Oppose Unification, Lose; Stay Out of the Euro",
+          "summary": "Oppose Unification, Lose; Stay Out of the Euro",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -5,
+            "INFLUENCE": -4
+          },
+          "flags": [
+            "GORBY_REFORM"
+          ],
+          "effects": [
+            {
+              "id": "UK_T8_A_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Unification 1990 over your objection; Kohl remembers",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_A_E2",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "Mitterrand trades unification for the euro",
+              "insight": "Britain opts out",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_A_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher falls in 1990 to her own party over Europe",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Your friendship with Gorbachev gives you no leverage on Germany",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_A_E5",
+              "place": "Brussels",
+              "lat": 50.85,
+              "lng": 4.35,
+              "text": "The Maastricht opt-outs shape Britain's semi-detached EU membership until 2016.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T8_B",
+          "label": "Back Unification, Join the Euro Project",
+          "summary": "Back Unification, Join the Euro Project",
+          "historical": false,
+          "meterDelta": {
+            "ECON": -3,
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "UK_T8_B_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Britain is the honest broker; Kohl becomes an ally",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_B_E2",
+              "place": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "text": "Britain joins the euro in 1999; the City is at the center of Europe's finance",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_B_E3",
+              "place": "London",
+              "lat": 51.51,
+              "lng": -0.13,
+              "text": "Thatcher is replaced by a pro-European Tory",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A Britain inside Europe is a weaker US bridge",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T8_B_E5",
+              "place": "Edinburgh",
+              "lat": 55.95,
+              "lng": -3.19,
+              "text": "Scottish independence loses its \"Europe\" argument.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "UK_T8_C",
+          "label": "Push for a Neutral Unified Germany",
+          "summary": "Push for a Neutral Unified Germany",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -5,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "FRG_NEUTRAL"
+          ],
+          "effects": [
+            {
+              "id": "UK_T8_C_E1",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Germany unites neutral, out of NATO",
+              "insight": "Gorbachev's dream",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Bush is furious",
+              "insight": "the NATO order is broken",
+              "region": "Americas"
+            },
+            {
+              "id": "UK_T8_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A grateful Gorbachev survives longer; the coup of 1991 is smaller",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_C_E4",
+              "place": "Warsaw",
+              "lat": 52.23,
+              "lng": 21.01,
+              "text": "Poland, with a neutral Germany, seeks NATO alone",
+              "insight": "and fast",
+              "region": "Europe"
+            },
+            {
+              "id": "UK_T8_C_E5",
+              "place": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "text": "France doubts a neutral giant next door",
+              "insight": "the Franco-German engine stalls.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "London",
+          "name": "The National Dispatch",
+          "headline": "The Wall and the Lady",
+          "deck": "Gorbachev is a man you can \"do business with.\" The Wall is falling; Kohl wants rapid German unification; Thatcher fears it."
+        },
+        {
+          "city": "Moscow",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "UK_T8_A",
+          "lines": {
+            "UK_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T8_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "UK_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "UK_T8_C",
+          "lines": {
+            "UK_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T8_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "UK_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "UK_T8_A",
+          "lines": {
+            "UK_T8_A": "The immediate budget holds. Watch the longer-term costs.",
+            "UK_T8_B": "We will pay for this. Decide what domestic spending can wait.",
+            "UK_T8_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "UK_T8_B",
+          "lines": {
+            "UK_T8_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "UK_T8_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "UK_T8_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    }
+  ]
+}

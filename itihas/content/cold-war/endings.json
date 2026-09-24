@@ -1,0 +1,542 @@
+[
+  {
+    "id": "E01_NUCLEAR_WINTER",
+    "title": "Nuclear Winter",
+    "priority": 100,
+    "card": "The map goes dark. Cities become numbers; numbers become silence. There is no debrief for the dead. Somewhere, a radio operator keeps calling a base that no longer answers. You made choices that seemed reasonable one at a time. Together they built a ladder, and everyone climbed.",
+    "reality": "counterfactual, nearly historical. This never happened, and historians can name at least five nights it almost did: October 27, 1962 (a U-2 shot down over Cuba, a submarine nearly launching a nuclear torpedo); March 1969 (Ussuri River); November 1979 and June 1980 (NORAD false alarms); September 26, 1983 (Petrov) and November 1983 (Able Archer). Each time a specific human being decided not to act.",
+    "discuss": [
+      "Deterrence held for 44 years — was that a system working or a lucky streak?",
+      "Who should have the authority to launch, and how many people should it take?",
+      "What made the people who said \"no\" say no?"
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "meter": "TENSION",
+            "op": ">=",
+            "value": 100
+          },
+          {
+            "all": [
+              {
+                "flag": "NUKE_USED",
+                "set": true
+              },
+              {
+                "meter": "TENSION",
+                "op": ">=",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tagline": "The map goes dark."
+  },
+  {
+    "id": "E02_LIMITED_EXCHANGE",
+    "title": "The Day After",
+    "priority": 95,
+    "card": "One weapon was used. Then — somehow — nothing else. A ceasefire signed by people who could not believe they were still alive. Hundreds of thousands are dead in one region; the rest of the world watches the fallout maps and learns the word \"hibakusha.\" Every treaty for the next century starts with that day.",
+    "reality": "counterfactual. The only nuclear use in war remains Hiroshima and Nagasaki (1945). Historians debate whether a \"limited\" exchange could stay limited; most war plans of the era said no, but Kennedy's and Khrushchev's back-channel in 1962 suggests leaders looked for exits even at the top of the ladder.",
+    "discuss": [
+      "Could a nuclear war ever be \"limited\"?",
+      "How do societies rebuild trust after an unthinkable act?",
+      "Which of your choices made this weapon usable?"
+    ],
+    "conditions": [
+      {
+        "flag": "NUKE_USED",
+        "set": true
+      },
+      {
+        "meter": "TENSION",
+        "op": "<=",
+        "value": 89
+      }
+    ],
+    "tagline": "One weapon was used."
+  },
+  {
+    "id": "E03_DRAGON_WAR",
+    "title": "The Dragon Front",
+    "priority": 90,
+    "card": "The world's two largest communist powers — or China and the West — went to war along 4,000 kilometers of border. Millions died in a war of mountains and rivers that no map could hold. When it ended, Asia was a different continent, and everyone's alliances had flipped at least once.",
+    "reality": "counterfactual, close. In 1969 the USSR and China fought border battles at Zhenbao/Damansky Island and Moscow sounded out Washington about striking China's nuclear sites. Nixon said no. In 1950–53 China and the US fought each other openly in Korea; MacArthur's plan to bomb Manchuria was rejected by Truman.",
+    "discuss": [
+      "Why did the Sino-Soviet split matter more than the US–Soviet one for Asia?",
+      "What stopped the 1969 crisis from becoming this?",
+      "Which side \"won,\" and did anyone?"
+    ],
+    "conditions": [
+      {
+        "flag": "CHINA_WAR",
+        "set": true
+      }
+    ],
+    "tagline": "The world's two largest communist powers — or China and the West — went to war along 4,000 kilometers of border."
+  },
+  {
+    "id": "E04_BERLIN_1948",
+    "title": "The Berlin War",
+    "priority": 88,
+    "card": "It started over a currency and ended over a city. Tanks met at checkpoints; bombers waited on runways. Europe, which had buried its dead only three years earlier, dug again. Whether it stayed conventional depended on generals who had never expected to fight this soon.",
+    "reality": "counterfactual. The 1948–49 Blockade was answered by an airlift, not force; both sides chose not to shoot. In 1961 US and Soviet tanks faced each other at Checkpoint Charlie for 16 hours before both backed away. Berlin was the most dangerous place on earth, and it never fired.",
+    "discuss": [
+      "Why was Berlin worth risking a war for — to both sides?",
+      "The airlift was a \"peaceful\" answer; was it also a form of pressure?",
+      "What does a divided city teach about how wars start?"
+    ],
+    "conditions": [
+      {
+        "flag": "BERLIN_WAR",
+        "set": true
+      }
+    ],
+    "tagline": "It started over a currency and ended over a city."
+  },
+  {
+    "id": "E05_SECOND_KOREA",
+    "title": "Peninsula in Flames",
+    "priority": 86,
+    "card": "Korea did not freeze at the 38th parallel. Superpower armies met each other directly on a peninsula the size of Minnesota. Japan rearmed in a year. When the guns stopped, one Korea existed — and the world had learned how fast a \"limited\" war stops being limited.",
+    "reality": "counterfactual. Historically Soviet pilots secretly flew in Korea, Chinese \"volunteers\" fought openly, and the US considered nuclear weapons more than once but Soviet ground forces never entered and the line held roughly where it began. The armistice of 1953 has never become a peace treaty.",
+    "discuss": [
+      "Why did both superpowers hide their direct clashes in Korea?",
+      "Was a divided Korea the least-bad outcome?",
+      "How did Japan's economic miracle depend on a war next door?"
+    ],
+    "conditions": [
+      {
+        "flag": "KOREA_SECOND_WAR",
+        "set": true
+      }
+    ],
+    "tagline": "Korea did not freeze at the 38th parallel."
+  },
+  {
+    "id": "E06_COUP_AT_HOME",
+    "title": "Collapse at Home",
+    "priority": 84,
+    "card": "The enemy never had to invade. Your own streets did the work: strikes, coups, or a legislature that would not fund one more crisis. History will record that {country} lost the Cold War to itself — a reminder that foreign policy is paid for in domestic currency.",
+    "reality": "historical, in a sense. The USSR dissolved from within in 1991 without a shot from NATO. In the US, Vietnam broke two presidencies. Regimes in Argentina (1983) and Greece (1974) fell to the costs of their own military adventures.",
+    "discuss": [
+      "Which is more dangerous to a government: an enemy abroad or a crisis at home?",
+      "How did your foreign choices show up in your stability meter?",
+      "Does a democracy or a dictatorship handle a long confrontation better?"
+    ],
+    "conditions": [
+      {
+        "meter": "STABILITY",
+        "op": "<=",
+        "value": 10
+      }
+    ],
+    "tagline": "The enemy never had to invade."
+  },
+  {
+    "id": "E07_WEST_BROKE",
+    "title": "The West Goes Broke",
+    "priority": 82,
+    "card": "Containment cost more than the container could bear. Inflation, debt, and defense budgets that ate schools and hospitals — by the mid-1980s the Western economies were the ones asking for loans. The Cold War did not end; it changed which side was tired.",
+    "reality": "counterfactual. The real 1970s came close: stagflation, the 1971 dollar shock, the 1973 oil crisis. But Western growth recovered and the USSR's economy a third the size — was the one that could not sustain 20% of GDP on defense.",
+    "discuss": [
+      "Is economic strength the \"real\" weapon of a long rivalry?",
+      "What did the US and its allies spend on the Cold War, and what else could it have bought?",
+      "What kept the West from this ending historically?"
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "flag": "WEST_ECON_COLLAPSE",
+            "set": true
+          },
+          {
+            "all": [
+              {
+                "any": [
+                  {
+                    "country": "USA"
+                  },
+                  {
+                    "country": "UK"
+                  },
+                  {
+                    "country": "FRG"
+                  }
+                ]
+              },
+              {
+                "meter": "ECON",
+                "op": "<=",
+                "value": 12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tagline": "Containment cost more than the container could bear."
+  },
+  {
+    "id": "E08_RED_EUROPE",
+    "title": "Red Dawn Over Europe",
+    "priority": 80,
+    "card": "Poland was crushed by foreign tanks; the Wall stood; Western Europe's peace movements chose neutrality over missiles. By 1990 the Iron Curtain had moved west in spirit if not in territory, and Moscow's hardliners — never reformers — ruled a sullen, armed, poor empire that endured.",
+    "reality": "counterfactual. Poland's martial law in 1981 was imposed by Poles, not Soviets; Western Europe deployed the missiles despite the protests; and the USSR chose a reformer in 1985. Each was a close-run decision.",
+    "discuss": [
+      "Why did Moscow let Polish generals do the job in 1981?",
+      "Was Western Europe's peace movement naïve, wise, or both?",
+      "What would a Soviet Union led by hardliners have looked like in 2000?"
+    ],
+    "conditions": [
+      {
+        "flag": "POLAND_INVADED",
+        "set": true
+      },
+      {
+        "flag": "WALL_STANDS",
+        "set": true
+      },
+      {
+        "any": [
+          {
+            "notCountry": "USSR"
+          },
+          {
+            "meter": "INFLUENCE",
+            "op": ">=",
+            "value": 60
+          }
+        ]
+      }
+    ],
+    "tagline": "Poland was crushed by foreign tanks; the Wall stood; Western Europe's peace movements chose neutrality over missiles."
+  },
+  {
+    "id": "E09_FORTRESS_AMERICA",
+    "title": "Fortress America",
+    "priority": 78,
+    "card": "You brought the troops home in 1947 and never sent them back. Europe went its own way — some of it east. Asia armed itself. America was safe, rich, and alone, watching a world it had declined to shape. The Cold War happened; you were not in it.",
+    "reality": "counterfactual. Isolationism was the strongest tradition in American foreign policy until 1941 and remained powerful in 1947 the Marshall Plan passed only after the Czech coup frightened Congress. Historians argue about what a US-less Europe would have looked like; few think it would have been freer.",
+    "discuss": [
+      "Is withdrawal a decision or an absence of one?",
+      "What did the US get — and give up — by staying in Europe for 45 years?",
+      "Could a country be \"safe\" while the rest of the world is not?"
+    ],
+    "conditions": [
+      {
+        "flag": "US_ISOLATION",
+        "set": true
+      },
+      {
+        "country": "USA"
+      },
+      {
+        "meter": "INFLUENCE",
+        "op": "<=",
+        "value": 30
+      }
+    ],
+    "tagline": "You brought the troops home in 1947 and never sent them back."
+  },
+  {
+    "id": "E10_EURASIAN_BLOC",
+    "title": "The Eurasian Bloc",
+    "priority": 76,
+    "card": "Moscow and Beijing healed their split and never talked to Washington. A single communist landmass from Berlin to Hanoi, 1.2 billion people, two nuclear arsenals, one enemy. The West's \"triangle\" never existed; the world was a line, and everyone stood on one side of it.",
+    "reality": "counterfactual. The Sino-Soviet alliance of 1950 lasted barely a decade, broken by ideology, ego, and the border. Nixon's 1972 opening exploited a split that already existed. Whether the alliance could have been repaired after 1969 is one of the great \"what ifs.\"",
+    "discuss": [
+      "Why did two communist giants hate each other more than they hated the West?",
+      "How much of the West's Cold War strategy depended on the split?",
+      "What does the modern China–Russia relationship owe to this history?"
+    ],
+    "conditions": [
+      {
+        "flag": "SINO_SOVIET_HEAL",
+        "set": true
+      },
+      {
+        "flag": "NO_DETENTE",
+        "set": true
+      }
+    ],
+    "tagline": "Moscow and Beijing healed their split and never talked to Washington."
+  },
+  {
+    "id": "E11_IRON_CURTAIN_HOLDS",
+    "title": "Iron Curtain Holds",
+    "priority": 74,
+    "card": "No glasnost. No Wall coming down. Leipzig's marchers were shot, the Baltics were held by tanks, and the Soviet Union entered the 21st century as a nuclear-armed, shrinking, stubborn state — a North Korea the size of a continent. Nobody won. Nobody lost. Everybody waited.",
+    "reality": "counterfactual, very close. Gorbachev's selection in March 1985 was a Politburo vote. In October 1989 East German troops in Leipzig had live ammunition and orders that were never given. In January 1991 Soviet tanks did kill 14 people in Vilnius and then stopped. The peaceful ending was chosen, repeatedly, by people who could have chosen otherwise.",
+    "discuss": [
+      "Why do we assume the USSR \"had to\" fall?",
+      "What would daily life in a 1999 East Germany be like?",
+      "Can force hold an empire together indefinitely — and at what cost?"
+    ],
+    "conditions": [
+      {
+        "flag": "GORBY_HARDLINE",
+        "set": true
+      },
+      {
+        "flag": "WALL_STANDS",
+        "set": true
+      }
+    ],
+    "tagline": "No glasnost."
+  },
+  {
+    "id": "E12_TWO_MARKETS",
+    "title": "Two Roads to Market",
+    "priority": 72,
+    "card": "The USSR did what China did: markets, no ballots. By 2000 two authoritarian capitalist giants faced a democratic West that had never planned for rivals who were rich. The Cold War did not end in 1991. It changed uniforms.",
+    "reality": "counterfactual. Kosygin's 1965 reforms and China's 1978 reforms were the same idea; the USSR abandoned it, China did not. Whether a Soviet \"Chinese path\" could have worked with a far more industrialized, urban economy and a bloc to subsidize — is fiercely debated.",
+    "discuss": [
+      "Why did China's reforms succeed where Soviet ones failed?",
+      "Is a market economy possible without political freedom? Look at the evidence.",
+      "Is this ending better or worse than the historical one — and for whom?"
+    ],
+    "conditions": [
+      {
+        "flag": "USSR_CHINESE_PATH",
+        "set": true
+      },
+      {
+        "flag": "USSR_SURVIVES",
+        "set": true
+      }
+    ],
+    "tagline": "The USSR did what China did: markets, no ballots."
+  },
+  {
+    "id": "E13_GRAND_BARGAIN",
+    "title": "The Grand Bargain",
+    "priority": 70,
+    "card": "The West bailed Moscow out. A reforming, confederal Soviet Union survived into the 1990s — no Yeltsin, no oligarchs, no fifteen new states, no Ukrainian independence, no NATO expansion, no 2022. Also no self-determination for 100 million people who never got to vote on their country. This is the ending where \"better\" depends on who's asking.",
+    "reality": "counterfactual, proposed. In 1991 the \"Grand Bargain\" (~$30 billion in aid for reform) was pitched to Bush and rejected. Germany paid Gorbachev DM 15 billion for reunification. Whether money could have saved the union is unclear; the republics were already leaving.",
+    "discuss": [
+      "Should the West have paid to keep the USSR together?",
+      "Whose interests would that have served — and whose wouldn't it?",
+      "How do you weigh stability against self-determination?"
+    ],
+    "conditions": [
+      {
+        "flag": "USSR_SURVIVES",
+        "set": true
+      },
+      {
+        "flag": "GORBY_REFORM",
+        "set": true
+      }
+    ],
+    "tagline": "The West bailed Moscow out."
+  },
+  {
+    "id": "E14_EARLY_THAW",
+    "title": "The Early Thaw",
+    "priority": 68,
+    "card": "Hungary or Czechoslovakia was allowed to breathe — and the bloc did not collapse. A neutral belt formed in Central Europe; the arms race slowed; the Cold War thawed twenty years early into something colder than peace but warmer than war. The 1970s felt like the 1990s.",
+    "reality": "counterfactual. Austria (1955) proves a neutral state next to the bloc was possible; Finland proves a tolerated one was. Nagy in 1956 and Dubček in 1968 asked for versions of this and were crushed. Whether Moscow could have tolerated it without the whole empire unraveling is the question.",
+    "discuss": [
+      "Why did Moscow accept a neutral Austria but not a neutral Hungary?",
+      "Would a thaw in 1956 have made 1989 unnecessary — or impossible?",
+      "What does \"neutral\" cost a small country?"
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "flag": "HUNGARY_FREE",
+            "set": true
+          },
+          {
+            "flag": "PRAGUE_FREE",
+            "set": true
+          }
+        ]
+      },
+      {
+        "meter": "TENSION",
+        "op": "<=",
+        "value": 45
+      }
+    ],
+    "tagline": "Hungary or Czechoslovakia was allowed to breathe — and the bloc did not collapse."
+  },
+  {
+    "id": "E15_PACIFIC_CENTURY",
+    "title": "The Pacific Century",
+    "priority": 66,
+    "card": "China reformed its economy *and* its politics, and did not shoot its students. By 2000 it was rich, roughly free, and the center of gravity of the world economy. The Cold War's last decade was about Beijing, not Moscow, and the 21st century arrived early.",
+    "reality": "counterfactual. Zhao Ziyang's faction argued for dialogue in May 1989 and lost; Zhao spent 15 years under house arrest. China's economic rise happened anyway; its political opening did not. Historians disagree sharply about whether the two could have gone together.",
+    "discuss": [
+      "Why did China's leaders conclude the USSR's mistake was *political* opening?",
+      "What does a \"democratic China\" scenario assume, and are the assumptions fair?",
+      "How has Tiananmen shaped how the world sees China today?"
+    ],
+    "conditions": [
+      {
+        "country": "CHN"
+      },
+      {
+        "meter": "ECON",
+        "op": ">=",
+        "value": 75
+      },
+      {
+        "flag": "TIANANMEN",
+        "set": false
+      }
+    ],
+    "tagline": "China reformed its economy *and* its politics, and did not shoot its students."
+  },
+  {
+    "id": "E16_NONALIGNED_WORLD",
+    "title": "The Third Way Wins",
+    "priority": 64,
+    "card": "Non-alignment was not a dodge; it was a plan. India, Egypt, Yugoslavia, and dozens of new nations built a bloc that made both superpowers bid for its favor — and got development instead of proxy wars. The Cold War was still fought, but the Global South declined to be its battlefield.",
+    "reality": "partly historical. The Non-Aligned Movement (1961) was real and at times powerful at the UN, over Suez, in decolonization. But it was undercut by its members' own alignments (India–USSR, Cuba–USSR) and by superpower interventions from the Congo to Afghanistan. Its \"victory\" is a counterfactual; its existence is not.",
+    "discuss": [
+      "Was non-alignment principled or opportunistic — and can it be both?",
+      "Why did the superpowers find it so threatening?",
+      "Where is the NAM today, and does it matter?"
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "flag": "NAM_STRONG",
+            "set": true
+          },
+          {
+            "all": [
+              {
+                "country": "IND"
+              },
+              {
+                "meter": "INFLUENCE",
+                "op": ">=",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tagline": "Non-alignment was not a dodge; it was a plan."
+  },
+  {
+    "id": "E17_ENDLESS_PROXIES",
+    "title": "Proxy Wars Without End",
+    "priority": 62,
+    "card": "No nuclear war — just every other kind. Vietnam, Angola, Afghanistan, Central America, the Horn of Africa: the superpowers never touched each other and burned everyone else. The Cold War did not end in 1991 in this world; it simply ran out of new places to fight.",
+    "reality": "historical, in a sense. Around 20 million people died in Cold War proxy conflicts. Your ending exaggerates the pattern but does not invent it. The difference is that the historical rivalry eventually exhausted one side; yours kept both fed.",
+    "discuss": [
+      "Who paid the Cold War's real death toll?",
+      "Why is \"no direct war\" counted as success?",
+      "Pick one proxy war and trace its causes back to a superpower decision in this game."
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "flag": "VIETNAM_TOTAL",
+            "set": true
+          },
+          {
+            "all": [
+              {
+                "meter": "TENSION",
+                "op": ">=",
+                "value": 65
+              },
+              {
+                "meter": "TENSION",
+                "op": "<=",
+                "value": 89
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tagline": "No nuclear war — just every other kind."
+  },
+  {
+    "id": "E18_QUIET_DIVIDEND",
+    "title": "The Quiet Dividend",
+    "priority": 60,
+    "card": "No Vietnam. No Afghanistan. Two wars that never happened, two generations who came home because they never left, and two superpowers that spent the money elsewhere. The Cold War ended anyway — a bit later, a bit quieter, and without the wounds that shaped the 1970s and the 2000s.",
+    "reality": "counterfactual. Both interventions were argued against at the time by George Ball in Washington (1965) and Alexei Kosygin in Moscow (1979). Historians generally agree the US could have avoided Vietnam without losing the Cold War; they are less sure the USSR could have avoided Afghanistan without losing Central Asia's confidence.",
+    "discuss": [
+      "What made Vietnam and Afghanistan seem necessary to the people who chose them?",
+      "What would each country have done with the money and the lives?",
+      "Which \"quiet\" decisions in history deserve more credit?"
+    ],
+    "conditions": [
+      {
+        "flag": "VIETNAM_NEUTRAL",
+        "set": true
+      },
+      {
+        "flag": "AFGHAN_SKIPPED",
+        "set": true
+      }
+    ],
+    "tagline": "No Vietnam."
+  },
+  {
+    "id": "E19_HISTORY_AS_IT_WAS",
+    "title": "1991: The Long Peace",
+    "priority": 58,
+    "card": "Forty-four years, no direct war between the superpowers, and one December night the red flag comes down over the Kremlin. You made most of the calls the real leaders made. Whether that's wisdom or luck is the question this whole game is about.",
+    "reality": "historical. The Cold War ended not with a battle but with a bankruptcy, a botched press conference, and a general secretary who would not order his soldiers to fire. Around 20 million died in its proxy wars anyway in Korea, Vietnam, Afghanistan, Angola, Central America.",
+    "discuss": [
+      "Was the peaceful ending inevitable, or a near miss?",
+      "Who \"won\"? Ask a Vietnamese, a Pole, and an Angolan.",
+      "Which of your choices would you make differently knowing what you know now?"
+    ],
+    "conditions": [
+      {
+        "any": [
+          {
+            "historicalPct": ">=",
+            "value": 75
+          },
+          {
+            "all": [
+              {
+                "flag": "GORBY_REFORM",
+                "set": true
+              },
+              {
+                "flag": "USSR_SURVIVES",
+                "set": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tagline": "Forty-four years, no direct war between the superpowers, and one December night the red flag comes down over the Kremlin."
+  },
+  {
+    "id": "E20_FROZEN_PEACE",
+    "title": "Frozen Peace",
+    "priority": 0,
+    "card": "Nothing broke. Nothing healed. The Wall stands or falls; the missiles stay or go; the two blocs glare at each other into a new century, neither strong enough to win nor weak enough to quit. Your path was careful and strange, and it produced a world that simply… continued.",
+    "reality": "counterfactual, but the most common \"expected\" future in 1985. Almost no one in 1985 predicted the Cold War would end within six years. Analysts on both sides assumed a permanent standoff. Your ending is what the experts thought would happen.",
+    "discuss": [
+      "Why did almost nobody see 1989 coming?",
+      "Is a \"frozen\" peace a success or a failure?",
+      "What sudden changes in today's world might experts be missing?"
+    ],
+    "conditions": [],
+    "tagline": "Nothing broke."
+  }
+]

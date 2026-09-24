@@ -1,0 +1,62 @@
+[
+  {
+    "id": "arkhipov",
+    "name": "Arkhipov Award",
+    "description": "Choose de-escalation when tension is at least 80."
+  },
+  {
+    "id": "historian",
+    "name": "Historian",
+    "description": "Make at least seven historical decisions."
+  },
+  {
+    "id": "chaos",
+    "name": "Chaos Theorist",
+    "description": "Survive eight decisions without following history."
+  },
+  {
+    "id": "collector",
+    "name": "Butterfly Collector",
+    "description": "Open every consequence in a complete game."
+  },
+  {
+    "id": "passport",
+    "name": "Passport",
+    "description": "Finish as three different countries."
+  },
+  {
+    "id": "perspective",
+    "name": "Perspective",
+    "description": "Play the same era as the US and USSR."
+  },
+  {
+    "id": "long-game",
+    "name": "Long Game",
+    "description": "Reach The Long Peace or The Grand Bargain."
+  },
+  {
+    "id": "cassandra",
+    "name": "Cassandra",
+    "description": "Predict a historically followed advisor six times in one game."
+  },
+  {
+    "id": "treasurer",
+    "name": "Treasurer’s Friend",
+    "description": "Finish with an economy of at least 80."
+  },
+  {
+    "id": "peace",
+    "name": "No Man’s Land",
+    "description": "Finish with tension at 20 or below."
+  },
+  {
+    "id": "nonaligned",
+    "name": "Non-Aligned",
+    "description": "Reach The Third Way Wins."
+  },
+  {
+    "id": "reader",
+    "name": "Debrief Reader",
+    "description": "Open all three discussion questions."
+  }
+]

@@ -1,0 +1,2044 @@
+{
+  "id": "CUB",
+  "name": "Cuba",
+  "capital": "Havana",
+  "lat": 23.11,
+  "lng": -82.37,
+  "intro": "It's 1953. You're 26, a lawyer, and you've just decided to attack an army barracks with 130 friends. Cuba is a casino for Americans and a sugar plantation for their companies; Batista took power in a coup. Ninety miles away sits the most powerful country on earth. You will play the revolution — and then the state it builds. Every choice will be watched from Washington and Moscow. Choose how small a country stands up.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 40,
+    "ECON": 30,
+    "INFLUENCE": 20
+  },
+  "nodes": [
+    {
+      "id": "CUB_T1",
+      "turn": 1,
+      "year": "1953–56",
+      "title": "Moncada",
+      "situation": "Attack the Moncada barracks, or build a political movement and wait for elections Batista may never hold?",
+      "choices": [
+        {
+          "id": "CUB_T1_A",
+          "label": "Attack",
+          "summary": "Attack",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -5,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T1_A_E1",
+              "place": "Santiago de Cuba",
+              "lat": 20.02,
+              "lng": -75.83,
+              "text": "The attack fails; 60 rebels are tortured and killed; Castro's trial speech, \"History will absolve me,\" makes him famous",
+              "insight": "failure as marketing",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_A_E2",
+              "place": "Mexico City",
+              "lat": 19.43,
+              "lng": -99.13,
+              "text": "Exiled, you meet an Argentine doctor named Guevara",
+              "insight": "the revolution gets its second face",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The Eisenhower administration keeps arming Batista",
+              "insight": "the US chooses the devil it knows",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_A_E4",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Batista cancels elections and tortures dissidents",
+              "insight": "repression recruits for you",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_A_E5",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Latin American students take note",
+              "insight": "armed struggle becomes a template.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T1_B",
+          "label": "Build a Party, Contest Elections",
+          "summary": "Build a Party, Contest Elections",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 3,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T1_B_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Batista rigs the 1954 election; you win a seat, then it's annulled",
+              "insight": "a lesson in why elections aren't enough under a dictator",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "US liberals see a \"democratic alternative\"",
+              "insight": "quiet contacts begin",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_B_E3",
+              "place": "Mexico City",
+              "lat": 19.43,
+              "lng": -99.13,
+              "text": "No exile; no Che",
+              "insight": "the revolution, if it comes, is Cuban and moderate",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_B_E4",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "Exile communities form early, around you, not against you",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_B_E5",
+              "place": "Santiago",
+              "lat": 20.02,
+              "lng": -75.83,
+              "text": "Without Moncada, no martyrs; Batista lasts until 1962.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T1_C",
+          "label": "Ally With the Communist Party (PSP) From the…",
+          "summary": "Ally With the Communist Party (PSP) From the Start",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -8,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T1_C_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Soviet contacts in 1954",
+              "insight": "Cuba is a Soviet project a decade early",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T1_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The CIA marks you as a communist in 1954; the Guatemala playbook (that year's coup) is prepared for Cuba",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_C_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Batista uses \"communism\" to justify everything; the middle class backs him",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_C_E4",
+              "place": "Guatemala City",
+              "lat": 14.63,
+              "lng": -90.51,
+              "text": "Árbenz's overthrow is your preview",
+              "insight": "Che watches it happen",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T1_C_E5",
+              "place": "Santiago",
+              "lat": 20.02,
+              "lng": -75.83,
+              "text": "Moncada goes ahead with PSP support and is still crushed.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Moncada",
+          "deck": "Attack the Moncada barracks, or build a political movement and wait for elections Batista may never hold?."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: the US chooses the devil it knows"
+        },
+        {
+          "city": "Caracas",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: armed struggle becomes a template."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T1_A",
+          "lines": {
+            "CUB_T1_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T1_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T1_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T1_A",
+          "lines": {
+            "CUB_T1_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T1_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T1_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T1_A",
+          "lines": {
+            "CUB_T1_A": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T1_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T1_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T1_A",
+          "lines": {
+            "CUB_T1_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T1_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T1_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T2",
+      "turn": 2,
+      "year": "1956–58",
+      "title": "Sierra Maestra",
+      "situation": "You've landed with 82 men; 12 survive. From the mountains you build an army. Batista's forces are brutal but rotten. The US is embarrassed by him. How do you win?",
+      "choices": [
+        {
+          "id": "CUB_T2_A",
+          "label": "Guerrilla War + Win the Middle Class",
+          "summary": "Guerrilla War + Win the Middle Class",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 5,
+            "INFLUENCE": 12
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T2_A_E1",
+              "place": "Sierra Maestra",
+              "lat": 20.0,
+              "lng": -76.8,
+              "text": "Herbert Matthews's NYT interview makes you a legend",
+              "insight": "media is a weapon",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_A_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US imposes an arms embargo on Batista in March 1958",
+              "insight": "Eisenhower drops him",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_A_E3",
+              "place": "Santa Clara",
+              "lat": 22.41,
+              "lng": -79.97,
+              "text": "Che derails an armored train; Batista flees New Year's Eve 1958",
+              "insight": "the army dissolved rather than fought",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_A_E4",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Half the country cheers; you promise elections in 18 months",
+              "insight": "a promise not kept",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_A_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Soviets barely notice",
+              "insight": "they had no role; Castro's turn to Moscow is a later choice, not a plan.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T2_B",
+          "label": "Urban Sabotage Campaign",
+          "summary": "Urban Terror Campaign",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -10,
+            "INFLUENCE": -5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T2_B_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Bombs in cinemas; the middle class recoils; Batista's repression is justified to Americans",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The arms embargo never comes; the US backs Batista to 1960",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_B_E3",
+              "place": "Sierra Maestra",
+              "lat": 20.0,
+              "lng": -76.8,
+              "text": "The rural army starves without urban supplies",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_B_E4",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "Exiles split; the 26th of July Movement fragments",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_B_E5",
+              "place": "Santiago",
+              "lat": 20.02,
+              "lng": -75.83,
+              "text": "The Frank País network is wiped out",
+              "insight": "the movement loses its best organizer earlier.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T2_C",
+          "label": "Accept a US-Brokered Transition",
+          "summary": "Accept a US-Brokered Transition — Batista Out, Elections, Castro as One Candidate Among Many",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 8,
+            "INFLUENCE": 3
+          },
+          "flags": [
+            "CUBA_DEMOCRATIC"
+          ],
+          "effects": [
+            {
+              "id": "CUB_T2_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US gets its \"third force\"; Castro is a politician, not a caudillo",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_C_E2",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "You win the 1959 election",
+              "insight": "legitimately; land reform proceeds by law, slower",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "No Soviet Cuba",
+              "insight": "no missile crisis, no Angola",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T2_C_E4",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Latin American democrats have a model that isn't guns",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T2_C_E5",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "No mass exile; no exile lobby.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "CUBA_DEMOCRATIC"
+          ],
+          "situation": "A transition is being negotiated. Your movement must decide how to convert popular support into a government."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Sierra Maestra",
+          "deck": "You've landed with 82 men; 12 survive."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: Eisenhower drops him"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: they had no role; Castro's turn to Moscow is a later choice, not a plan."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T2_A",
+          "lines": {
+            "CUB_T2_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T2_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T2_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T2_A",
+          "lines": {
+            "CUB_T2_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T2_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T2_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T2_A",
+          "lines": {
+            "CUB_T2_A": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T2_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T2_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T2_A",
+          "lines": {
+            "CUB_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T2_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CUB_T2_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T3",
+      "turn": 3,
+      "year": "1959–61",
+      "title": "Whose Sugar?",
+      "situation": "You've nationalized US oil refineries that refused Soviet crude. Washington cuts the sugar quota. Moscow offers to buy it. Exiles are training in Guatemala. Do you go all in with the Soviets?",
+      "choices": [
+        {
+          "id": "CUB_T3_A",
+          "label": "Nationalize Everything, Take the Soviet Deal",
+          "summary": "Nationalize Everything, Take the Soviet Deal",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 10,
+            "STABILITY": 5,
+            "ECON": -5,
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T3_A_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The US embargo begins (1960) and never ends",
+              "insight": "60+ years",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_A_E2",
+              "place": "Bay of Pigs",
+              "lat": 22.2,
+              "lng": -81.1,
+              "text": "The CIA's 1,400 exiles are crushed in 72 hours",
+              "insight": "Kennedy is humiliated; you're a hero",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_A_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev adopts Cuba as proof revolution can happen without the Red Army",
+              "insight": "and as a base",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T3_A_E4",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "200,000 leave in two years",
+              "insight": "Cuba loses its professional class",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_A_E5",
+              "place": "Santiago de Chile",
+              "lat": -33.45,
+              "lng": -70.67,
+              "text": "Latin American leftists take the \"Cuban road\"; the US answers with the Alliance for Progress and a wave of coups.",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T3_B",
+          "label": "Nationalize With Compensation, Stay Non-Aligned",
+          "summary": "Nationalize With Compensation, Stay Non-Aligned",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 2,
+            "ECON": 3,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "NAM_STRONG"
+          ],
+          "effects": [
+            {
+              "id": "CUB_T3_B_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kennedy's liberals argue for coexistence; the embargo is partial",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_B_E2",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "You join the Non-Aligned Movement as a founder (as you did in 1961)",
+              "insight": "but this time it means it",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T3_B_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev is disappointed; no missiles ever come",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T3_B_E4",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Slower socialism, a freer press, a mixed economy",
+              "insight": "Cuba as Latin Yugoslavia",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_B_E5",
+              "place": "Mexico City",
+              "lat": 19.43,
+              "lng": -99.13,
+              "text": "Mexico becomes your model and protector",
+              "insight": "Latin nationalism, not Soviet communism.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T3_C",
+          "label": "Strike First",
+          "summary": "Strike First — Attack the Exile Camps in Guatemala",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 18,
+            "STABILITY": -6,
+            "INFLUENCE": -10
+          },
+          "flags": [
+            "CUBA_INVADED"
+          ],
+          "effects": [
+            {
+              "id": "CUB_T3_C_E1",
+              "place": "Guatemala City",
+              "lat": 14.63,
+              "lng": -90.51,
+              "text": "A Cuban raid on a US-backed camp; Guatemala declares war",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Eisenhower authorizes open US military action",
+              "insight": "no Bay of Pigs fiasco, a real invasion",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_C_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The revolution fights a US landing; tens of thousands die; you're captured or in the hills",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T3_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev protests and does nothing",
+              "insight": "Cuba was never worth a war before the missiles",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T3_C_E5",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Latin America condemns you",
+              "insight": "the OAS backs the US.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "CUBA_DEMOCRATIC"
+          ],
+          "situation": "Your elected government faces a land-and-sugar dispute with American companies. Washington wants compensation; Moscow offers a market. How far will your reforms go?"
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Whose Sugar?",
+          "deck": "You've nationalized US oil refineries that refused Soviet crude."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Bay of Pigs",
+          "deck": "At stake: Kennedy is humiliated; you're a hero"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: and as a base"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T3_C",
+          "lines": {
+            "CUB_T3_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CUB_T3_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T3_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T3_B",
+          "lines": {
+            "CUB_T3_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CUB_T3_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T3_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T3_B",
+          "lines": {
+            "CUB_T3_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CUB_T3_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CUB_T3_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T3_A",
+          "lines": {
+            "CUB_T3_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T3_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T3_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T4",
+      "turn": 4,
+      "year": "1962",
+      "title": "The Missiles",
+      "situation": "Khrushchev offers to place nuclear missiles in Cuba. They'd deter a US invasion. They'd also make you the world's target. Che says yes; some in your circle say the Soviets will trade you away.",
+      "choices": [
+        {
+          "id": "CUB_T4_A",
+          "label": "Accept the Missiles",
+          "summary": "Accept the Missiles",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 25,
+            "STABILITY": 2,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T4_A_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Thirteen days; Moscow settles without asking you",
+              "insight": "you learn you're a chess piece",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_A_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The no-invasion pledge is why your government survives to 2016 and beyond",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_A_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev falls in 1964; Brezhnev keeps you as a subsidized showcase",
+              "insight": "$5 billion a year by the 1980s",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T4_A_E4",
+              "place": "Bolivia, Vallegrande",
+              "lat": -18.5,
+              "lng": -64.1,
+              "text": "Frustrated with Moscow's caution, Che goes to export revolution alone",
+              "insight": "he's killed in 1967",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_A_E5",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "Exiles feel betrayed by Kennedy",
+              "insight": "the lobby that shapes US policy for 60 years hardens.",
+              "meterDelta": {
+                "TENSION": -15
+              },
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T4_B",
+          "label": "Refuse the Missiles",
+          "summary": "Refuse the Missiles — Ask for Conventional Arms Only",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -5,
+            "STABILITY": 3,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T4_B_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "No missile crisis; Kennedy, without a \"win,\" authorizes Operation Mongoose to escalate",
+              "insight": "a second invasion attempt in 1963 (40%)",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev respects the refusal but funds you less",
+              "insight": "Cuba is poorer, freer of Moscow",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T4_B_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "No thirteen days; the world never learns Cuba's name the same way",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_B_E4",
+              "place": "Berlin",
+              "lat": 52.52,
+              "lng": 13.4,
+              "text": "Khrushchev, without a Cuban lever, presses Berlin again",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T4_B_E5",
+              "place": "Belgrade",
+              "lat": 44.79,
+              "lng": 20.45,
+              "text": "The Non-Aligned Movement embraces you as a non-nuclear stand.",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T4_C",
+          "label": "Accept AND Demand Cuban Control of the Warheads",
+          "summary": "Accept AND Demand Cuban Control of the Warheads",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 35,
+            "STABILITY": 4,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T4_C_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev refuses",
+              "insight": "but the request leaks; Washington now believes Castro might launch",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T4_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Airstrikes are approved",
+              "insight": "the crisis has no back-channel because Moscow can't promise you'll obey",
+              "chance": {
+                "flag": "NUKE_USED",
+                "historian": 0.4,
+                "student": 0.2,
+                "successText": "A nuclear weapon is used. The crisis has crossed a threshold; leaders now face the danger of a wider exchange.",
+                "failureText": "Leaders stop short of nuclear use in this run. The confrontation still damages trust and raises the risk of another crisis."
+              },
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_C_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "You prepare to die \"with honor\"",
+              "insight": "100,000 militia on the beaches",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T4_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao praises you as the true revolutionary",
+              "insight": "the Sino-Soviet split pulls at Cuba",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CUB_T4_C_E5",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Latin America is terrified; the OAS expels you (it did anyway) and backs a quarantine.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "NAM_STRONG"
+          ],
+          "situation": "Your non-aligned policy has kept some distance from Moscow. Now a Soviet military offer tests that independence. Accepting missiles would reverse your earlier course."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "The Missiles",
+          "deck": "Khrushchev offers to place nuclear missiles in Cuba."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power."
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: $5 billion a year by the 1980s"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T4_C",
+          "lines": {
+            "CUB_T4_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CUB_T4_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T4_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T4_B",
+          "lines": {
+            "CUB_T4_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CUB_T4_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T4_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T4_A",
+          "lines": {
+            "CUB_T4_A": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T4_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T4_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T4_A",
+          "lines": {
+            "CUB_T4_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T4_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T4_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T5",
+      "turn": 5,
+      "year": "1965–68",
+      "title": "Export the Revolution",
+      "situation": "Che wants to open \"two, three, many Vietnams.\" Moscow wants you quiet and productive. Your sugar harvest is failing; you've promised 10 million tons. Latin American guerrillas ask for help.",
+      "choices": [
+        {
+          "id": "CUB_T5_A",
+          "label": "Back Che's Bolivia Mission, Then Pivot to Moscow…",
+          "summary": "Back Che's Bolivia Mission, Then Pivot to Moscow After He Dies",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -4,
+            "ECON": -8,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T5_A_E1",
+              "place": "Vallegrande",
+              "lat": -18.5,
+              "lng": -64.1,
+              "text": "Che is executed in October 1967; his image outlives every argument",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_A_E2",
+              "place": "Prague",
+              "lat": 50.08,
+              "lng": 14.44,
+              "text": "You endorse the 1968 Soviet invasion",
+              "insight": "the price of Soviet oil; Latin American leftists are shocked",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T5_A_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The 1970 ten-million-ton harvest fails at 8.5",
+              "insight": "the economy is Sovietized in response",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Full integration into the Soviet bloc's economy (COMECON 1972)",
+              "insight": "dependency for 20 years",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T5_A_E5",
+              "place": "Santiago de Chile",
+              "lat": -33.45,
+              "lng": -70.67,
+              "text": "Allende wins in 1970 by ballot",
+              "insight": "you tell him to arm; he doesn't; 1973 coup.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T5_B",
+          "label": "Focus Inward — Literacy, Health, Sugar, No Exports",
+          "summary": "Focus Inward — Literacy, Health, Sugar, No Exports",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 8,
+            "ECON": 6,
+            "INFLUENCE": -4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T5_B_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The literacy campaign and the doctor program make Cuba the Third World's health model (both were real; here they're the whole story)",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev is pleased; subsidies rise",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T5_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Johnson quietly eases the embargo's edges",
+              "insight": "a US–Cuba thaw in the 1970s becomes possible",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_B_E4",
+              "place": "Vallegrande",
+              "lat": -18.5,
+              "lng": -64.1,
+              "text": "Che stays in Cuba as economy minister and fails at it",
+              "insight": "a different legend",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_B_E5",
+              "place": "Luanda",
+              "lat": -8.84,
+              "lng": 13.23,
+              "text": "No Cuban troops in Africa; Angola's war goes differently.",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T5_C",
+          "label": "Full Export — Arm Guerrillas Across the Hemisphere",
+          "summary": "Full Export — Arm Guerrillas Across the Hemisphere",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 8,
+            "STABILITY": -8,
+            "ECON": -10,
+            "INFLUENCE": 8
+          },
+          "flags": [
+            "CUBA_EXPORTS"
+          ],
+          "effects": [
+            {
+              "id": "CUB_T5_C_E1",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Venezuela's guerrillas surge; the OAS votes a full blockade",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon, in 1969, authorizes covert action against Cuba on a Bay-of-Pigs scale",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev cuts oil for a year to bring you to heel",
+              "insight": "the \"Microfaction\" purge (real, 1968) is reversed: Moscow's men are purged",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T5_C_E4",
+              "place": "Montevideo",
+              "lat": -34.9,
+              "lng": -56.16,
+              "text": "The Tupamaros grow; Uruguay's democracy falls earlier",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T5_C_E5",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Shortages; rationing tightens.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Export the Revolution",
+          "deck": "Che wants to open \"two, three, many Vietnams.\" Moscow wants you quiet and productive."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Prague",
+          "deck": "At stake: the price of Soviet oil; Latin American leftists are shocked"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: dependency for 20 years"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T5_C",
+          "lines": {
+            "CUB_T5_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T5_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T5_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T5_A",
+          "lines": {
+            "CUB_T5_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T5_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T5_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T5_B",
+          "lines": {
+            "CUB_T5_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CUB_T5_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CUB_T5_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T5_C",
+          "lines": {
+            "CUB_T5_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T5_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CUB_T5_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T6",
+      "turn": 6,
+      "year": "1975",
+      "title": "Operation Carlota",
+      "situation": "Angola is independent and at war; South Africa is invading to install its favored faction. The MPLA asks you for troops. Moscow is hesitant. You have 36,000 soldiers ready.",
+      "choices": [
+        {
+          "id": "CUB_T6_A",
+          "label": "Send the Army to Angola",
+          "summary": "Send the Army to Angola",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 6,
+            "STABILITY": 4,
+            "ECON": -6,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T6_A_E1",
+              "place": "Luanda",
+              "lat": -8.84,
+              "lng": 13.23,
+              "text": "Cuban troops stop the South Africans at Quifangondo; the MPLA holds",
+              "insight": "a Black-majority army beat apartheid's",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_A_E2",
+              "place": "Pretoria",
+              "lat": -25.75,
+              "lng": 28.19,
+              "text": "South Africa's regime is shaken; Cuito Cuanavale (1988) forces Namibian independence",
+              "insight": "Mandela credits you",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kissinger's détente is dead; \"Cuban proxies\" become the US's 1970s nightmare",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T6_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Soviets follow you in",
+              "insight": "an ally led its patron",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T6_A_E5",
+              "place": "Addis Ababa",
+              "lat": 9.02,
+              "lng": 38.75,
+              "text": "Ethiopia's war follows; 17,000 Cubans in the Ogaden by 1978",
+              "insight": "you're a global military power with 10 million people.",
+              "region": "Africa & Middle East"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T6_B",
+          "label": "Send Doctors and Teachers, Not Soldiers",
+          "summary": "Send Doctors and Teachers, Not Soldiers",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 3,
+            "ECON": 2,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T6_B_E1",
+              "place": "Luanda",
+              "lat": -8.84,
+              "lng": 13.23,
+              "text": "The MPLA loses Luanda to the South African–backed forces; a longer, uglier civil war",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_B_E2",
+              "place": "Pretoria",
+              "lat": -25.75,
+              "lng": 28.19,
+              "text": "Apartheid survives longer, unchallenged militarily",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Carter, in 1977, seriously pursues normalization with a \"non-interventionist\" Cuba",
+              "insight": "the embargo eases",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T6_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Soviets lose Angola; Brezhnev blames you",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T6_B_E5",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The medical brigades become Cuba's calling card a decade early.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T6_C",
+          "label": "Intervene AND Push Moscow to Match With Its…",
+          "summary": "Intervene AND Push Moscow to Match With Its Own Troops",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 15,
+            "STABILITY": -2,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T6_C_E1",
+              "place": "Luanda",
+              "lat": -8.84,
+              "lng": 13.23,
+              "text": "Soviet advisors become Soviet divisions; the US responds with open aid to South Africa",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Congress overrides the Clark Amendment; the US and USSR fight a proxy war in Africa's biggest oil state",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T6_C_E3",
+              "place": "Pretoria",
+              "lat": -25.75,
+              "lng": 28.19,
+              "text": "South Africa gets US intelligence and nuclear cover",
+              "insight": "its bomb program accelerates",
+              "region": "Africa & Middle East"
+            },
+            {
+              "id": "CUB_T6_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A second Afghanistan, four years early",
+              "insight": "Soviet overstretch",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T6_C_E5",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Casualties climb; a veterans' movement stirs.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Operation Carlota",
+          "deck": "Angola is independent and at war; South Africa is invading to install its favored faction."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Pretoria",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Mandela credits you"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T6_C",
+          "lines": {
+            "CUB_T6_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CUB_T6_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T6_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T6_B",
+          "lines": {
+            "CUB_T6_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CUB_T6_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T6_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T6_B",
+          "lines": {
+            "CUB_T6_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CUB_T6_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CUB_T6_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T6_A",
+          "lines": {
+            "CUB_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T6_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T6_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T7",
+      "turn": 7,
+      "year": "1980",
+      "title": "Mariel",
+      "situation": "10,000 Cubans storm the Peruvian embassy. Carter says he'll welcome refugees. You open the port of Mariel. The Soviets are in Afghanistan; oil subsidies are strained. The exiles are becoming a Florida power.",
+      "choices": [
+        {
+          "id": "CUB_T7_A",
+          "label": "Open Mariel",
+          "summary": "Open Mariel — Let 125,000 Leave (and Empty Some Prisons)",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 6,
+            "INFLUENCE": -6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T7_A_E1",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "The Cuban-American community doubles; Florida's politics are transformed",
+              "insight": "\"Mariel\" becomes a US slur and a Cuban wound",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_A_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Carter's \"open arms\" collapses in the chaos; Reagan wins Florida",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_A_E3",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Pressure valve released; dissent exported",
+              "insight": "the regime's oldest trick",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev grumbles at the embarrassment; subsidies continue",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T7_A_E5",
+              "place": "Key West",
+              "lat": 24.56,
+              "lng": -81.78,
+              "text": "The boatlift's images define Cuba for Americans for a generation.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T7_B",
+          "label": "Keep the Ports Shut, Negotiate an Orderly Migration…",
+          "summary": "Keep the Ports Shut, Negotiate an Orderly Migration Deal",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -5,
+            "INFLUENCE": 3
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T7_B_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The embassy crisis festers; a bigger crackdown",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_B_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A 1980 migration accord (like the actual 1994 one) sets an annual quota",
+              "insight": "a rare US–Cuba treaty",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_B_E3",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "The exile lobby stays smaller; Florida's politics are less Cuban-shaped",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_B_E4",
+              "place": "Lima",
+              "lat": -12.05,
+              "lng": -77.04,
+              "text": "Peru absorbs 10,000 refugees; Latin America's view of Cuba sours",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_B_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "No interest.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T7_C",
+          "label": "Use the Crisis",
+          "summary": "Use the Crisis — Offer Normalization Talks to Carter",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -6,
+            "STABILITY": 2,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T7_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Carter, desperate for a win before the election, opens talks",
+              "insight": "Reagan's victory ends them (70%) or an accord holds (30%)",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_C_E2",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "The embargo eases on food and medicine",
+              "insight": "the 1990s \"Special Period\" is softer",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Soviets, suspicious, cut oil deliveries by 10%",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T7_C_E4",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "Exile hardliners are enraged; a bombing campaign in Miami",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T7_C_E5",
+              "place": "Mexico City",
+              "lat": 19.43,
+              "lng": -99.13,
+              "text": "Mexico brokers; its prestige in Latin America soars.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Mariel",
+          "deck": "10,000 Cubans storm the Peruvian embassy."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: Economic dependence gives the country supplying money, fuel or trade political leverage."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T7_A",
+          "lines": {
+            "CUB_T7_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T7_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T7_C",
+          "lines": {
+            "CUB_T7_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T7_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T7_A",
+          "lines": {
+            "CUB_T7_A": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T7_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CUB_T7_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T7_C",
+          "lines": {
+            "CUB_T7_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CUB_T7_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T7_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CUB_T8",
+      "turn": 8,
+      "year": "1989–91",
+      "title": "Special Period",
+      "situation": "Gorbachev is cutting subsidies. Your top general, Ochoa, is on trial (drugs, or a warning to reformers). The Eastern bloc has fallen. When the USSR ends, 85% of your trade vanishes overnight.",
+      "choices": [
+        {
+          "id": "CUB_T8_A",
+          "label": "Ochoa Executed, \"Socialism or Death,\" Open Tourism",
+          "summary": "Ochoa Executed, \"Socialism or Death,\" Open Tourism",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -10,
+            "ECON": -25,
+            "INFLUENCE": -8
+          },
+          "flags": [
+            "GORBY_REFORM"
+          ],
+          "effects": [
+            {
+              "id": "CUB_T8_A_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Blackouts, bicycles, oxen",
+              "insight": "GDP falls 35%; the regime survives on tourism dollars and rationing",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_A_E2",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "The exile lobby passes the Helms-Burton Act (1996) tightening the embargo",
+              "insight": "the opposite of what falls a regime",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_A_E3",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "Chávez arrives in 1999 with cheap oil",
+              "insight": "a new patron",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Russians leave; the Lourdes listening station closes in 2001",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "CUB_T8_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The embargo remains the world's longest",
+              "insight": "every UN vote condemns it, nothing changes.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T8_B",
+          "label": "Chinese Path — Market Reforms, Party Control",
+          "summary": "Chinese Path — Market Reforms, Party Control",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 2,
+            "ECON": 10,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T8_B_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "Farmers' markets, small business, foreign investment; growth by 1995",
+              "insight": "a Caribbean Vietnam",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_B_E2",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Deng's advisors visit; a \"socialist market\" partnership",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CUB_T8_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Clinton's Congress splits on the embargo; partial lifting in the late 1990s",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_B_E4",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "The younger exile generation splits from the hardliners",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_B_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Russia's oligarchs invest",
+              "insight": "Cuban nickel and rum.",
+              "region": "Europe"
+            }
+          ]
+        },
+        {
+          "id": "CUB_T8_C",
+          "label": "Political Opening — Multi-Party Elections by 1993",
+          "summary": "Political Opening — Multi-Party Elections by 1993",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -15,
+            "ECON": 5,
+            "INFLUENCE": 10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CUB_T8_C_E1",
+              "place": "Havana",
+              "lat": 23.11,
+              "lng": -82.37,
+              "text": "A Cuban \"velvet\" transition; the Party might win the first election (as many ex-communists did)",
+              "insight": "or not",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The embargo ends in 1994; US tourists and money flood in",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_C_E3",
+              "place": "Miami",
+              "lat": 25.76,
+              "lng": -80.19,
+              "text": "Exiles return; property disputes tear the country",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_C_E4",
+              "place": "Caracas",
+              "lat": 10.48,
+              "lng": -66.9,
+              "text": "No Cuban model for Chávez; Latin America's left is different",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CUB_T8_C_E5",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Russia's Yeltsin claims credit.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Havana",
+          "name": "The National Dispatch",
+          "headline": "Special Period",
+          "deck": "Gorbachev is cutting subsidies."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: every UN vote condemns it, nothing changes."
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CUB_T8_A",
+          "lines": {
+            "CUB_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T8_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CUB_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CUB_T8_A",
+          "lines": {
+            "CUB_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T8_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CUB_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CUB_T8_B",
+          "lines": {
+            "CUB_T8_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CUB_T8_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CUB_T8_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CUB_T8_C",
+          "lines": {
+            "CUB_T8_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CUB_T8_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CUB_T8_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    }
+  ]
+}

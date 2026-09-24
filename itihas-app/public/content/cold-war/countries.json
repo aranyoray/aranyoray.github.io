@@ -1,0 +1,100 @@
+[
+  {
+    "id": "USA",
+    "name": "United States",
+    "capital": "Washington, DC",
+    "lat": 38.9,
+    "lng": -77.04,
+    "intro": "It's 1947. You won the war, you have the bomb, and half the world is broke or in ruins. Your generals want to keep the army; your voters want it home. Stalin's armies sit in Berlin, Warsaw, Bucharest. Britain just told you it can't afford Greece anymore. Every choice you make will echo in places you can't see. Your job: keep America safe and prosperous — and, if you can, keep the world from burning.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 65,
+      "ECON": 70,
+      "INFLUENCE": 60
+    }
+  },
+  {
+    "id": "USSR",
+    "name": "Soviet Union",
+    "capital": "Moscow",
+    "lat": 55.76,
+    "lng": 37.62,
+    "intro": "It's 1947. You lost 27 million people beating Hitler and you will never let Germany threaten you again. You have no bomb — yet. America has one, plus the world's only healthy economy. Your buffer states in Eastern Europe are unstable; your own people are exhausted and starving. Stalin's Politburo watches every choice. Secure the motherland, spread the revolution if you can — and don't get nuked.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 45,
+      "ECON": 35,
+      "INFLUENCE": 55
+    }
+  },
+  {
+    "id": "CHN",
+    "name": "China",
+    "capital": "Beijing",
+    "lat": 39.9,
+    "lng": 116.4,
+    "intro": "It's 1949. You've just won a civil war after a century of humiliation. Your country is broken, illiterate, and surrounded: Americans in Japan and Korea, Chiang on Taiwan, the Soviets as ally-but-also-overlord. Stalin doesn't fully trust you. You want China to stand up. Choose whose shadow to stand in — or none.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 40,
+      "ECON": 25,
+      "INFLUENCE": 35
+    }
+  },
+  {
+    "id": "UK",
+    "name": "United Kingdom",
+    "capital": "London",
+    "lat": 51.51,
+    "lng": -0.13,
+    "intro": "It's 1947. You won the war and went bankrupt doing it. India is leaving; Palestine is a nightmare; the Americans hold your debt. Your bomb program is secret even from most of the cabinet. Are you still a great power, America's partner, or Europe's leader? Pick before the money runs out.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 55,
+      "ECON": 35,
+      "INFLUENCE": 55
+    }
+  },
+  {
+    "id": "FRG",
+    "name": "West Germany",
+    "capital": "Bonn",
+    "lat": 50.74,
+    "lng": 7.1,
+    "intro": "It's 1948. Your cities are rubble, your country is split in four, your neighbors hate you, and the word \"Germany\" makes everyone reach for a rifle. You have one asset: everybody needs you. The Americans need a shield, the French need a market, the Soviets need you not to be in NATO. You're not sovereign yet. Play it right and you'll be Europe's richest country in twenty years. Play it wrong and you're a battlefield.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 45,
+      "ECON": 30,
+      "INFLUENCE": 25
+    }
+  },
+  {
+    "id": "CUB",
+    "name": "Cuba",
+    "capital": "Havana",
+    "lat": 23.11,
+    "lng": -82.37,
+    "intro": "It's 1953. You're 26, a lawyer, and you've just decided to attack an army barracks with 130 friends. Cuba is a casino for Americans and a sugar plantation for their companies; Batista took power in a coup. Ninety miles away sits the most powerful country on earth. You will play the revolution — and then the state it builds. Every choice will be watched from Washington and Moscow. Choose how small a country stands up.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 40,
+      "ECON": 30,
+      "INFLUENCE": 20
+    }
+  },
+  {
+    "id": "IND",
+    "name": "India",
+    "capital": "New Delhi",
+    "lat": 28.61,
+    "lng": 77.21,
+    "intro": "It's August 1947. You are free at midnight — and split in two at the same instant. Trains arrive full of the dead. Kashmir is already in dispute. You have 340 million people, almost no industry, and a leader, Nehru, who thinks the world is about to divide into two armed camps and India should join neither. Both camps will try to buy you. Choose what \"non-aligned\" means when the bills come due.",
+    "startMeters": {
+      "TENSION": 40,
+      "STABILITY": 35,
+      "ECON": 25,
+      "INFLUENCE": 40
+    }
+  }
+]

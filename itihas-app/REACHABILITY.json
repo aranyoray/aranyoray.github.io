@@ -1,0 +1,496 @@
+{
+  "method": "Exhaustive 3^8 main-decision paths, two fixed flashpoint policies, seeded risk, both difficulties. Early nuclear endings prune later decisions. This is a reachability sample across flashpoint policies, not all possible random draws.",
+  "countries": {
+    "USA": {
+      "student": {
+        "distinct": 11,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 647,
+          "E11_IRON_CURTAIN_HOLDS": 682,
+          "E13_GRAND_BARGAIN": 1007,
+          "E08_RED_EUROPE": 267,
+          "E01_NUCLEAR_WINTER": 435,
+          "E18_QUIET_DIVIDEND": 125,
+          "E17_ENDLESS_PROXIES": 143,
+          "E06_COUP_AT_HOME": 51,
+          "E14_EARLY_THAW": 155,
+          "E03_DRAGON_WAR": 396,
+          "E09_FORTRESS_AMERICA": 488
+        }
+      },
+      "historian": {
+        "distinct": 11,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 645,
+          "E11_IRON_CURTAIN_HOLDS": 679,
+          "E13_GRAND_BARGAIN": 1002,
+          "E08_RED_EUROPE": 267,
+          "E01_NUCLEAR_WINTER": 430,
+          "E18_QUIET_DIVIDEND": 122,
+          "E17_ENDLESS_PROXIES": 143,
+          "E06_COUP_AT_HOME": 51,
+          "E14_EARLY_THAW": 155,
+          "E03_DRAGON_WAR": 396,
+          "E09_FORTRESS_AMERICA": 486
+        }
+      }
+    },
+    "USSR": {
+      "student": {
+        "distinct": 10,
+        "endings": {
+          "E06_COUP_AT_HOME": 1128,
+          "E11_IRON_CURTAIN_HOLDS": 348,
+          "E12_TWO_MARKETS": 327,
+          "E01_NUCLEAR_WINTER": 493,
+          "E10_EURASIAN_BLOC": 564,
+          "E03_DRAGON_WAR": 591,
+          "E19_HISTORY_AS_IT_WAS": 38,
+          "E14_EARLY_THAW": 13,
+          "E05_SECOND_KOREA": 435,
+          "E04_BERLIN_1948": 339
+        }
+      },
+      "historian": {
+        "distinct": 11,
+        "endings": {
+          "E06_COUP_AT_HOME": 1014,
+          "E11_IRON_CURTAIN_HOLDS": 334,
+          "E12_TWO_MARKETS": 315,
+          "E01_NUCLEAR_WINTER": 484,
+          "E10_EURASIAN_BLOC": 545,
+          "E03_DRAGON_WAR": 588,
+          "E19_HISTORY_AS_IT_WAS": 38,
+          "E14_EARLY_THAW": 13,
+          "E02_LIMITED_EXCHANGE": 87,
+          "E05_SECOND_KOREA": 435,
+          "E04_BERLIN_1948": 339
+        }
+      }
+    },
+    "CHN": {
+      "student": {
+        "distinct": 9,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 107,
+          "E06_COUP_AT_HOME": 2492,
+          "E11_IRON_CURTAIN_HOLDS": 769,
+          "E10_EURASIAN_BLOC": 1135,
+          "E20_FROZEN_PEACE": 1230,
+          "E03_DRAGON_WAR": 5373,
+          "E01_NUCLEAR_WINTER": 99,
+          "E17_ENDLESS_PROXIES": 90,
+          "E15_PACIFIC_CENTURY": 9
+        }
+      },
+      "historian": {
+        "distinct": 9,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 107,
+          "E06_COUP_AT_HOME": 2492,
+          "E11_IRON_CURTAIN_HOLDS": 769,
+          "E10_EURASIAN_BLOC": 1135,
+          "E20_FROZEN_PEACE": 1230,
+          "E03_DRAGON_WAR": 5373,
+          "E01_NUCLEAR_WINTER": 99,
+          "E17_ENDLESS_PROXIES": 90,
+          "E15_PACIFIC_CENTURY": 9
+        }
+      }
+    },
+    "UK": {
+      "student": {
+        "distinct": 5,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 1793,
+          "E06_COUP_AT_HOME": 1500,
+          "E20_FROZEN_PEACE": 3378,
+          "E07_WEST_BROKE": 4852,
+          "E17_ENDLESS_PROXIES": 1599
+        }
+      },
+      "historian": {
+        "distinct": 5,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 1793,
+          "E06_COUP_AT_HOME": 1500,
+          "E20_FROZEN_PEACE": 3378,
+          "E07_WEST_BROKE": 4852,
+          "E17_ENDLESS_PROXIES": 1599
+        }
+      }
+    },
+    "FRG": {
+      "student": {
+        "distinct": 6,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 1743,
+          "E20_FROZEN_PEACE": 2864,
+          "E06_COUP_AT_HOME": 2442,
+          "E17_ENDLESS_PROXIES": 1466,
+          "E04_BERLIN_1948": 4374,
+          "E07_WEST_BROKE": 233
+        }
+      },
+      "historian": {
+        "distinct": 6,
+        "endings": {
+          "E19_HISTORY_AS_IT_WAS": 1743,
+          "E20_FROZEN_PEACE": 2864,
+          "E06_COUP_AT_HOME": 2442,
+          "E17_ENDLESS_PROXIES": 1466,
+          "E04_BERLIN_1948": 4374,
+          "E07_WEST_BROKE": 233
+        }
+      }
+    },
+    "CUB": {
+      "student": {
+        "distinct": 6,
+        "endings": {
+          "E17_ENDLESS_PROXIES": 1928,
+          "E06_COUP_AT_HOME": 2152,
+          "E19_HISTORY_AS_IT_WAS": 984,
+          "E20_FROZEN_PEACE": 1944,
+          "E01_NUCLEAR_WINTER": 153,
+          "E16_NONALIGNED_WORLD": 3279
+        }
+      },
+      "historian": {
+        "distinct": 6,
+        "endings": {
+          "E17_ENDLESS_PROXIES": 1928,
+          "E06_COUP_AT_HOME": 2152,
+          "E19_HISTORY_AS_IT_WAS": 984,
+          "E20_FROZEN_PEACE": 1944,
+          "E01_NUCLEAR_WINTER": 153,
+          "E16_NONALIGNED_WORLD": 3279
+        }
+      }
+    },
+    "IND": {
+      "student": {
+        "distinct": 5,
+        "endings": {
+          "E16_NONALIGNED_WORLD": 4974,
+          "E06_COUP_AT_HOME": 5359,
+          "E19_HISTORY_AS_IT_WAS": 985,
+          "E20_FROZEN_PEACE": 1797,
+          "E17_ENDLESS_PROXIES": 7
+        }
+      },
+      "historian": {
+        "distinct": 5,
+        "endings": {
+          "E16_NONALIGNED_WORLD": 4974,
+          "E06_COUP_AT_HOME": 5359,
+          "E19_HISTORY_AS_IT_WAS": 985,
+          "E20_FROZEN_PEACE": 1797,
+          "E17_ENDLESS_PROXIES": 7
+        }
+      }
+    }
+  },
+  "witnesses": {
+    "E19_HISTORY_AS_IT_WAS": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E11_IRON_CURTAIN_HOLDS": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E13_GRAND_BARGAIN": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C"
+      ],
+      "flashPolicy": 0
+    },
+    "E08_RED_EUROPE": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E01_NUCLEAR_WINTER": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "C"
+      ],
+      "flashPolicy": 0
+    },
+    "E18_QUIET_DIVIDEND": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "B",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E17_ENDLESS_PROXIES": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E06_COUP_AT_HOME": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "C",
+        "C",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E14_EARLY_THAW": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "C",
+        "C",
+        "B",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E03_DRAGON_WAR": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "B",
+        "A",
+        "C",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E09_FORTRESS_AMERICA": {
+      "country": "USA",
+      "difficulty": "student",
+      "path": [
+        "B",
+        "A",
+        "A",
+        "C",
+        "C",
+        "B",
+        "B",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E12_TWO_MARKETS": {
+      "country": "USSR",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C"
+      ],
+      "flashPolicy": 0
+    },
+    "E10_EURASIAN_BLOC": {
+      "country": "USSR",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "C",
+        "A",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E05_SECOND_KOREA": {
+      "country": "USSR",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "C",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E04_BERLIN_1948": {
+      "country": "USSR",
+      "difficulty": "student",
+      "path": [
+        "C",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E02_LIMITED_EXCHANGE": {
+      "country": "USSR",
+      "difficulty": "historian",
+      "path": [
+        "A",
+        "B",
+        "B",
+        "B",
+        "B",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E20_FROZEN_PEACE": {
+      "country": "CHN",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "B",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E15_PACIFIC_CENTURY": {
+      "country": "CHN",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "B",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "B"
+      ],
+      "flashPolicy": 0
+    },
+    "E07_WEST_BROKE": {
+      "country": "UK",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    },
+    "E16_NONALIGNED_WORLD": {
+      "country": "CUB",
+      "difficulty": "student",
+      "path": [
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "flashPolicy": 0
+    }
+  },
+  "unreached": []
+}

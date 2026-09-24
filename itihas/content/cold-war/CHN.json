@@ -1,0 +1,2051 @@
+{
+  "id": "CHN",
+  "name": "China",
+  "capital": "Beijing",
+  "lat": 39.9,
+  "lng": 116.4,
+  "intro": "It's 1949. You've just won a civil war after a century of humiliation. Your country is broken, illiterate, and surrounded: Americans in Japan and Korea, Chiang on Taiwan, the Soviets as ally-but-also-overlord. Stalin doesn't fully trust you. You want China to stand up. Choose whose shadow to stand in — or none.",
+  "startMeters": {
+    "TENSION": 40,
+    "STABILITY": 40,
+    "ECON": 25,
+    "INFLUENCE": 35
+  },
+  "nodes": [
+    {
+      "id": "CHN_T1",
+      "turn": 1,
+      "year": "1949–50",
+      "title": "Lean to One Side",
+      "situation": "Stalin offers a treaty with strings (Port Arthur, Mongolia). The US hints at recognition if you stay independent.",
+      "choices": [
+        {
+          "id": "CHN_T1_A",
+          "label": "Sign with Stalin",
+          "summary": "Sign with Stalin",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 5,
+            "ECON": 4,
+            "INFLUENCE": -3
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T1_A_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "$300M loan and 10,000 advisors, Soviet-model industry",
+              "insight": "your economy is built on their blueprint, which you'll later reject",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T1_A_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Recognition dies; 22 years of no contact",
+              "insight": "\"Who lost China?\" poisons US politics",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T1_A_E3",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Chiang survives on US aid",
+              "insight": "Taiwan's fate is now a superpower issue",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_A_E4",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "You recognize Ho Chi Minh first; Vietnam becomes your revolutionary client",
+              "insight": "you'll fight him in 1979",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_A_E5",
+              "place": "Ulaanbaatar",
+              "lat": 47.92,
+              "lng": 106.92,
+              "text": "You concede Mongolia's independence",
+              "insight": "a price paid for the treaty that Chinese nationalists still resent.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T1_B",
+          "label": "Independent Path — Recognize Neither",
+          "summary": "Independent Path — Recognize Neither",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -3,
+            "ECON": -5,
+            "INFLUENCE": 4
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T1_B_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Acheson's \"let the dust settle\" wins; US recognition by 1951",
+              "insight": "Korea then plays very differently",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T1_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin calls you a \"Titoist,\" cuts aid",
+              "insight": "you're isolated but free",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T1_B_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Without Soviet blueprints, you improvise",
+              "insight": "a peasant-centered model (Mao's real instinct) emerges a decade early",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_B_E4",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "US, no longer seeing you as Soviet proxy, pressures Chiang to negotiate",
+              "insight": "a One-China deal in the 1950s becomes conceivable",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_B_E5",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan trades with you by 1952",
+              "insight": "the East Asian economy integrates 20 years early.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T1_C",
+          "label": "Court Washington Openly",
+          "summary": "Court Washington Openly",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -6,
+            "ECON": 2,
+            "INFLUENCE": 2
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T1_C_E1",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "McCarthy's Republicans block any deal",
+              "insight": "you're rebuffed and humiliated",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T1_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin, enraged, backs a rival faction (Gao Gang)",
+              "insight": "your party splits",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T1_C_E3",
+              "place": "Pyongyang",
+              "lat": 39.02,
+              "lng": 125.75,
+              "text": "Kim, distrusting you, relies entirely on Stalin",
+              "insight": "the Korean War proceeds without your buffer role",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Rebuffed, you swing hard left",
+              "insight": "the Great Leap comes early",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T1_C_E5",
+              "place": "Hong Kong",
+              "lat": 22.32,
+              "lng": 114.17,
+              "text": "British colony becomes your only window",
+              "insight": "a role it plays till 1997 anyway.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Lean to One Side",
+          "deck": "Stalin offers a treaty with strings (Port Arthur, Mongolia)."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: \"Who lost China?\" poisons US politics"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: \"Who lost China?\" poisons US politics"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T1_A",
+          "lines": {
+            "CHN_T1_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T1_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T1_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T1_A",
+          "lines": {
+            "CHN_T1_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T1_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T1_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T1_A",
+          "lines": {
+            "CHN_T1_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T1_B": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T1_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T1_B",
+          "lines": {
+            "CHN_T1_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T1_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T1_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T2",
+      "turn": 2,
+      "year": "1950",
+      "title": "Cross the Yalu",
+      "situation": "UN forces approach your border. Stalin promises air cover, then hedges. Your generals say the army is exhausted.",
+      "choices": [
+        {
+          "id": "CHN_T2_A",
+          "label": "Intervene",
+          "summary": "Intervene",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 10,
+            "STABILITY": 8,
+            "ECON": -10,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T2_A_E1",
+              "place": "Seoul",
+              "lat": 37.57,
+              "lng": 126.98,
+              "text": "You push the UN back, then stall",
+              "insight": "180,000 Chinese dead for a stalemate",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_A_E2",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "7th Fleet permanently guards Taiwan",
+              "insight": "the price of Korea",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_A_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "\"China stood up\"",
+              "insight": "legitimacy surge, mass mobilization, purges of \"counter-revolutionaries\" (700,000+ killed)",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin's late air cover confirms he'll use you",
+              "insight": "the seed of the split",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T2_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "China becomes the \"Yellow Peril\" of US politics for two decades",
+              "insight": "no trade, no seat at the UN.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T2_B",
+          "label": "Stay Out",
+          "summary": "Stay Out",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -5,
+            "STABILITY": -8,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T2_B_E1",
+              "place": "Pyongyang",
+              "lat": 39.02,
+              "lng": 125.75,
+              "text": "Kim's regime collapses; a US-allied unified Korea sits on your border",
+              "insight": "the encirclement you feared",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin treats you as unreliable; aid shrinks",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T2_B_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Nationalist critics ask what the revolution was for",
+              "insight": "Mao purges them anyway",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_B_E4",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Without Korea, the US fleet doesn't deploy",
+              "insight": "you invade Taiwan in 1951 and win",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_B_E5",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan hosts US nukes aimed at you",
+              "insight": "the shield gets closer.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T2_C",
+          "label": "Intervene and Bomb Japan's Bases",
+          "summary": "Intervene and Bomb Japan's Bases",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 30
+          },
+          "flags": [
+            "CHINA_WAR"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T2_C_E1",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Bombing Kyushu bases brings Japan into the war",
+              "insight": "a rearmed Japan by 1952",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Truman authorizes nuclear strikes on Manchurian staging areas",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "chance": {
+                "flag": "NUKE_USED",
+                "historian": 0.35,
+                "student": 0.175,
+                "successText": "A nuclear weapon is used. The crisis has crossed a threshold; leaders now face the danger of a wider exchange.",
+                "failureText": "Leaders stop short of nuclear use in this run. The confrontation still damages trust and raises the risk of another crisis."
+              },
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T2_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Stalin, terrified of being dragged in, cuts you loose",
+              "insight": "you're alone",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T2_C_E4",
+              "place": "Shanghai",
+              "lat": 31.23,
+              "lng": 121.47,
+              "text": "US carrier strikes hit your coast; industry collapses",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T2_C_E5",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "The war becomes the regime's whole identity",
+              "insight": "a North Korea-style garrison state.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Cross the Yalu",
+          "deck": "UN forces approach your border."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: no trade, no seat at the UN."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: no trade, no seat at the UN."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T2_C",
+          "lines": {
+            "CHN_T2_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CHN_T2_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T2_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T2_B",
+          "lines": {
+            "CHN_T2_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CHN_T2_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T2_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T2_B",
+          "lines": {
+            "CHN_T2_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T2_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CHN_T2_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T2_A",
+          "lines": {
+            "CHN_T2_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T2_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T2_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T3",
+      "turn": 3,
+      "year": "1956–58",
+      "title": "Let a Hundred Flowers Bloom",
+      "situation": "Khrushchev has denounced Stalin. Intellectuals want to criticize the party. Moscow's model is delivering slow growth. Mao is impatient.",
+      "choices": [
+        {
+          "id": "CHN_T3_A",
+          "label": "Great Leap Forward",
+          "summary": "Great Leap Forward",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -15,
+            "ECON": -25,
+            "INFLUENCE": -5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T3_A_E1",
+              "place": "Henan",
+              "lat": 34.76,
+              "lng": 113.65,
+              "text": "Backyard furnaces and communes",
+              "insight": "30–45 million die in the famine 1959–61",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev mocks the Leap; you call him a revisionist",
+              "insight": "the split becomes ideological",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T3_A_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao retreats from daily rule; Liu Shaoqi and Deng repair the economy",
+              "insight": "Mao's revenge becomes the Cultural Revolution",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_A_E4",
+              "place": "Lhasa",
+              "lat": 29.65,
+              "lng": 91.17,
+              "text": "The 1959 Tibetan uprising, fed by Leap-era coercion, is crushed; the Dalai Lama flees to India",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_A_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Sheltering the Dalai Lama poisons Sino-Indian ties",
+              "insight": "the 1962 war is now on the calendar.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T3_B",
+          "label": "Soviet Model, Slow and Steady",
+          "summary": "Soviet Model, Slow and Steady",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 5,
+            "ECON": 8,
+            "INFLUENCE": 2
+          },
+          "flags": [
+            "CHINA_GRADUAL"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T3_B_E1",
+              "place": "Shenyang",
+              "lat": 41.8,
+              "lng": 123.43,
+              "text": "Heavy industry grows 8%/yr on Soviet plans",
+              "insight": "no famine, no Leap",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Alliance holds through the 1960s",
+              "insight": "the split, if it comes, is later and milder",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T3_B_E3",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Mao's radicals are marginalized; a technocratic party emerges",
+              "insight": "the Cultural Revolution never happens",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A stable Sino-Soviet bloc is more frightening",
+              "insight": "the US spends more on Asia, less on Vietnam adventures (nothing to \"roll back\")",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T3_B_E5",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Prosperous mainland tempts Taiwan's business class",
+              "insight": "cross-strait contact begins in the 1970s.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T3_C",
+          "label": "Hundred Flowers For Real — Open Debate",
+          "summary": "Hundred Flowers For Real — Open Debate",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -10,
+            "ECON": 3,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "CHINA_OPEN"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T3_C_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Criticism overwhelms the party within months; Mao either reverses (historically he did, purging 500,000 as \"rightists\") or loses control",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_C_E2",
+              "place": "Shanghai",
+              "lat": 31.23,
+              "lng": 121.47,
+              "text": "A reformist intellectual wing survives",
+              "insight": "China's 1980s arrive in the 1960s",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T3_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev cites you as proof of thaw",
+              "insight": "Eastern Europe's reformers are emboldened",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T3_C_E4",
+              "place": "Budapest",
+              "lat": 47.5,
+              "lng": 19.04,
+              "text": "Hungary-style unrest spreads to Guangzhou students",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T3_C_E5",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Chiang loses the \"free China\" monopoly; Western opinion shifts toward you.",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Let a Hundred Flowers Bloom",
+          "deck": "Khrushchev has denounced Stalin."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: the split becomes ideological"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the split becomes ideological"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T3_A",
+          "lines": {
+            "CHN_T3_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T3_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T3_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T3_A",
+          "lines": {
+            "CHN_T3_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T3_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T3_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T3_B",
+          "lines": {
+            "CHN_T3_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T3_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T3_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T3_C",
+          "lines": {
+            "CHN_T3_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T3_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T3_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T4",
+      "turn": 4,
+      "year": "1962",
+      "title": "Himalaya",
+      "situation": "India has pushed border posts into disputed territory (\"Forward Policy\"). Nehru refuses to negotiate. The USSR sells India MiGs. Cuba is in crisis; the world is distracted.",
+      "choices": [
+        {
+          "id": "CHN_T4_A",
+          "label": "Punitive Strike Then Withdraw",
+          "summary": "Punitive Strike Then Withdraw",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 4,
+            "STABILITY": 5,
+            "INFLUENCE": 5
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T4_A_E1",
+              "place": "Tawang",
+              "lat": 27.59,
+              "lng": 91.87,
+              "text": "You rout Indian forces in a month, then withdraw unilaterally",
+              "insight": "a message, not a conquest",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_A_E2",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Nehru is broken; India militarizes and starts its nuclear program",
+              "insight": "the bomb comes in 1974",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_A_E3",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan becomes your ally",
+              "insight": "the \"all-weather friendship\" starts here",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_A_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev supports India during the Cuban crisis",
+              "insight": "proof to you the alliance is dead",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T4_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US airlifts arms to India",
+              "insight": "briefly, until Pakistan complains.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T4_B",
+          "label": "Negotiate — Swap Aksai Chin for Arunachal",
+          "summary": "Negotiate — Swap Aksai Chin for Arunachal",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -3,
+            "INFLUENCE": 6
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T4_B_E1",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "Nehru accepts the swap (his 1960 position was close)",
+              "insight": "the border is settled forever",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_B_E2",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan, denied a Chinese patron, leans fully on the US",
+              "insight": "no Sino-Pak axis, no nuclear help later",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_B_E3",
+              "place": "Lhasa",
+              "lat": 29.65,
+              "lng": 91.17,
+              "text": "A quiet border reduces Tibetan insurgency support from India",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Khrushchev claims credit",
+              "insight": "the alliance limps on",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T4_B_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A China–India understanding alarms the US",
+              "insight": "the \"Asian giants\" framing appears in the 1960s, not the 2000s.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T4_C",
+          "label": "Take and Hold Arunachal",
+          "summary": "Take and Hold Arunachal",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 12,
+            "STABILITY": 2,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T4_C_E1",
+              "place": "Assam",
+              "lat": 26.14,
+              "lng": 91.77,
+              "text": "You occupy to the Brahmaputra; India's northeast becomes an insurgent zone",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_C_E2",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "India joins the US in a formal treaty by 1964",
+              "insight": "nonalignment dies",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_C_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The USSR arms India massively",
+              "insight": "you now have hostile superpowers on both flanks",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T4_C_E4",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan attacks Kashmir opportunistically in 1963",
+              "insight": "a two-front war for India",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T4_C_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US considers nuclear guarantees for India",
+              "insight": "Asia goes nuclear a decade early.",
+              "region": "Americas"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Himalaya",
+          "deck": "India has pushed border posts into disputed territory (\"Forward Policy\")."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: briefly, until Pakistan complains."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: briefly, until Pakistan complains."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T4_C",
+          "lines": {
+            "CHN_T4_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CHN_T4_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T4_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T4_B",
+          "lines": {
+            "CHN_T4_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CHN_T4_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T4_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T4_A",
+          "lines": {
+            "CHN_T4_A": "The immediate budget holds. Watch the longer-term costs.",
+            "CHN_T4_B": "The immediate budget holds. Watch the longer-term costs.",
+            "CHN_T4_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T4_B",
+          "lines": {
+            "CHN_T4_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T4_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T4_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T5",
+      "turn": 5,
+      "year": "1966",
+      "title": "Bombard the Headquarters",
+      "situation": "Mao, sidelined since the famine, calls students to purge \"capitalist roaders.\" Liu Shaoqi and Deng control the party machine. The Vietnam War rages on your border.",
+      "choices": [
+        {
+          "id": "CHN_T5_A",
+          "label": "Cultural Revolution",
+          "summary": "Cultural Revolution",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": -25,
+            "ECON": -15,
+            "INFLUENCE": -10
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T5_A_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Red Guards destroy the party, universities close for years, 1–2 million die",
+              "insight": "a decade lost",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_A_E2",
+              "place": "Hong Kong",
+              "lat": 22.32,
+              "lng": 114.17,
+              "text": "1967 riots and bombs",
+              "insight": "Britain nearly loses the colony",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_A_E3",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "You still send 320,000 troops to North Vietnam",
+              "insight": "chaos at home, war abroad",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_A_E4",
+              "place": "Ussuri River",
+              "lat": 48.3,
+              "lng": 134.7,
+              "text": "Paranoia peaks in the 1969 border war with the USSR",
+              "insight": "2,000 dead",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_A_E5",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "A China at war with itself and Moscow is a China ready for Nixon",
+              "insight": "the opening's precondition.",
+              "region": "Americas"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T5_B",
+          "label": "Mao Retires — Liu and Deng Rule",
+          "summary": "Mao Retires — Liu and Deng Rule",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 10,
+            "ECON": 12,
+            "INFLUENCE": 5
+          },
+          "flags": [
+            "CHINA_GRADUAL"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T5_B_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Pragmatic reforms of 1962–65 continue",
+              "insight": "China's Deng era starts in 1966",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A rational China negotiates the border; the split freezes rather than boils",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T5_B_E3",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "Aid to Vietnam is conditioned on negotiation",
+              "insight": "the war ends sooner",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_B_E4",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "No Sino-Soviet war, less reason for Nixon's opening",
+              "insight": "but trade begins by 1970 via Japan",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T5_B_E5",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Prosperity draws Taiwan's businesses; reunification talks in the 1980s.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T5_C",
+          "label": "Cultural Revolution Plus War With the USSR",
+          "summary": "Cultural Revolution Plus War With the USSR",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 30,
+            "STABILITY": -30
+          },
+          "flags": [
+            "CHINA_WAR"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T5_C_E1",
+              "place": "Zhenbao Island",
+              "lat": 46.5,
+              "lng": 133.8,
+              "text": "Border clashes become full war; Soviet forces bomb Manchuria",
+              "insight": "you fight with militia and slogans",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_C_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "The Politburo debates nuclear strikes on your bomb sites (this was real in 1969)",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T5_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon warns Moscow off",
+              "insight": "the US becomes your de facto protector",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T5_C_E4",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "The army takes over from Red Guards; a military dictatorship under Lin Biao",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T5_C_E5",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "Vietnam sides with Moscow; you're at war on two fronts.",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "CHINA_GRADUAL"
+          ],
+          "situation": "Your earlier reforms have avoided the worst economic damage in this timeline. Mao still fears losing control of the party. Choose whether to expand political campaigns, defend gradual reform, or export confrontation abroad."
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Bombard the Headquarters",
+          "deck": "Mao, sidelined since the famine, calls students to purge \"capitalist roaders.\" Liu Shaoqi and Deng control the party machine."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: the opening's precondition."
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the opening's precondition."
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T5_C",
+          "lines": {
+            "CHN_T5_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T5_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T5_C": "This raises the pressure. Be ready for the other side to answer."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T5_A",
+          "lines": {
+            "CHN_T5_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T5_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T5_C": "Expect allies to worry about the risk. Explain where our commitment ends."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T5_B",
+          "lines": {
+            "CHN_T5_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T5_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T5_C": "The immediate budget holds. Watch the longer-term costs."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T5_B",
+          "lines": {
+            "CHN_T5_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T5_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T5_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T6",
+      "turn": 6,
+      "year": "1972",
+      "title": "The Handshake",
+      "situation": "Nixon wants to visit. Lin Biao is dead in a mysterious plane crash. The Soviets have a million troops on your border. Zhou Enlai says the Americans can be used; Mao's wife says it's betrayal.",
+      "choices": [
+        {
+          "id": "CHN_T6_A",
+          "label": "Welcome Nixon",
+          "summary": "Welcome Nixon",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": -10,
+            "ECON": 5,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T6_A_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "The Shanghai Communiqué; UN seat won; Taiwan expelled",
+              "insight": "you're a great power again",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_A_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Brezhnev, fearing US–China encirclement, rushes to sign SALT",
+              "insight": "your leverage on both",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T6_A_E3",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan normalizes relations within months",
+              "insight": "trade explodes",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_A_E4",
+              "place": "Islamabad",
+              "lat": 33.69,
+              "lng": 73.04,
+              "text": "Pakistan, your matchmaker, is rewarded with US silence over Bangladesh atrocities",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_A_E5",
+              "place": "Shenzhen",
+              "lat": 22.54,
+              "lng": 114.06,
+              "text": "The door is open; when Deng wins in 1978 there's someone to trade with.",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T6_B",
+          "label": "Refuse — Both Superpowers Are Enemies",
+          "summary": "Refuse — Both Superpowers Are Enemies",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": 5,
+            "STABILITY": -3,
+            "ECON": -6,
+            "INFLUENCE": -5
+          },
+          "flags": [
+            "NO_DETENTE"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T6_B_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Radicals dominate; Deng never returns from exile",
+              "insight": "reform is delayed a decade or more",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Without a US–China axis, the Soviets don't need SALT",
+              "insight": "the arms race runs hotter",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T6_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Nixon settles for détente with Moscow alone",
+              "insight": "the US–Soviet condominium Europeans feared",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T6_B_E4",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Taiwan keeps its UN seat into the 1980s",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_B_E5",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "Vietnam stays loyal to you",
+              "insight": "no 1979 war, but no reform either.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T6_C",
+          "label": "Play Both — Also Reconcile With Moscow",
+          "summary": "Play Both — Also Reconcile With Moscow",
+          "historical": false,
+          "meterDelta": {
+            "TENSION": -12,
+            "ECON": 8,
+            "INFLUENCE": 10
+          },
+          "flags": [
+            "SINO_SOVIET_HEAL",
+            "NO_DETENTE"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T6_C_E1",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Border settlement and resumed trade",
+              "insight": "the split heals into rivalry",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T6_C_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Kissinger fears a \"united front\"",
+              "insight": "the US gives you more to keep you",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T6_C_E3",
+              "place": "Tokyo",
+              "lat": 35.68,
+              "lng": 139.69,
+              "text": "Japan hedges",
+              "insight": "slower normalization",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_C_E4",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "Both patrons united, Vietnam wins in 1973",
+              "insight": "Partners judge a commitment by what it costs you to keep it. A changed commitment reshapes their choices.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T6_C_E5",
+              "place": "New Delhi",
+              "lat": 28.61,
+              "lng": 77.21,
+              "text": "India, losing its Soviet counterweight to you, tests its bomb in 1972 and courts the US.",
+              "insight": "A threat to one side changes the other side’s calculations, encouraging it to build or seek protection.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "The Handshake",
+          "deck": "Nixon wants to visit."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Moscow",
+          "deck": "At stake: your leverage on both"
+        },
+        {
+          "city": "Moscow",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: your leverage on both"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T6_B",
+          "lines": {
+            "CHN_T6_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T6_B": "This raises the pressure. Be ready for the other side to answer.",
+            "CHN_T6_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T6_C",
+          "lines": {
+            "CHN_T6_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T6_B": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CHN_T6_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T6_C",
+          "lines": {
+            "CHN_T6_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T6_B": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T6_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T6_A",
+          "lines": {
+            "CHN_T6_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T6_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T6_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T7",
+      "turn": 7,
+      "year": "1978–79",
+      "title": "Reform and Opening",
+      "situation": "Mao is dead. Deng has outmaneuvered the Gang of Four. Vietnam has invaded Cambodia, your ally. The economy is at famine levels in parts of the countryside.",
+      "choices": [
+        {
+          "id": "CHN_T7_A",
+          "label": "Deng's Reforms + Punish Vietnam",
+          "summary": "Deng's Reforms + Punish Vietnam",
+          "historical": true,
+          "meterDelta": {
+            "TENSION": 4,
+            "STABILITY": 8,
+            "ECON": 20,
+            "INFLUENCE": 8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T7_A_E1",
+              "place": "Anhui",
+              "lat": 31.86,
+              "lng": 117.28,
+              "text": "Farmers secretly divide collective land; the state legalizes it",
+              "insight": "400 million leave poverty by 2000",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_A_E2",
+              "place": "Lang Son",
+              "lat": 21.85,
+              "lng": 106.76,
+              "text": "A 4-week war with Vietnam; 30,000 dead; you withdraw",
+              "insight": "a message to Moscow's client, at a price",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_A_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Full diplomatic relations; Deng in a cowboy hat",
+              "insight": "the US bets on Chinese reform for 40 years",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T7_A_E4",
+              "place": "Shenzhen",
+              "lat": 22.54,
+              "lng": 114.06,
+              "text": "Special Economic Zone opens",
+              "insight": "Hong Kong capital pours in",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_A_E5",
+              "place": "Kabul",
+              "lat": 34.53,
+              "lng": 69.17,
+              "text": "You join the US arming Afghan rebels",
+              "insight": "the encirclement of the USSR is complete.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T7_B",
+          "label": "Maoist Continuity Under Hua Guofeng",
+          "summary": "Maoist Continuity Under Hua Guofeng",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -5,
+            "ECON": -8,
+            "INFLUENCE": -8
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T7_B_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "The \"two whatevers\"",
+              "insight": "Mao's line unchanged; growth stalls; a North Korea with 1 billion people",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_B_E2",
+              "place": "Hanoi",
+              "lat": 21.03,
+              "lng": 105.85,
+              "text": "No war; Vietnam dominates Indochina",
+              "insight": "A military commitment consumes resources and creates new security fears beyond the original battlefield.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The US pivots to Japan and ASEAN as its Asian anchors",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T7_B_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A weak, isolated China lets Brezhnev focus on Europe and Afghanistan",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T7_B_E5",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Taiwan's economy passes the mainland's in absolute terms by 1990.",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T7_C",
+          "label": "Political Reform Alongside Economic",
+          "summary": "Political Reform Alongside Economic",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -8,
+            "ECON": 15,
+            "INFLUENCE": 12
+          },
+          "flags": [
+            "CHINA_OPEN"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T7_C_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Village elections, a freer press",
+              "insight": "Democracy Wall is legalized rather than crushed",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_C_E2",
+              "place": "Shanghai",
+              "lat": 31.23,
+              "lng": 121.47,
+              "text": "Growth is slower early (uncertainty) but no 1989 crackdown",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T7_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "China becomes the West's favorite reformer",
+              "insight": "Soviet reformers cite you",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T7_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev's model has a precedent; the USSR's reforms are less panicked",
+              "insight": "Foreign decisions alter domestic coalitions. Leaders must answer to the institutions and people keeping them in power.",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T7_C_E5",
+              "place": "Hong Kong",
+              "lat": 22.32,
+              "lng": 114.17,
+              "text": "Handover negotiations go far easier",
+              "insight": "\"one country, two systems\" barely needed.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Reform and Opening",
+          "deck": "Mao is dead."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: the US bets on Chinese reform for 40 years"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: the US bets on Chinese reform for 40 years"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T7_A",
+          "lines": {
+            "CHN_T7_A": "This raises the pressure. Be ready for the other side to answer.",
+            "CHN_T7_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T7_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T7_B",
+          "lines": {
+            "CHN_T7_A": "Expect allies to worry about the risk. Explain where our commitment ends.",
+            "CHN_T7_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T7_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T7_A",
+          "lines": {
+            "CHN_T7_A": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T7_B": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T7_C": "This puts resources back into our economy. Recovery gives us choices later."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T7_C",
+          "lines": {
+            "CHN_T7_A": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T7_B": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T7_C": "Others may listen more closely. Influence works only if they believe our promises."
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHN_T8",
+      "turn": 8,
+      "year": "1989",
+      "title": "Tiananmen",
+      "situation": "A million students occupy the square demanding reform; Gorbachev is visiting; the world's cameras are there. Zhao Ziyang wants dialogue; Li Peng wants martial law. Eastern Europe is collapsing.",
+      "choices": [
+        {
+          "id": "CHN_T8_A",
+          "label": "Martial Law",
+          "summary": "Martial Law",
+          "historical": true,
+          "meterDelta": {
+            "STABILITY": 10,
+            "ECON": -5,
+            "INFLUENCE": -20
+          },
+          "flags": [
+            "TIANANMEN"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T8_A_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Hundreds to thousands killed June 4; Zhao under house arrest for 15 years",
+              "insight": "the party survives, the deal is \"prosperity for silence\"",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_A_E2",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Sanctions for a year, then business as usual by 1992",
+              "insight": "money beats memory",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T8_A_E3",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Gorbachev, horrified, resolves not to shoot in the Baltics",
+              "insight": "the USSR falls, you survive",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T8_A_E4",
+              "place": "Shenzhen",
+              "lat": 22.54,
+              "lng": 114.06,
+              "text": "Deng's 1992 \"Southern Tour\" restarts reform",
+              "insight": "capitalism without democracy",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_A_E5",
+              "place": "Hong Kong",
+              "lat": 22.32,
+              "lng": 114.17,
+              "text": "Trust in 1997 collapses; 500,000 march; emigration surges.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T8_B",
+          "label": "Zhao's Path — Dialogue and Reform",
+          "summary": "Zhao's Path — Dialogue and Reform",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": -10,
+            "ECON": 5,
+            "INFLUENCE": 15
+          },
+          "flags": [],
+          "effects": [
+            {
+              "id": "CHN_T8_B_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Concessions: press freedom, party elections",
+              "insight": "a slow Chinese glasnost",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_B_E2",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "A reforming China plus a reforming USSR",
+              "insight": "the whole communist world liberalizes at once",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T8_B_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "The \"end of history\" looks real; US defense budgets crater",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T8_B_E4",
+              "place": "Taipei",
+              "lat": 25.03,
+              "lng": 121.57,
+              "text": "Reunification talks under democracy become plausible in the 2000s",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_B_E5",
+              "place": "Shanghai",
+              "lat": 31.23,
+              "lng": 121.47,
+              "text": "Growth briefly slows, then surges with rule-of-law investment.",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        },
+        {
+          "id": "CHN_T8_C",
+          "label": "Hardline Plus Retreat From Reform",
+          "summary": "Hardline Plus Retreat From Reform",
+          "historical": false,
+          "meterDelta": {
+            "STABILITY": 5,
+            "ECON": -20,
+            "INFLUENCE": -25
+          },
+          "flags": [
+            "TIANANMEN",
+            "GORBY_HARDLINE",
+            "WALL_STANDS"
+          ],
+          "effects": [
+            {
+              "id": "CHN_T8_C_E1",
+              "place": "Beijing",
+              "lat": 39.9,
+              "lng": 116.4,
+              "text": "Crackdown and re-collectivization; Deng is sidelined by conservatives",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_C_E2",
+              "place": "Shenzhen",
+              "lat": 22.54,
+              "lng": 114.06,
+              "text": "SEZs closed; foreign capital flees",
+              "insight": "Economic dependence gives the country supplying money, fuel or trade political leverage.",
+              "region": "Asia & Pacific"
+            },
+            {
+              "id": "CHN_T8_C_E3",
+              "place": "Washington",
+              "lat": 38.9,
+              "lng": -77.04,
+              "text": "Full sanctions; China joins the USSR as a pariah",
+              "insight": "A choice in one capital changes the options available elsewhere. Local leaders respond to the new balance of risk and opportunity.",
+              "region": "Americas"
+            },
+            {
+              "id": "CHN_T8_C_E4",
+              "place": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "text": "Soviet hardliners cite you",
+              "insight": "Gorbachev is weaker; the August 1991 coup succeeds",
+              "region": "Europe"
+            },
+            {
+              "id": "CHN_T8_C_E5",
+              "place": "Pyongyang",
+              "lat": 39.02,
+              "lng": 125.75,
+              "text": "North Korea and China form a \"hermit bloc\"",
+              "insight": "1990s famine hits both.",
+              "region": "Asia & Pacific"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "requires": [
+            "CHINA_OPEN"
+          ],
+          "situation": "Your earlier political opening gives students more room to organize. Demands for wider reform confront the party leadership as Eastern Europe changes. Continue dialogue, impose martial law, or retreat from economic reform?"
+        }
+      ],
+      "headlines": [
+        {
+          "city": "Beijing",
+          "name": "The National Dispatch",
+          "headline": "Tiananmen",
+          "deck": "A million students occupy the square demanding reform; Gorbachev is visiting; the world's cameras are there."
+        },
+        {
+          "city": "Washington",
+          "name": "Foreign Desk",
+          "headline": "The view from Washington",
+          "deck": "At stake: money beats memory"
+        },
+        {
+          "city": "Washington",
+          "name": "The Independent Wire",
+          "headline": "A crisis with a long reach",
+          "deck": "The question here: money beats memory"
+        }
+      ],
+      "advisors": [
+        {
+          "id": "general",
+          "name": "The General",
+          "recommends": "CHN_T8_A",
+          "lines": {
+            "CHN_T8_A": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T8_B": "This gives us breathing room. Make sure our defenses hold while we use it.",
+            "CHN_T8_C": "This gives us breathing room. Make sure our defenses hold while we use it."
+          }
+        },
+        {
+          "id": "diplomat",
+          "name": "The Diplomat",
+          "recommends": "CHN_T8_A",
+          "lines": {
+            "CHN_T8_A": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T8_B": "A quieter confrontation leaves room to negotiate. Keep a channel open.",
+            "CHN_T8_C": "A quieter confrontation leaves room to negotiate. Keep a channel open."
+          }
+        },
+        {
+          "id": "treasurer",
+          "name": "The Treasurer",
+          "recommends": "CHN_T8_B",
+          "lines": {
+            "CHN_T8_A": "We will pay for this. Decide what domestic spending can wait.",
+            "CHN_T8_B": "This puts resources back into our economy. Recovery gives us choices later.",
+            "CHN_T8_C": "We will pay for this. Decide what domestic spending can wait."
+          }
+        },
+        {
+          "id": "spymaster",
+          "name": "The Spymaster",
+          "recommends": "CHN_T8_B",
+          "lines": {
+            "CHN_T8_A": "Our partners could hedge their bets. Watch where their commitments begin to weaken.",
+            "CHN_T8_B": "Others may listen more closely. Influence works only if they believe our promises.",
+            "CHN_T8_C": "Our partners could hedge their bets. Watch where their commitments begin to weaken."
+          }
+        }
+      ]
+    }
+  ]
+}

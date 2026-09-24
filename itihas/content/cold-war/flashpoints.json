@@ -1,0 +1,339 @@
+[
+  {
+    "id": "FP1",
+    "afterTurn": 1,
+    "year": "1949",
+    "title": "Joe-1",
+    "prompt": "The Soviet Union has tested an atomic bomb. How should {country} explain a world with two nuclear powers?",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP1_1",
+        "label": "Tell the public",
+        "meterDelta": {
+          "STABILITY": -4,
+          "INFLUENCE": 3
+        },
+        "effect": {
+          "id": "FP1_1_E1",
+          "place": "Los Alamos",
+          "lat": 35.88,
+          "lng": -106.3,
+          "text": "A second nuclear power changes the balance. American leaders accelerate work on a hydrogen bomb.",
+          "insight": "An opponent’s breakthrough can become an argument for your next weapon.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP1_2",
+        "label": "Delay the announcement",
+        "meterDelta": {
+          "STABILITY": 2,
+          "INFLUENCE": -2
+        },
+        "effect": {
+          "id": "FP1_2_E1",
+          "place": "Washington, DC",
+          "lat": 38.9,
+          "lng": -77.04,
+          "text": "Secrecy delays public debate, but evidence and leaks make silence harder to sustain.",
+          "insight": "Protecting confidence today can undermine trust when concealed information emerges.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP2",
+    "afterTurn": 2,
+    "year": "1957",
+    "title": "A signal from space",
+    "prompt": "Sputnik passes above every capital. People in {country} look up and ask who is ahead.",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP2_1",
+        "label": "Fund science and spaceflight",
+        "meterDelta": {
+          "ECON": -4,
+          "INFLUENCE": 6
+        },
+        "effect": {
+          "id": "FP2_1_E1",
+          "place": "Baikonur",
+          "lat": 45.62,
+          "lng": 63.31,
+          "text": "The orbiting satellite turns science education and rockets into national priorities.",
+          "insight": "A technological demonstration can change budgets far beyond the laboratory.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP2_2",
+        "label": "Call it a stunt",
+        "meterDelta": {
+          "ECON": 2,
+          "INFLUENCE": -5
+        },
+        "effect": {
+          "id": "FP2_2_E1",
+          "place": "{capital}",
+          "lat": 0,
+          "lng": 0,
+          "text": "Public concern about an apparent missile gap outgrows the official reassurance.",
+          "insight": "Dismissing a rival’s achievement leaves others to define what it means.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP3",
+    "afterTurn": 3,
+    "year": "1960",
+    "title": "The plane that did not come home",
+    "prompt": "A U-2 spy plane is shot down over the Soviet Union. Choose the public position {country} supports.",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP3_1",
+        "label": "Support an admission",
+        "meterDelta": {
+          "TENSION": 5,
+          "INFLUENCE": 2
+        },
+        "effect": {
+          "id": "FP3_1_E1",
+          "place": "Paris",
+          "lat": 48.86,
+          "lng": 2.35,
+          "text": "The summit collapses amid the spy-plane dispute.",
+          "insight": "Diplomacy depends on trust as well as what each side already knows.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP3_2",
+        "label": "Support a denial",
+        "meterDelta": {
+          "TENSION": 8,
+          "STABILITY": -3
+        },
+        "effect": {
+          "id": "FP3_2_E1",
+          "place": "Moscow",
+          "lat": 55.76,
+          "lng": 37.62,
+          "text": "Evidence of the flight turns a denial into a public embarrassment.",
+          "insight": "A cover story fails when the other side holds the evidence.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP4",
+    "afterTurn": 4,
+    "year": "1967",
+    "title": "Six days, a changed map",
+    "prompt": "War in the Middle East draws in the superpower rivalry. What position does {country} take?",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP4_1",
+        "label": "Back your partner",
+        "meterDelta": {
+          "TENSION": 6
+        },
+        "effect": {
+          "id": "FP4_1_E1",
+          "place": "Cairo",
+          "lat": 30.04,
+          "lng": 31.24,
+          "text": "Military defeat and victory deepen dependence on outside patrons.",
+          "insight": "Local wars become international crises when allies make them tests of credibility.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP4_2",
+        "label": "Push for a UN settlement",
+        "meterDelta": {
+          "TENSION": -3,
+          "INFLUENCE": 2
+        },
+        "effect": {
+          "id": "FP4_2_E1",
+          "place": "New York",
+          "lat": 40.75,
+          "lng": -73.97,
+          "text": "Resolution 242 becomes a disputed framework for negotiations.",
+          "insight": "A shared diplomatic text can create a channel even when its meaning is contested.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP5",
+    "afterTurn": 5,
+    "year": "1969",
+    "title": "Footprints on another world",
+    "prompt": "People gather around television sets as Apollo 11 reaches the Moon. How does {country} cover it?",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP5_1",
+        "label": "Broadcast the landing",
+        "meterDelta": {
+          "INFLUENCE": 4
+        },
+        "effect": {
+          "id": "FP5_1_E1",
+          "place": "Houston",
+          "lat": 29.76,
+          "lng": -95.37,
+          "text": "Mission control watches the landing in the Sea of Tranquility. The audience is worldwide.",
+          "insight": "A scientific achievement can shape perceptions of an entire political system.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP5_2",
+        "label": "Downplay the landing",
+        "meterDelta": {
+          "STABILITY": 1,
+          "INFLUENCE": -3
+        },
+        "effect": {
+          "id": "FP5_2_E1",
+          "place": "{capital}",
+          "lat": 0,
+          "lng": 0,
+          "text": "Foreign broadcasts and word of mouth carry the news anyway.",
+          "insight": "Information crosses borders even when official media stay quiet.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP6",
+    "afterTurn": 6,
+    "year": "1973",
+    "title": "The price of oil",
+    "prompt": "Oil prices rise sharply. The costs reach households and factories in {country}.",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP6_1",
+        "label": "Ration and fund alternatives",
+        "meterDelta": {
+          "STABILITY": -5
+        },
+        "effect": {
+          "id": "FP6_1_E1",
+          "place": "Riyadh",
+          "lat": 24.71,
+          "lng": 46.68,
+          "text": "Efficiency and new energy investment ease dependence over time.",
+          "insight": "Short-term sacrifice can reduce the leverage held by a vital supplier.",
+          "region": "World",
+          "delay": 1,
+          "meterDelta": {
+            "ECON": 3
+          }
+        }
+      },
+      {
+        "id": "FP6_2",
+        "label": "Borrow and subsidize",
+        "meterDelta": {
+          "STABILITY": 3,
+          "ECON": -6
+        },
+        "effect": {
+          "id": "FP6_2_E1",
+          "place": "{capital}",
+          "lat": 0,
+          "lng": 0,
+          "text": "Subsidies soften the immediate shock while debt and inflation build.",
+          "insight": "Making a cost less visible does not make it disappear.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP7",
+    "afterTurn": 7,
+    "year": "1983",
+    "title": "One man says no",
+    "prompt": "On 26 September, a Soviet warning system reports five incoming US missiles. Duty officer Stanislav Petrov judges it a false alarm.",
+    "cutscene": true,
+    "options": [
+      {
+        "id": "FP7_1",
+        "label": "Continue",
+        "meterDelta": {
+          "TENSION": -10
+        },
+        "effect": {
+          "id": "FP7_1_E1",
+          "place": "Serpukhov-15",
+          "lat": 55.08,
+          "lng": 37.07,
+          "text": "Petrov reports a false alarm. Satellite reflections, not incoming missiles, triggered the warning.",
+          "insight": "Judgment by someone outside the cabinet can interrupt a dangerous chain of escalation.",
+          "region": "World"
+        }
+      }
+    ]
+  },
+  {
+    "id": "FP8",
+    "afterTurn": 8,
+    "year": "1986",
+    "title": "An invisible cloud",
+    "prompt": "Chernobyl has released radioactive material across borders. How should {country} respond to the first reports?",
+    "cutscene": false,
+    "options": [
+      {
+        "id": "FP8_1",
+        "label": "Demand rapid disclosure",
+        "meterDelta": {
+          "STABILITY": -6,
+          "INFLUENCE": 5
+        },
+        "effect": {
+          "id": "FP8_1_E1",
+          "place": "Stockholm",
+          "lat": 59.33,
+          "lng": 18.07,
+          "text": "Swedish radiation monitoring helps expose a disaster that cannot stay within national borders.",
+          "insight": "Independent measurements can challenge an official account.",
+          "region": "World"
+        }
+      },
+      {
+        "id": "FP8_2",
+        "label": "Support a cover-up",
+        "meterDelta": {
+          "STABILITY": 2
+        },
+        "effect": {
+          "id": "FP8_2_E1",
+          "place": "Kyiv",
+          "lat": 50.45,
+          "lng": 30.52,
+          "text": "Public events proceed while the danger remains concealed. Trust falls when the scale becomes clear.",
+          "insight": "Withholding health information can trade brief calm for lasting distrust.",
+          "region": "World",
+          "meterDelta": {
+            "STABILITY": -10
+          }
+        }
+      }
+    ]
+  }
+]
