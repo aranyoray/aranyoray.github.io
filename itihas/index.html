@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Itihas — a timeline game</title>
+<meta name="description" content="Itihas: five thousand years of Indian history, one timeline. Place each event where it belongs. A game by Aranyo Ray.">
+<meta name="theme-color" content="#0d0b09">
+<meta property="og:title" content="Itihas — a timeline game">
+<meta property="og:description" content="Five thousand years of Indian history. One timeline. Where does each moment belong?">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.aranyoing.com/itihas/">
+<meta property="og:image" content="https://www.aranyoing.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="itihas.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<canvas id="fx" class="fx" aria-hidden="true"></canvas>
+
+<header class="bar">
+  <a href="../" class="bar-home" aria-label="Back to aranyoing.com">AR</a>
+  <div class="bar-title">
+    <span class="bar-script" lang="hi">इतिहास</span>
+    <span class="bar-name">Itihas</span>
+  </div>
+  <div class="bar-stats" id="bar-stats" hidden>
+    <div class="lives" id="lives" aria-label="Lives remaining">
+      <span class="life"></span><span class="life"></span><span class="life"></span>
+    </div>
+    <div class="score-wrap">
+      <span class="score-label">placed</span>
+      <span class="score" id="score">0</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- INTRO -->
+  <section class="screen screen-intro" id="screen-intro">
+    <div class="intro-inner">
+      <p class="eyebrow reveal" style="--i:0">A timeline game · <span lang="bn">ইতিহাস</span> · <span lang="hi">इतिहास</span></p>
+      <h1 class="title reveal" style="--i:1">Five thousand years.<br><em>One timeline.</em></h1>
+      <p class="lede reveal" style="--i:2">Each card is a moment from the history of the subcontinent, with its date hidden. Slide it into the right gap on the timeline. Three misses and the deck closes.</p>
+      <div class="intro-actions reveal" style="--i:3">
+        <button class="btn btn-gold" id="btn-daily" type="button">
+          <span class="btn-k">Today&rsquo;s deck</span>
+          <span class="btn-s" id="daily-date"></span>
+        </button>
+        <button class="btn btn-ghost" id="btn-random" type="button">
+          <span class="btn-k">Random deck</span>
+          <span class="btn-s">A new shuffle</span>
+        </button>
+      </div>
+      <dl class="intro-stats reveal" style="--i:4">
+        <div><dt>Best run</dt><dd id="stat-best">—</dd></div>
+        <div><dt>Games</dt><dd id="stat-games">0</dd></div>
+        <div><dt>Deck</dt><dd id="stat-deck">67 moments</dd></div>
+      </dl>
+      <div class="intro-rail reveal" aria-hidden="true" style="--i:5">
+        <span class="rail-tick" style="--x:4%"><i>c. 2600 BCE</i></span>
+        <span class="rail-tick" style="--x:31%"><i>499</i></span>
+        <span class="rail-tick" style="--x:58%"><i>1526</i></span>
+        <span class="rail-tick" style="--x:84%"><i>1947</i></span>
+        <span class="rail-tick rail-tick-q" style="--x:70%"><i>?</i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section class="screen screen-game" id="screen-game" hidden>
+    <div class="timeline-wrap" id="timeline-wrap">
+      <div class="timeline-fade timeline-fade-l" aria-hidden="true"></div>
+      <div class="timeline-fade timeline-fade-r" aria-hidden="true"></div>
+      <div class="timeline" id="timeline" role="list" aria-label="Timeline"></div>
+    </div>
+
+    <div class="hand">
+      <ul class="legend" aria-label="Eras">
+        <li data-era="ancient">Ancient</li><li data-era="classical">Classical</li><li data-era="medieval">Medieval</li>
+        <li data-era="early-modern">Early modern</li><li data-era="colonial">Colonial</li><li data-era="republic">Republic</li>
+      </ul>
+      <p class="hint" id="hint">Tap a gap on the timeline, or drag the card into place.</p>
+      <div class="draw" id="draw" tabindex="0" role="button" aria-label="Current event card. Press Enter to place at the selected gap.">
+        <div class="draw-top">
+          <span class="draw-era" id="draw-era">—</span>
+          <span class="draw-year">? ? ? ?</span>
+        </div>
+        <h2 class="draw-title" id="draw-title">—</h2>
+        <p class="draw-blurb" id="draw-blurb">—</p>
+        <div class="draw-foot">
+          <span class="draw-count" id="draw-count"></span>
+          <span class="draw-keys" aria-hidden="true"><kbd>←</kbd><kbd>→</kbd> move · <kbd>↵</kbd> place</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- END OVERLAY -->
+<div class="veil" id="veil" hidden>
+  <section class="end" role="dialog" aria-modal="true" aria-labelledby="end-title">
+    <p class="eyebrow" id="end-eyebrow">The deck closes</p>
+    <h2 class="end-title" id="end-title">You placed <em id="end-score">0</em> moments.</h2>
+    <p class="end-sub" id="end-sub"></p>
+    <div class="end-strip" id="end-strip" aria-label="Result by card"></div>
+    <div class="end-actions">
+      <button class="btn btn-gold" id="btn-share" type="button"><span class="btn-k">Share result</span></button>
+      <button class="btn btn-ghost" id="btn-again" type="button"><span class="btn-k">Play again</span></button>
+      <button class="btn btn-text" id="btn-review" type="button">Review the timeline</button>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="events.js"></script>
+<script src="itihas.js"></script>
+</body>
+</html>
