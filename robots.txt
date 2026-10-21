@@ -1,7 +1,7 @@
-# robots.txt for aranyoray.github.io
+# robots.txt for www.aranyoing.com
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://aranyoray.github.io/sitemap.xml
+Sitemap: https://www.aranyoing.com/sitemap.xml

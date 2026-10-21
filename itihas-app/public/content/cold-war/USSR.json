@@ -1888,7 +1888,8 @@
           },
           "flags": [
             "POLAND_INVADED",
-            "GORBY_HARDLINE"
+            "GORBY_HARDLINE",
+            "GORBY_PURGED"
           ],
           "effects": [
             {
@@ -2088,6 +2089,70 @@
               "insight": "The Cold War froze conflicts it didn't solve.",
               "region": "Europe"
             }
+          ],
+          "conditional": [
+            {
+              "requires": ["GORBY_PURGED"],
+              "label": "A Cautious Thaw",
+              "summary": "Grishin tries a limited Western opening — arms talks, grain, and a quiet lift of the worst Pact subsidies. No glasnost, no Berlin Wall opening.",
+              "flags": ["GRISHIN_THAW"],
+              "effects": [
+                {
+                  "id": "USSR_T8_A_ALT_E1",
+                  "place": "Berlin",
+                  "lat": 52.52,
+                  "lng": 13.4,
+                  "text": "The Wall stays. East Germany gets a trickle of West German loans; Leipzig's 1989 protests are small and shot down. No one in Moscow is prepared to let a Pact state leave.",
+                  "insight": "Without a Soviet leader willing to say 'no' to force, the Wall only comes down the hard way.",
+                  "region": "Europe"
+                },
+                {
+                  "id": "USSR_T8_A_ALT_E2",
+                  "place": "Geneva",
+                  "lat": 46.2,
+                  "lng": 6.14,
+                  "text": "Reykjavik never happens. INF talks drag for years because Grishin cannot sell deep cuts to his own generals.",
+                  "insight": "A hardline leader can negotiate, but only around the edges.",
+                  "region": "Europe"
+                },
+                {
+                  "id": "USSR_T8_A_ALT_E3",
+                  "place": "Chernobyl, Ukraine",
+                  "lat": 51.39,
+                  "lng": 30.1,
+                  "text": "The 1986 disaster is covered up more successfully; evacuations are late and partial. The rot in the system stays invisible for another decade.",
+                  "insight": "Closed systems hide their failures and keep failing.",
+                  "region": "Europe"
+                },
+                {
+                  "id": "USSR_T8_A_ALT_E4",
+                  "place": "Moscow",
+                  "lat": 55.76,
+                  "lng": 37.62,
+                  "text": "Grishin dies in 1988; a quiet succession hands the Politburo to another aging insider. The reform caucus has no leader and no air.",
+                  "insight": "Purging the reformers removed the only people who had a plan.",
+                  "region": "Europe"
+                },
+                {
+                  "id": "USSR_T8_A_ALT_E5",
+                  "place": "Vilnius",
+                  "lat": 54.69,
+                  "lng": 25.28,
+                  "text": "Baltic nationalism is contained with arrests, not negotiations; the republics stay in the union by force into the mid-1990s.",
+                  "insight": "The Baltics left because Gorbachev did not fire; a different leader fires.",
+                  "region": "Europe"
+                },
+                {
+                  "id": "USSR_T8_A_ALT_E6",
+                  "place": "Warsaw",
+                  "lat": 52.23,
+                  "lng": 21.01,
+                  "text": "Poland remains under martial law and tanks; Solidarity's leaders stay in jail or in exile. The 1989 roundtable never happens.",
+                  "insight": "Peaceful 1989 depended on a Kremlin that would not back the hardliners — this one does.",
+                  "region": "Europe"
+                }
+              ]
+            }
           ]
         },
         {
@@ -2235,7 +2300,12 @@
           ]
         }
       ],
-      "variants": [],
+      "variants": [
+        {
+          "requires": ["GORBY_PURGED"],
+          "situation": "Gorbachev was purged after the 1981 Polish adventure. You are Grishin, the Moscow party boss the hardliners chose instead — the man who built the Metro and ran its police. Growth is zero; oil prices just crashed; Chernobyl is a year away; the Pact is held together by Red Army tanks. Reform is a word nobody in your Politburo will say out loud. Your options: tighten the screws, buy time with a quiet Western overture, or copy Deng behind closed doors."
+        }
+      ],
       "headlines": [
         {
           "city": "Moscow",

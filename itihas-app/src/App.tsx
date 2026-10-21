@@ -508,6 +508,13 @@ export default function App() {
             Album <span className="count">{archive.cards.length}</span>
           </button>
           <button onClick={() => setModal("help")}>How to play</button>
+          <div className="game-switcher">
+            <span className="game-switch-icon" aria-hidden="true">☷</span>
+            <select className="game-switch" aria-label="Switch game" value="cw" onChange={(event) => { if (event.target.value === "hd") window.location.assign(import.meta.env.BASE_URL + "american/"); }}>
+              <option value="cw">The Cold War · 1947</option>
+              <option value="hd">A House Divided · 1850</option>
+            </select>
+          </div>
           <button
             className="settings-button"
             onClick={() => setModal("settings")}
@@ -849,7 +856,7 @@ export default function App() {
                     .slice(0, 3)
                     .map(eventCard)}
                 </div>
-                <h3>Bring these questions to the table.</h3>
+                <h3>FAQs — bring these to the table.</h3>
                 {ending?.discuss.map((q, i) => (
                   <details
                     key={q}
@@ -863,7 +870,7 @@ export default function App() {
                     }}
                   >
                     <summary>
-                      <span>0{i + 1}</span> Discussion question
+                      <span>0{i + 1}</span> FAQ
                     </summary>
                     <p>{q}</p>
                     <label>
@@ -940,6 +947,7 @@ export default function App() {
                   active={inspect || active}
                   onSelect={() => {}}
                   onEvent={openEvent}
+                  metrics={s!.meters}
                   playing
                 />
               </Suspense>
@@ -1074,25 +1082,6 @@ export default function App() {
                         quotation.
                       </p>
                     </div>
-                    <label className="prediction">
-                      Who do you think history listened to?
-                      <select
-                        value={s!.prediction || ""}
-                        onChange={(e) =>
-                          setSession({
-                            ...s!,
-                            prediction: e.target.value || null,
-                          })
-                        }
-                      >
-                        <option value="">Optional prediction</option>
-                        {node!.advisors.map((a) => (
-                          <option key={a.id} value={a.id}>
-                            {a.name}
-                          </option>
-                        ))}
-                      </select>
-                    </label>
                     {s!.options.council && (
                       <p className="council-note">
                         Assign one advisor to each student. Read the arguments

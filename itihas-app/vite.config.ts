@@ -5,7 +5,7 @@ export default defineConfig(({ command }) => ({
   base: command === "serve" ? "/itihas/" : "./",
   build: {
     outDir: "../itihas",
-    emptyOutDir: true,
+    emptyOutDir: false,
     chunkSizeWarningLimit: 1200,
     rollupOptions: {
       output: { manualChunks: { map: ["maplibre-gl"], fallback: ["leaflet"] } },

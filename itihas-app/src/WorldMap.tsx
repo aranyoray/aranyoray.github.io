@@ -10,7 +10,29 @@ type Props = {
   onSelect: (c: CountryInfo) => void;
   onEvent: (e: GameEvent) => void;
   playing: boolean;
+  metrics?: CountryInfo["startMeters"];
 };
+const BLOC_COLORS = {
+  western: "#6f9fbe",
+  soviet: "#bd7770",
+  nonaligned: "#c8ad6f",
+  other: "#c8cec1",
+} as const;
+const BLOC_NAMES: Record<string, string> = {
+  western: "U.S.-aligned",
+  soviet: "Soviet-aligned",
+  nonaligned: "Non-aligned",
+  other: "Other / shifting",
+};
+const COUNTRY_BLOCS: Record<string, keyof typeof BLOC_COLORS> = {
+  USA: "western", UK: "western", FRG: "western",
+  USSR: "soviet", CHN: "other", CUB: "other", IND: "nonaligned",
+};
+const HEALTH_METRICS = [
+  { key: "STABILITY" as const, label: "STB", name: "Stability", color: "#668b69" },
+  { key: "ECON" as const, label: "ECO", name: "Economy", color: "#b18941" },
+  { key: "INFLUENCE" as const, label: "INF", name: "Influence", color: "#647ca8" },
+];
 const labels = [
   ["NORTH AMERICA", -106, 48],
   ["SOUTH AMERICA", -58, -15],
@@ -49,6 +71,20 @@ const grid = {
     })),
   ],
 };
+function fitWholeWorld(map: any, fallback = false) {
+  if (!map?.fitBounds) return;
+  const width = map.getContainer?.()?.clientWidth || 800;
+  const pad = Math.max(8, Math.min(34, Math.round(width * 0.035)));
+  if (fallback) {
+    map.fitBounds([[-82, -180], [82, 180]], { padding: [24, pad], animate: false, maxZoom: 1.05 });
+  } else {
+    map.fitBounds([[-180, -82], [180, 82]], {
+      padding: { top: 24, right: pad, bottom: 34, left: pad },
+      maxZoom: 1.05,
+      duration: 0,
+    });
+  }
+}
 export default function WorldMap(props: Props) {
   const el = useRef<HTMLDivElement>(null);
   const map = useRef<any>(null);
@@ -63,29 +99,42 @@ export default function WorldMap(props: Props) {
     let cleanup = () => {};
     async function init() {
       try {
-        const [mod, res] = await Promise.all([
+        const [mod, landRes, blocsRes] = await Promise.all([
           import("maplibre-gl"),
           fetch(import.meta.env.BASE_URL + "maps/land.json"),
+          fetch(import.meta.env.BASE_URL + "maps/world-blocs.geojson"),
         ]);
-        if (!res.ok) throw Error("Map unavailable");
-        const land = await res.json();
+        if (!landRes.ok || !blocsRes.ok) throw Error("Map unavailable");
+        const land = await landRes.json();
+        const blocs = await blocsRes.json();
         if (disposed) return;
         const ml = mod.default;
         api.current = ml;
         let m: any;
+        let fallbackMap = false;
         try {
           m = new ml.Map({
             container: el.current!,
             center: [15, 25],
-            zoom: 1.25,
-            minZoom: 0.6,
-            maxZoom: 6,
+            zoom: 0.8,
+            minZoom: 0.25,
+            maxZoom: 1.05,
+            maxBounds: [[-180, -85], [180, 85]],
+            dragPan: false,
+            dragRotate: false,
+            scrollZoom: false,
+            boxZoom: false,
+            doubleClickZoom: false,
+            keyboard: false,
+            touchZoomRotate: false,
+            touchPitch: false,
             attributionControl: false,
             renderWorldCopies: false,
             style: {
               version: 8,
               sources: {
                 land: { type: "geojson", data: land },
+                blocs: { type: "geojson", data: blocs },
                 grid: { type: "geojson", data: grid },
                 routes: {
                   type: "geojson",
@@ -115,6 +164,26 @@ export default function WorldMap(props: Props) {
                   paint: { "fill-color": "#f3f0e5" },
                 },
                 {
+                  id: "bloc-fill",
+                  type: "fill",
+                  source: "blocs",
+                  paint: {
+                    "fill-color": ["match", ["get", "bloc"],
+                      "western", BLOC_COLORS.western,
+                      "soviet", BLOC_COLORS.soviet,
+                      "nonaligned", BLOC_COLORS.nonaligned,
+                      BLOC_COLORS.other,
+                    ],
+                    "fill-opacity": 0.88,
+                  },
+                },
+                {
+                  id: "bloc-borders",
+                  type: "line",
+                  source: "blocs",
+                  paint: { "line-color": "#738071", "line-width": 0.55, "line-opacity": 0.9 },
+                },
+                {
                   id: "coast",
                   type: "line",
                   source: "land",
@@ -137,6 +206,7 @@ export default function WorldMap(props: Props) {
           map.current = m;
           m.on("load", () => {
             if (disposed) return;
+            fitWholeWorld(m);
             for (const [text, lng, lat] of labels) {
               const d = document.createElement("span");
               d.className =
@@ -156,15 +226,22 @@ export default function WorldMap(props: Props) {
         } catch {
           const L = await import("leaflet");
           if (disposed) return;
+          fallbackMap = true;
           setMode("fallback");
           api.current = L;
           m = L.map(el.current!, {
             center: [25, 15],
-            zoom: 2,
-            minZoom: 1,
-            maxZoom: 6,
+            zoom: 0.8,
+            minZoom: 0,
+            maxZoom: 1.05,
             zoomControl: false,
             attributionControl: false,
+            dragging: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            boxZoom: false,
+            keyboard: false,
+            touchZoom: false,
           });
           L.geoJSON(land, {
             style: {
@@ -174,15 +251,25 @@ export default function WorldMap(props: Props) {
               fillOpacity: 1,
             },
           }).addTo(m);
+          L.geoJSON(blocs, {
+            style: (feature: any) => ({
+              color: "#738071",
+              weight: 0.55,
+              fillColor: BLOC_COLORS[feature?.properties?.bloc as keyof typeof BLOC_COLORS] || BLOC_COLORS.other,
+              fillOpacity: 0.88,
+            }),
+          }).addTo(m);
           L.geoJSON(grid, { style: { color: "#bec7bc", weight: 0.6 } }).addTo(
             m,
           );
           map.current = m;
+          fitWholeWorld(m, true);
           setReady((x) => x + 1);
         }
         const ro = new ResizeObserver(() => {
           m.invalidateSize?.();
           m.resize?.();
+          fitWholeWorld(m, fallbackMap);
         });
         ro.observe(el.current!);
         cleanup = () => {
@@ -205,40 +292,80 @@ export default function WorldMap(props: Props) {
     markers.current = [];
     const ml = api.current;
     const mapObj = map.current;
-    function pin(lng: number, lat: number, element: HTMLElement) {
+    const pinOffsets: Record<string, [number, number]> = {
+      USA: [14, 12], USSR: [8, 8], CHN: [14, 10], UK: [-48, 8],
+      FRG: [50, -15], CUB: [14, 10], IND: [12, 16],
+    };
+    function pin(lng: number, lat: number, element: HTMLElement, countryId?: string) {
+      const offset = countryId ? pinOffsets[countryId] || [0, 0] : [0, 0];
       if (mode === "fallback") {
         const m = ml
           .marker([lat, lng], {
             icon: ml.divIcon({
               html: element,
               className: "leaf-pin",
-              iconSize: [18, 18],
+              iconSize: [150, 66],
+              iconAnchor: [4 - offset[0], 9 - offset[1]],
             }),
           })
           .addTo(mapObj);
         markers.current.push(m);
       } else {
         markers.current.push(
-          new ml.Marker({ element }).setLngLat([lng, lat]).addTo(mapObj),
+          new ml.Marker({ element, offset }).setLngLat([lng, lat]).addTo(mapObj),
         );
       }
     }
-    if (!props.playing) {
-      for (const c of props.countries) {
-        const b = document.createElement("button");
-        b.className =
-          "capital-pin" + (props.selected?.id === c.id ? " selected" : "");
-        b.dataset.country = c.id;
-        b.setAttribute("aria-label", "Play as " + c.name);
-        const dot = document.createElement("i");
-        b.append(dot);
-        const text = document.createElement("span");
-        text.textContent = c.capital.replace(", DC", "");
-        b.append(text);
-        b.onclick = () => propsRef.current.onSelect(c);
-        pin(c.lng, c.lat, b);
+    for (const c of props.countries) {
+      const bloc = COUNTRY_BLOCS[c.id] || "other";
+      const values = props.selected?.id === c.id && props.metrics
+        ? props.metrics
+        : c.startMeters;
+      const marker = document.createElement(props.playing ? "div" : "button");
+      marker.className = `capital-pin bloc-${bloc}${props.selected?.id === c.id ? " selected" : ""}`;
+      marker.dataset.country = c.id;
+      marker.style.setProperty("--bloc-color", BLOC_COLORS[bloc]);
+      const details = HEALTH_METRICS.map(({ key, label, name, color }) => {
+        const value = Math.round(values[key]);
+        return `${name} ${value}/100`;
+      }).join(", ");
+      marker.setAttribute("aria-label", `${c.name}; ${BLOC_NAMES[bloc]}; ${details}`);
+      marker.title = `${c.name} · ${BLOC_NAMES[bloc]} · ${details}`;
+      const dot = document.createElement("i");
+      dot.className = "country-dot";
+      marker.append(dot);
+      const copy = document.createElement("span");
+      copy.className = "country-marker-copy";
+      const name = document.createElement("strong");
+      name.textContent = c.id;
+      copy.append(name);
+      const capital = document.createElement("small");
+      capital.textContent = c.capital.replace(", DC", "");
+      copy.append(capital);
+      const bars = document.createElement("span");
+      bars.className = "country-health-bars";
+      bars.setAttribute("aria-hidden", "true");
+      for (const { key, label, name: metricName, color } of HEALTH_METRICS) {
+        const value = Math.round(values[key]);
+        const row = document.createElement("span");
+        row.className = "country-health-bar";
+        row.title = `${metricName}: ${value}/100`;
+        const tag = document.createElement("small");
+        tag.textContent = label;
+        const track = document.createElement("i");
+        const fill = document.createElement("b");
+        fill.style.width = `${value}%`;
+        fill.style.backgroundColor = color;
+        track.append(fill);
+        row.append(tag, track);
+        bars.append(row);
       }
-    } else {
+      copy.append(bars);
+      marker.append(copy);
+      if (!props.playing) marker.onclick = () => propsRef.current.onSelect(c);
+      pin(c.lng, c.lat, marker, c.id);
+    }
+    if (props.playing) {
       const seen = new Map<string, GameEvent>();
       for (const e of props.events) seen.set(e.place, e);
       if (props.active) seen.set(props.active.place, props.active);
@@ -264,30 +391,14 @@ export default function WorldMap(props: Props) {
     mode,
     props.countries,
     props.selected,
+    props.metrics,
     props.events,
     props.active,
     props.playing,
   ]);
   useEffect(() => {
     if (!ready || !map.current) return;
-    const target = props.active || (props.playing ? props.selected : null);
-    const reduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-    const center: [number, number] = target
-      ? [target.lng, target.lat]
-      : [15, 25];
-    if (mode === "fallback") {
-      map.current.setView([center[1], center[0]], target ? 3 : 2, {
-        animate: !reduced,
-      });
-    } else {
-      map.current.flyTo({
-        center,
-        zoom: target ? 2.8 : 1.25,
-        duration: reduced ? 0 : 650,
-        essential: false,
-      });
+    if (mode !== "fallback") {
       const routes = map.current.getSource("routes");
       if (routes)
         routes.setData({
@@ -311,17 +422,9 @@ export default function WorldMap(props: Props) {
         });
     }
   }, [props.active?.id, props.playing, props.selected?.id, ready, mode]);
-  function zoom(d: number) {
-    if (!map.current) return;
-    mode === "fallback"
-      ? map.current.setZoom(map.current.getZoom() + d)
-      : map.current.zoomTo(map.current.getZoom() + d, { duration: 300 });
-  }
   function reset() {
     if (!map.current) return;
-    mode === "fallback"
-      ? map.current.setView([25, 15], 2)
-      : map.current.flyTo({ center: [15, 25], zoom: 1.25, duration: 600 });
+    fitWholeWorld(map.current, mode === "fallback");
   }
   return (
     <div className="atlas">
@@ -341,18 +444,17 @@ export default function WorldMap(props: Props) {
         <span className="crosshair">⊕</span> WORLD ATLAS <span>1947—1991</span>
       </div>
       <div className="map-controls">
-        <button aria-label="Zoom in" onClick={() => zoom(1)}>
-          +
-        </button>
-        <button aria-label="Zoom out" onClick={() => zoom(-1)}>
-          −
-        </button>
-        <button aria-label="Show whole world" onClick={reset}>
-          ↗
+        <button aria-label="Fit the whole world" onClick={reset}>
+          ⤢
         </button>
       </div>
+      <div className="map-bloc-legend" aria-label="Illustrative Cold War blocs">
+        {Object.entries(BLOC_NAMES).map(([bloc, name]) => (
+          <span key={bloc}><i style={{ backgroundColor: BLOC_COLORS[bloc as keyof typeof BLOC_COLORS] }} />{name}</span>
+        ))}
+      </div>
       <div className="map-credit">
-        Natural Earth · coastlines, not historical borders
+        Natural Earth · illustrative alignments; borders and blocs shifted over time
       </div>
       <div className="compass" aria-hidden="true">
         N<span>↑</span>
