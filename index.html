@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aranyo Ray — Founder &amp; Systems Engineer, Yale</title>
-<meta name="description" content="Aranyo Ray, founder and systems engineer at Yale, builds hardware-integrated AI systems: US Air Force–commended ISEF research to a 700k-rider metro pilot.">
+<title>Aranyo Ray — Founder of SamaWritten | Systems Engineer</title>
+<meta name="description" content="Aranyo Ray, founder of SamaWritten, the wearable for vitals, medical ID and contact check-ins. Yale-trained systems engineer based in Kolkata and Bangalore.">
 <meta name="author" content="Aranyo Ray">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
@@ -20,8 +20,8 @@
 <meta property="og:site_name" content="Aranyo Ray">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://www.aranyoing.com/">
-<meta property="og:title" content="Aranyo Ray — Founder &amp; Systems Engineer">
-<meta property="og:description" content="Founder and systems engineer at Yale building hardware-integrated AI systems — from US Air Force–commended ISEF research to a 700k-rider metro pilot.">
+<meta property="og:title" content="Aranyo Ray — Founder of SamaWritten">
+<meta property="og:description" content="Founder of SamaWritten, the wearable for vitals, medical ID and contact check-ins. Yale-trained systems engineer, Kolkata and Bangalore.">
 <meta property="og:image" content="https://www.aranyoing.com/images/og-cover.jpg">
 <meta property="og:image:secure_url" content="https://www.aranyoing.com/images/og-cover.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -31,8 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@aranyoray">
 <meta name="twitter:creator" content="@aranyoray">
-<meta name="twitter:title" content="Aranyo Ray — Founder &amp; Systems Engineer">
-<meta name="twitter:description" content="Founder and systems engineer at Yale building hardware-integrated AI systems — from US Air Force–commended ISEF research to a 700k-rider metro pilot.">
+<meta name="twitter:title" content="Aranyo Ray — Founder of SamaWritten">
+<meta name="twitter:description" content="Founder of SamaWritten, the wearable for vitals, medical ID and contact check-ins. Yale-trained systems engineer, Kolkata and Bangalore.">
 <meta name="twitter:image" content="https://www.aranyoing.com/images/og-cover.jpg">
 <meta name="twitter:image:alt" content="Aranyo Ray">
 <link rel="me" href="https://www.linkedin.com/in/aranyo/">
@@ -51,10 +51,14 @@
       "url": "https://www.aranyoing.com/",
       "image": "https://www.aranyoing.com/images/og-cover.jpg",
       "email": "mailto:aranyoray@gmail.com",
-      "jobTitle": "Founder & Systems Engineer",
-      "description": "Founder and systems engineer building hardware-integrated AI systems with validated real-world outcomes.",
+      "jobTitle": "Founder, SamaWritten",
+      "worksFor": { "@id": "https://samawritten.com/#organization" },
+      "description": "Founder of SamaWritten, a wearable for heart-rate, HRV, sleep and activity trends with an always-visible medical ID and contact check-ins. Yale-trained systems engineer.",
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "Yale University", "sameAs": "https://www.yale.edu/" },
-      "homeLocation": { "@type": "Place", "name": "New Haven, Connecticut, USA" },
+      "homeLocation": [
+        { "@type": "Place", "name": "Kolkata, West Bengal, India" },
+        { "@type": "Place", "name": "Bengaluru, Karnataka, India" }
+      ],
       "award": [
         "Diana Award",
         "US Air Force Commendation, Intel ISEF (NanoCide)",
@@ -75,6 +79,14 @@
       ]
     },
     {
+      "@type": "Organization",
+      "@id": "https://samawritten.com/#organization",
+      "name": "SamaWritten",
+      "url": "https://samawritten.com/",
+      "description": "A wearable for heart-rate, HRV, sleep and activity trends, an always-visible medical ID and 2G contact check-ins.",
+      "founder": { "@id": "https://www.aranyoing.com/#person" }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://www.aranyoing.com/#website",
       "url": "https://www.aranyoing.com/",
@@ -86,7 +98,7 @@
       "@type": "ProfilePage",
       "@id": "https://www.aranyoing.com/#profilepage",
       "url": "https://www.aranyoing.com/",
-      "name": "Aranyo Ray — Founder & Systems Engineer",
+      "name": "Aranyo Ray — Founder of SamaWritten",
       "isPartOf": { "@id": "https://www.aranyoing.com/#website" },
       "mainEntity": { "@id": "https://www.aranyoing.com/#person" },
       "primaryImageOfPage": "https://www.aranyoing.com/images/og-cover.jpg"
@@ -211,11 +223,17 @@
   .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
   .hero-name {
     font-family: 'Instrument Serif', serif;
-    font-size: clamp(44px, 9vw, 132px);
+    font-size: clamp(46px, 7.2vw, 118px); white-space: nowrap;
     line-height: 1.0; letter-spacing: -0.025em; margin-bottom: 10px;
   }
   .hero-name em { font-style: italic; color: var(--text-muted); opacity: 0.8; }
   [data-theme="dark"] .hero-name em { opacity: 1; color: var(--text-muted); }
+  .hero-def {
+    font-family: 'Instrument Serif', serif; font-size: clamp(17px, 1.55vw, 24px);
+    color: var(--text-muted); line-height: 1.45; max-width: 680px; margin: 4px 0 16px;
+  }
+  .hero-def .def-w { color: var(--text); font-style: italic; }
+  .hero-def .def-pos { font-family: 'DM Mono', monospace; font-size: 0.68em; color: var(--accent); margin: 0 10px; letter-spacing: 0.04em; }
   .hero-tagline {
     font-size: 12.5px; color: var(--text-muted);
     margin-bottom: 12px; font-family: 'DM Mono', monospace; letter-spacing: 0.01em;
@@ -296,7 +314,7 @@
   .col-main > .card { height: 100%; }
   @media (min-width: 701px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
-    .grid > .card-full, .grid > .card-def, .grid > .card-about, .grid > .card-moments,
+    .grid > .card-full, .grid > .card-def, .grid > .card-about, 
     .grid > .contact-card, .grid > .social-row, .grid > .col-main, .grid > .col-side { grid-column: 1 / -1; }
   }
   @media (min-width: 1101px) {
@@ -312,12 +330,11 @@
     .col-side { gap: 14px; }
     .grid > .card { grid-column: span 3; }
     .grid > .card-quote { grid-column: span 6; }
-    .grid > .card-full, .grid > .card-def, .grid > .card-about, .grid > .card-moments,
+    .grid > .card-full, .grid > .card-def, .grid > .card-about, 
     .grid > .contact-card, .grid > .social-row { grid-column: 1 / -1; }
     .grid > .col-main { grid-column: span 7; }
     .grid > .col-side { grid-column: span 5; }
     .col-side > .card { flex: none; }
-    .card-moments .gallery-split { min-height: 480px; }
     .card-about .about-statement { font-size: 1.6rem; max-width: 1000px; }
     .step-desc { max-width: 680px; }
   }
@@ -407,7 +424,8 @@
     :root { --max: 100%; }
     .nav-inner { padding: 10px 15px; }
     .hero-wrapper { padding: 40px 0 20px; }
-    .hero-name { font-size: 3.2rem; line-height: 1.1; margin-bottom: 12px; }
+    .hero-name { font-size: 2.9rem; line-height: 1.1; margin-bottom: 12px; }
+    .hero-def { margin-left: auto; margin-right: auto; }
     .hero-tagline { font-size: 14px; max-width: 280px; margin: 0 auto 24px; }
     .chip-stage { display: none !important; } /* Remove CPU animation on mobile */
     .about-statement { font-size: 1.1rem; line-height: 1.5; }
@@ -443,113 +461,29 @@
   .hl-purple { border-color: #8b5cf6; }
   .hl-red { border-color: #ef4444; }
 
-  /* MOMENTS / GALLERY */
-  .gallery-split {
-    display: flex; align-items: stretch;
-    border: 1px solid var(--border); border-radius: 12px;
-    overflow: hidden; min-height: 380px; margin-top: 15px;
-    background: var(--bg);
+  /* MOMENTS: three marquee rows, no captions */
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .moments {
+    grid-column: 1 / -1; width: 100vw; margin-left: calc(50% - 50vw);
+    overflow: hidden; display: flex; flex-direction: column; gap: 12px; padding: 10px 0;
   }
-  .gallery-image-panel {
-    flex: 0 0 55%; position: relative;
-    overflow: hidden; cursor: crosshair; background: var(--border);
-    min-height: 280px;
+  .marquee { overflow: hidden; width: 100%; }
+  .marquee-track {
+    display: flex; gap: 12px; width: max-content;
+    animation: marquee-ltr var(--dur, 48s) linear infinite;
+    will-change: transform;
   }
-  .gallery-image {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: cover; opacity: 0; transition: opacity 0.6s ease;
+  .marquee.rtl .marquee-track { animation-name: marquee-rtl; }
+  .marquee-track img {
+    height: clamp(150px, 17vw, 260px); width: auto; flex: none; display: block;
+    border-radius: 12px; border: 1px solid var(--border); object-fit: cover;
+    background: var(--card);
   }
-  .gallery-image--active { opacity: 1; }
-  .gallery-text-panel {
-    flex: 1; display: flex; flex-direction: column;
-    justify-content: center; padding: 30px; gap: 20px;
-  }
-  .gallery-slides { position: relative; width: 100%; }
-  .gallery-slide {
-    display: none; flex-direction: column;
-    justify-content: center; gap: 8px;
-    opacity: 0; transform: translateY(10px); transition: all 0.4s ease;
-  }
-  .gallery-slide--active {
-    display: flex; opacity: 1; transform: translateY(0);
-  }
-  .gallery-slide-tag {
-    font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600;
-    letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent);
-  }
-  .gallery-slide-title {
-    font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 600;
-    color: var(--text); margin: 0; letter-spacing: -0.02em;
-  }
-  .gallery-slide-desc {
-    font-family: 'Outfit', sans-serif; font-size: 14px; line-height: 1.6;
-    color: var(--text-muted); margin: 0;
-  }
-  .gallery-nav { display: flex; align-items: center; gap: 15px; margin-top: 10px; }
-  .gallery-btn {
-    width: 36px; height: 36px; border-radius: 50%;
-    border: 1px solid var(--border); background: var(--bg);
-    color: var(--text); cursor: pointer; display: flex;
-    align-items: center; justify-content: center; transition: all 0.2s;
-  }
-  .gallery-btn:hover { border-color: var(--text); transform: translateY(-1px); }
-  .gallery-btn:active { transform: translateY(0); }
-  .gallery-dots { display: flex; align-items: center; gap: 8px; }
-  .gallery-dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    background: var(--border); border: none; cursor: pointer;
-    transition: all 0.2s; padding: 0;
-  }
-  .gallery-dot.active { background: var(--text); transform: scale(1.3); }
+  .moments:hover .marquee-track { animation-play-state: paused; }
+  @keyframes marquee-ltr { from { transform: translateX(calc(-100% / 3)); } to { transform: translateX(0); } }
+  @keyframes marquee-rtl { from { transform: translateX(0); } to { transform: translateX(calc(-100% / 3)); } }
+  @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } .marquee { overflow-x: auto; } }
 
-  /* LIGHTBOX */
-  .lightbox-overlay {
-    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.95);
-    display: flex; align-items: center; justify-content: center;
-    z-index: 2000; opacity: 0; visibility: hidden;
-    transition: all 0.3s ease; padding: 40px; backdrop-filter: blur(8px);
-  }
-  .lightbox-overlay.active { opacity: 1; visibility: visible; }
-  .lightbox-close {
-    position: absolute; top: 20px; right: 20px;
-    width: 44px; height: 44px; border: none;
-    background: rgba(255, 255, 255, 0.1); border-radius: 50%;
-    font-size: 24px; cursor: pointer; color: #fff;
-    display: flex; align-items: center; justify-content: center; transition: all 0.2s;
-  }
-  .lightbox-close:hover { background: rgba(255, 255, 255, 0.2); transform: rotate(90deg); }
-  .lightbox-arrow {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    width: 48px; height: 48px; border: none;
-    background: rgba(255, 255, 255, 0.1); border-radius: 50%;
-    cursor: pointer; color: #fff; display: flex;
-    align-items: center; justify-content: center; transition: all 0.2s;
-  }
-  .lightbox-arrow:hover:not(:disabled) { background: rgba(255, 255, 255, 0.2); }
-  .lightbox-arrow:disabled { opacity: 0.2; cursor: default; }
-  .lightbox-arrow-left { left: 20px; }
-  .lightbox-arrow-right { right: 20px; }
-  .lightbox-content { max-width: 1000px; width: 100%; text-align: center; }
-  .lightbox-image { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 8px; }
-  .lightbox-details { margin-top: 20px; color: #fff; font-family: 'Outfit', sans-serif; }
-  .lightbox-title { font-size: 1.4rem; font-weight: 600; margin-bottom: 5px; }
-  .lightbox-desc { font-size: 14px; opacity: 0.7; }
-  .lightbox-counter { font-size: 11px; opacity: 0.5; margin-bottom: 10px; display: block; letter-spacing: 0.1em; }
-
-  /* MOMENTS CARD REFINEMENTS */
-  .card-moments { padding: 0 !important; }
-  .card-moments .card-label { padding: 20px 22px 10px; margin-bottom: 0; }
-  .card-moments .gallery-split { border: none; border-radius: 0; margin-top: 0; min-height: 400px; }
-
-  @media (max-width: 700px) {
-    .gallery-split { flex-direction: column; min-height: auto; }
-    .gallery-image-panel { order: 1; height: 280px; flex: none; width: 100%; }
-    .gallery-text-panel { order: 2; padding: 25px; }
-    .gallery-slide-title { font-size: 1.5rem; }
-    .lightbox-arrow { width: 40px; height: 40px; }
-    .lightbox-arrow-left { left: 10px; }
-    .lightbox-arrow-right { right: 10px; }
-  }
   .about-statement {
     font-family: 'Outfit', sans-serif;
     font-size: 1.25rem;
@@ -778,7 +712,6 @@
     <ul class="nav-links">
       <li><a href="#work">Work</a></li>
       <li><a href="#approach">Approach</a></li>
-      <li><a href="/itihas/">Itihas ↗</a></li>
       <li><a href="/mentor.html">Mentor</a></li>
       <li><a href="https://x.com/aranyoray" target="_blank" rel="noopener">X ↗</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -802,9 +735,10 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span class="dot"></span>
-          Founder &amp; Systems Engineer
+          Founder, SamaWritten
         </div>
-        <h1 class="hero-name">Aranyo<br><em>Ray.</em></h1>
+        <h1 class="hero-name">Aranyo <em>Ray.</em></h1>
+        <p class="hero-def"><span class="def-w">aranyoing</span><span class="def-pos">/n./</span><span class="def-t">executing rapidly in ambiguous, high-constraint environments to produce real, validated outcomes.</span></p>
         <p class="hero-tagline"><strong>Founder &amp; Builder</strong> — Scaling systems from bits to atoms.</p>
         <div class="hero-actions">
           <a href="mailto:aranyoray@gmail.com" class="btn-primary">Get in touch</a>
@@ -889,8 +823,8 @@
     <div class="card">
       <h2 class="card-label">Currently</h2>
       <div class="build-status"><span class="dot"></span> Active</div>
-      <div class="build-title">Stealth Startup — Behavioral Safety</div>
-      <div class="build-sub">Building behavioral-first safety at scale. Backed by advisors from GIC (Singapore), Disney, and Apple.</div>
+      <div class="build-title"><a href="https://samawritten.com/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:1px solid currentColor;">SamaWritten</a></div>
+      <div class="build-sub">Founder. A wearable for heart-rate, HRV, sleep and activity trends, with an always-visible medical ID and 2G contact check-ins. Backed by advisors from CHN Indiana, Tidal Health, Gentuity and Narayana Health.</div>
     </div>
 
     <!-- LOCATION / GLOBE -->
@@ -900,8 +834,8 @@
       </div>
       <div class="location-content">
         <h2 class="card-label">Based</h2>
-        <div class="location-city">YALE · NEW HAVEN</div>
-        <div class="location-sub">CONNECTICUT, USA</div>
+        <div class="location-city">KOLKATA · BANGALORE</div>
+        <div class="location-sub">INDIA</div>
       </div>
     </div>
 
@@ -932,15 +866,15 @@
     <div class="card card-full" id="work">
       <h2 class="card-label">Sidequests</h2>
       <ul class="timeline">
-        <li class="tl-item" onmouseenter="showPreview('assets/stealth.png', event)" onmouseleave="hidePreview()">
+        <li class="tl-item" onmouseenter="showPreview('images/moments/11-in-lab.jpg', event)" onmouseleave="hidePreview()">
           <div class="tl-left">
             <div class="tl-year">2026</div>
             <div class="tl-dot accent"></div>
             <div class="tl-line"></div>
           </div>
           <div class="tl-body">
-            <div class="tl-role"><span class="hl hl-blue">Stealth Startup</span> — Building behavioral-first safety at scale.</div>
-            <div class="tl-meta">Backed by advisors from <span class="hl hl-orange">GIC (Singapore), Disney, and Apple</span>.</div>
+            <div class="tl-role"><a href="https://samawritten.com/" target="_blank" rel="noopener" class="hl hl-blue" style="color:inherit;text-decoration:none;">SamaWritten</a> — Founder. Wearable vitals, medical ID and contact check-ins.</div>
+            <div class="tl-meta">Backed by advisors from <span class="hl hl-orange">CHN Indiana, Tidal Health, Gentuity and Narayana Health</span>.</div>
           </div>
         </li>
         <li class="tl-item" onmouseenter="showPreview('assets/metro.png', event)" onmouseleave="hidePreview()">
@@ -1166,74 +1100,12 @@
     </div>
 
     <!-- MOMENTS -->
-    <div class="card card-full card-moments">
-      <h2 class="card-label">Moments</h2>
-      <div class="gallery-split" id="gallery-split">
-        <div class="gallery-image-panel" id="gallery-image-panel">
-          <img class="gallery-image gallery-image--active" decoding="async" src="Headshot-Aranyo-Ray-cto-komal.jpg" alt="Aranyo Ray professional headshot at Yale" data-index="0">
-          <img class="gallery-image" loading="lazy" decoding="async" src="group-photo-yale-aranyo.webp" alt="Aranyo Ray Yale group photo by the lake" data-index="1">
-          <img class="gallery-image" loading="lazy" decoding="async" src="photo-yale-aranyo.jpeg" alt="Aranyo Ray with friends on Yale campus" data-index="2">
-          <img class="gallery-image" loading="lazy" decoding="async" src="celebration-yale-aranyo.jpeg" alt="Aranyo Ray at Yale cultural celebration" data-index="3">
-          <img class="gallery-image" loading="lazy" decoding="async" src="Pohela-Boishak-Bengali-New-Year-Group-Photo-aranyo-yale.jpeg" alt="Pohela Boishakh Bengali New Year celebration at Yale" data-index="4">
-          <img class="gallery-image" loading="lazy" decoding="async" src="Harvard-event-selfie-aranyo.jpg" alt="Aranyo Ray at Harvard Yale game" data-index="5">
-          <img class="gallery-image" loading="lazy" decoding="async" src="harvard-goup-photo-event-aranyo.jpeg" alt="Aranyo Ray group photo at Harvard Yale event" data-index="6">
-          <img class="gallery-image" loading="lazy" decoding="async" src="organization-aranyo-usa-komal.jpeg" alt="Aranyo Ray Asian American Cultural Center award at Yale" data-index="7">
-        </div>
-        <div class="gallery-text-panel">
-          <div class="gallery-slides" id="gallery-slides">
-            <div class="gallery-slide gallery-slide--active" data-index="0">
-              <span class="gallery-slide-tag">Professional</span>
-              <h3 class="gallery-slide-title">CTO at Komal</h3>
-              <p class="gallery-slide-desc">Professional headshot during time as Chief Technology Officer at Komal, Yale.</p>
-            </div>
-            <div class="gallery-slide" data-index="1">
-              <span class="gallery-slide-tag">Yale</span>
-              <h3 class="gallery-slide-title">By the Lake</h3>
-              <p class="gallery-slide-desc">Group photo with friends by the lake at Yale University.</p>
-            </div>
-            <div class="gallery-slide" data-index="2">
-              <span class="gallery-slide-tag">Yale</span>
-              <h3 class="gallery-slide-title">On Campus</h3>
-              <p class="gallery-slide-desc">With friends on the Yale campus grounds.</p>
-            </div>
-            <div class="gallery-slide" data-index="3">
-              <span class="gallery-slide-tag">Culture</span>
-              <h3 class="gallery-slide-title">Cultural Celebration</h3>
-              <p class="gallery-slide-desc">Celebrating cultural diversity at Yale University.</p>
-            </div>
-            <div class="gallery-slide" data-index="4">
-              <span class="gallery-slide-tag">Culture</span>
-              <h3 class="gallery-slide-title">Pohela Boishakh</h3>
-              <p class="gallery-slide-desc">Bengali New Year celebration with the community at Yale.</p>
-            </div>
-            <div class="gallery-slide" data-index="5">
-              <span class="gallery-slide-tag">Events</span>
-              <h3 class="gallery-slide-title">Harvard-Yale Game</h3>
-              <p class="gallery-slide-desc">At the legendary Harvard-Yale rivalry game.</p>
-            </div>
-            <div class="gallery-slide" data-index="6">
-              <span class="gallery-slide-tag">Events</span>
-              <h3 class="gallery-slide-title">Harvard-Yale Event</h3>
-              <p class="gallery-slide-desc">Group photo at the Harvard-Yale event gathering.</p>
-            </div>
-            <div class="gallery-slide" data-index="7">
-              <span class="gallery-slide-tag">Award</span>
-              <h3 class="gallery-slide-title">AACC Award</h3>
-              <p class="gallery-slide-desc">Asian American Cultural Center award recognition at Yale University.</p>
-            </div>
-          </div>
-          <div class="gallery-nav">
-            <button class="gallery-btn" id="gallery-prev" aria-label="Previous photos">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-            </button>
-            <div class="gallery-dots" id="gallery-dots"></div>
-            <button class="gallery-btn" id="gallery-next" aria-label="Next photos">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section class="moments" aria-label="Photos">
+      <h2 class="visually-hidden">Moments</h2>
+      <div class="marquee" style="--dur: 44s"><div class="marquee-track"><img fetchpriority="low" src="images/moments/01-headshot.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/02-yale-lake.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/03-yale-campus.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/04-yale-celebration.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/05-pohela-boishakh.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/06-harvard-yale.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/01-headshot.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/02-yale-lake.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/03-yale-campus.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/04-yale-celebration.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/05-pohela-boishakh.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/06-harvard-yale.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/01-headshot.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/02-yale-lake.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/03-yale-campus.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/04-yale-celebration.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/05-pohela-boishakh.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/06-harvard-yale.jpg" alt="" decoding="async"></div></div>
+      <div class="marquee rtl" style="--dur: 52s"><div class="marquee-track"><img fetchpriority="low" src="images/moments/07-harvard-yale-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/08-aacc-award.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/09-study-yale.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/10-finance-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/11-in-lab.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/07-harvard-yale-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/08-aacc-award.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/09-study-yale.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/10-finance-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/11-in-lab.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/07-harvard-yale-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/08-aacc-award.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/09-study-yale.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/10-finance-group.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/11-in-lab.jpg" alt="" decoding="async"></div></div>
+      <div class="marquee" style="--dur: 60s"><div class="marquee-track"><img fetchpriority="low" src="images/moments/12-cams-lab.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/13-nanocide.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/14-diana-ashoka.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/15-better-india.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/16-profile.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/12-cams-lab.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/13-nanocide.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/14-diana-ashoka.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/15-better-india.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/16-profile.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/12-cams-lab.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/13-nanocide.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/14-diana-ashoka.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/15-better-india.jpg" alt="" decoding="async"><img fetchpriority="low" src="images/moments/16-profile.jpg" alt="" decoding="async"></div></div>
+    </section>
 
     <!-- CONTACT -->
     <div class="card contact-card" id="contact">
@@ -1258,25 +1130,6 @@
   <span>© 2026 Aranyo Ray</span>
   <span>Builder · Researcher · Founder</span>
 </footer>
-
-<!-- LIGHTBOX -->
-<div class="lightbox-overlay" id="lightbox-overlay">
-  <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
-  <button class="lightbox-arrow lightbox-arrow-left" id="lightbox-prev" aria-label="Previous photo">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-  </button>
-  <div class="lightbox-content" id="lightbox-content">
-    <img class="lightbox-image" id="lightbox-image" src="" alt="">
-    <div class="lightbox-details" id="lightbox-details">
-      <span class="lightbox-counter" id="lightbox-counter"></span>
-      <h3 class="lightbox-title" id="lightbox-title"></h3>
-      <p class="lightbox-desc" id="lightbox-desc"></p>
-    </div>
-  </div>
-  <button class="lightbox-arrow lightbox-arrow-right" id="lightbox-next" aria-label="Next photo">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-  </button>
-</div>
 
 <script>
   function showStep(n, btn) {
@@ -1350,149 +1203,6 @@
     }
   });
 
-  // Gallery Logic
-  const galleryImagePanel = document.getElementById('gallery-image-panel');
-  const galleryImages = Array.from(galleryImagePanel.querySelectorAll('.gallery-image'));
-  const gallerySlides = Array.from(document.getElementById('gallery-slides').querySelectorAll('.gallery-slide'));
-  const galleryPrevBtn = document.getElementById('gallery-prev');
-  const galleryNextBtn = document.getElementById('gallery-next');
-  const galleryDotsContainer = document.getElementById('gallery-dots');
-
-  let currentGalleryIndex = 0;
-  let galleryTimer;
-
-  function updateGallery() {
-    galleryImages.forEach((img, i) => {
-      img.classList.toggle('gallery-image--active', i === currentGalleryIndex);
-    });
-    gallerySlides.forEach((slide, i) => {
-      slide.classList.toggle('gallery-slide--active', i === currentGalleryIndex);
-    });
-    updateGalleryDots();
-    startGalleryTimer();
-  }
-
-  function updateGalleryDots() {
-    galleryDotsContainer.innerHTML = '';
-    galleryImages.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.classList.add('gallery-dot');
-      if (i === currentGalleryIndex) dot.classList.add('active');
-      dot.addEventListener('click', () => {
-        currentGalleryIndex = i;
-        updateGallery();
-      });
-      galleryDotsContainer.appendChild(dot);
-    });
-  }
-
-  function startGalleryTimer() {
-    clearInterval(galleryTimer);
-    galleryTimer = setInterval(() => {
-      currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
-      updateGallery();
-    }, 5000);
-  }
-
-  if (galleryPrevBtn) {
-    galleryPrevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
-      updateGallery();
-    });
-  }
-
-  if (galleryNextBtn) {
-    galleryNextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
-      updateGallery();
-    });
-  }
-
-  // Lightbox Logic
-  const lightboxOverlay = document.getElementById('lightbox-overlay');
-  const lightboxImage = document.getElementById('lightbox-image');
-  const lightboxTitle = document.getElementById('lightbox-title');
-  const lightboxDesc = document.getElementById('lightbox-desc');
-  const lightboxCounter = document.getElementById('lightbox-counter');
-  const lightboxCloseBtn = document.getElementById('lightbox-close');
-  const lightboxPrevBtn = document.getElementById('lightbox-prev');
-  const lightboxNextBtn = document.getElementById('lightbox-next');
-
-  let currentLightboxIndex = 0;
-
-  function openLightbox(index) {
-    currentLightboxIndex = index;
-    updateLightboxContent();
-    lightboxOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
-  }
-
-  function closeLightbox() {
-    lightboxOverlay.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
-  }
-
-  function updateLightboxContent() {
-    const image = galleryImages[currentLightboxIndex];
-    const slide = gallerySlides[currentLightboxIndex];
-
-    lightboxImage.src = image.src;
-    lightboxImage.alt = image.alt;
-    lightboxTitle.textContent = slide.querySelector('.gallery-slide-title').textContent;
-    lightboxDesc.textContent = slide.querySelector('.gallery-slide-desc').textContent;
-    lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${galleryImages.length}`;
-
-    lightboxPrevBtn.disabled = currentLightboxIndex === 0;
-    lightboxNextBtn.disabled = currentLightboxIndex === galleryImages.length - 1;
-  }
-
-  lightboxCloseBtn.addEventListener('click', closeLightbox);
-  lightboxOverlay.addEventListener('click', (e) => {
-    if (e.target === lightboxOverlay) {
-      closeLightbox();
-    }
-  });
-
-  lightboxPrevBtn.addEventListener('click', () => {
-    if (currentLightboxIndex > 0) {
-      currentLightboxIndex--;
-      updateLightboxContent();
-    }
-  });
-
-  lightboxNextBtn.addEventListener('click', () => {
-    if (currentLightboxIndex < galleryImages.length - 1) {
-      currentLightboxIndex++;
-      updateLightboxContent();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (lightboxOverlay.classList.contains('active')) {
-      if (e.key === 'Escape') {
-        closeLightbox();
-      } else if (e.key === 'ArrowLeft') {
-        lightboxPrevBtn.click();
-      } else if (e.key === 'ArrowRight') {
-        lightboxNextBtn.click();
-      }
-    }
-  });
-
-  galleryImagePanel.addEventListener('click', (e) => {
-    const clickedImage = e.target.closest('.gallery-image');
-    if (clickedImage) {
-      const index = parseInt(clickedImage.dataset.index);
-      openLightbox(index);
-    }
-  });
-
-  // Initial setup
-  updateGallery();
 </script>
   <script type="module">
     import createGlobe from 'https://cdn.skypack.dev/cobe'
@@ -1501,7 +1211,8 @@
     const card = canvas.closest('.location-card')
     const docEl = document.documentElement
     let globe = null
-    let phi = 5.6
+    const PHI0 = 2.9
+    let phi = PHI0
     let theta = 0.6
     let width = 0
     let r = 0
@@ -1519,7 +1230,7 @@
         devicePixelRatio: 2,
         width: width * 2,
         height: width * 2,
-        phi: 5.6, // YALE CENTERED
+        phi: PHI0, // India in view
         theta: 0.6,
         dark: isDark ? 1 : 0,
         diffuse: 1.2,
@@ -1529,7 +1240,8 @@
         markerColor: [251 / 255, 100 / 255, 21 / 255],
         glowColor: isDark ? [0.1, 0.1, 0.1] : [0.9, 0.9, 0.9],
         markers: [
-          { location: [41.3163, -72.9223], size: 0.08 }, // YALE ONLY
+          { location: [22.5726, 88.3639], size: 0.08 }, // Kolkata
+          { location: [12.9716, 77.5946], size: 0.08 }, // Bangalore
         ],
         onRender: (state) => {
           if (isHovering && !pointerInteracting) phi += 0.005
